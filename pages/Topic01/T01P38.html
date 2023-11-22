@@ -20,24 +20,34 @@
 <![endif]-->
 
     <style type="text/css">
-    ul.alertText {left:175px;width: 632px;}
+        ul.alertText {
+            position: absolute;
+            left: 246px;
+            width: 632px;
+        }
+
         .glosTag {
             display: inline-block;
         }
-        
+
         ul.alertText li {
             list-style: none;
         }
-        ul.alertText li:before{content: ''; background: #000000; }
+
+        ul.alertText li:before {
+            content: '';
+            background: #000000;
+        }
+
         .mainContainer {
-         width: 1000px;
+            width: 1000px;
             height: 460px;
             left: 40px;
             top: 12px;
             opacity: 1;
             position: absolute;
         }
-        
+
         .clsPatch {
             position: absolute;
             width: 948px;
@@ -53,19 +63,19 @@
             -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
             /* padding: 0px 17px; */
         }
-        
+
         .cls_Text {
             position: absolute;
             width: 93%;
             /* left: 15px; */
         }
-        
+
         #idText45 {
             font-size: 16px;
             font-family: OpenSansRegular;
             margin: 18px;
         }
-        
+
         .clsCircle {
             position: absolute;
             /* -ms-transform: matrix(0, 0, 0, 0, 0, 0);
@@ -76,7 +86,7 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
         }
-        
+
         .Clsback {
             position: relative;
             width: 300px;
@@ -92,12 +102,13 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
             /* display :none; */
         }
+
         /* .dropdown2 {
     width: 250px;
     height: 35px;
     border-radius: 5px;
 } */
-        
+
         select {
             /* position: absolute; */
             width: 295px;
@@ -122,17 +133,17 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             -moz-appearance: none;
             font-family: OpenSansRegular;
         }
-        
+
         select:focus {
             background: url('pages/images/common/uparrow.png') no-repeat right;
             background-position-x: 272px;
         }
-        
+
         select option {
             font-size: 14px;
             font-family: OpenSansRegular;
         }
-        
+
         span {
             position: absolute;
             width: 235px;
@@ -144,7 +155,7 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             font-family: OpenSansRegular;
             display: none;
         }
-        
+
         .wrong {
             position: absolute;
             background: url("pages/images/Topic01/T01P09/wrong.png");
@@ -154,11 +165,11 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             left: 385px;
             display: none;
         }
-        
+
         #pgTitleFrame span {
             display: block;
         }
-        
+
         #sub_Txt0 {
             position: absolute;
             left: 30px;
@@ -166,7 +177,7 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             width: 250px;
             height: 350px;
         }
-        
+
         #sub_Txt3 {
             position: absolute;
             left: 30px;
@@ -176,48 +187,50 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             left: 233px;
             margin-top: 317px;
         }
-        
+
         #sub_Txt4 {
             position: absolute;
             left: 30px;
             top: 130px;
         }
-        
+
         .bullet_Text {
-             margin-top: 15px;
+            margin-top: 15px;
             left: 29px;
             background-color: white;
             /* border: 1px solid grey; */
             top: 25px;
-            border-radius: 2px;
+            border-radius: 25px;
             font-size: 14px;
             font-family: OpenSansRegular;
             padding: 6px 12px;
             /* border-radius: 24px; */
-            border-radius: 15px;
-            -webkit-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
-            border-radius: 5px;
-            -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+            border-radius: 25px;
+            /* -webkit-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75); */
+            /* -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75); */
+            /* box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75); */
+            border-radius: 25px;
+            /* -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75); */
             display: none;
             height: 458px;
-            animation: left_to_right 1s ease; 
+            animation: left_to_right 1s ease;
         }
+
         @keyframes left_to_right {
-  from {
-   opacity: 0;
-  }
-  to {
-    opacity:1;
-  }
-}
-      
-        
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
         .bullet_Text p {
             margin: 0px;
         }
-        
+
         #para3 {
             position: absolute;
             /* border: 1px solid gray; */
@@ -232,48 +245,53 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             margin-left: 10px;
             display: none;
         }
-        
+
         #idText2 {
             font-size: 13px;
             font-family: OpenSansRegular;
             left: 10px;
         }
+
         /*  */
-        
+
         #image1 {
-            background: url(pages/images/Topic01/T01P38/bloodbox.png) no-repeat;
+            background: url(pages/images/Topic01/T01P38/Changing_glows.png) no-repeat;
             background-size: cover;
-            background-position: -47px 1px; 
+            background-position: -47px 1px;
         }
-        
+
         #idPatch1 {
             position: absolute;
             top: 0px;
             left: 0px;
             border-radius: 10px;
-            width: 129px;
+            width: 220px;
             height: 448px;
-            opacity: 1; overflow:hidden;
+            opacity: 1;
+            overflow: hidden;
         }
-        #idPatch1 {	 position: relative;
+
+        #idPatch1 {
+            position: relative;
             background-size: cover;
-         
-            width: 155px;
-            height: 446px; top:5px;
-        }  
+            width: 220px;
+            height: 446px;
+            top: 5px;
+        }
+
         .clsImage {
             position: absolute;
             top: 5px;
             opacity: 1;
             left: 7px;
-            width: 140px;
+            width: 210px;
             height: 432px;
-            border-radius: 10px;
-    border: 2px solid #fff;
-           
-            
+            border-radius: 25px;
+            border: 2px solid #fff;
+
+
         }
-     
+
         .clsIconImgExpand {
             position: absolute;
             width: 178px;
@@ -285,7 +303,7 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             line-height: 43px;
             padding: 0px 10px;
         }
-        
+
         #icon00 {
             background: url("pages/images/common/enlarge_text.png") no-repeat;
             bottom: 6px;
@@ -294,14 +312,14 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             text-align: center;
             display: none;
         }
-        
+
         .clsIconImg {
             position: absolute;
             width: 28px;
             height: 28px;
             /* top: 440px; */
         }
-        
+
         #icon01 {
             background: url(pages/images/common/small_expand.png) no-repeat;
             bottom: 10px;
@@ -313,11 +331,11 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             left: auto;
             top: auto;
         }
-        
+
         #icon01:hover {
             background: url("pages/images/common/small_expand_hover.png") no-repeat;
         }
-        
+
         .CaseStudy {
             position: absolute;
             left: 0px;
@@ -335,16 +353,16 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             -mz-border-radius: 5px;
             display: none;
         }
-        
+
         #TabPopup .caseStudyContent {
             height: 429px;
             top: 31px;
         }
-        
+
         #TabPopup .caseStudyContent .expandImgTxtRight {
             top: 378px;
         }
-        
+
         .caseStudyContent {
             position: relative;
             left: -30px;
@@ -360,7 +378,7 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             -mz-border-radius: 10px;
             margin: 0px auto;
         }
-        
+
         .ModalTxtImg {
             position: absolute;
             top: 0px;
@@ -374,7 +392,7 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
         }
-        
+
         .closepopup {
             position: absolute;
             width: 30px;
@@ -387,12 +405,12 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             text-decoration: none;
             background-size: contain;
         }
-        
+
         .closepopup:hover {
             background: url("pages/images/common/close_expand_hover.png") no-repeat;
             background-size: contain;
         }
-        
+
         .clickToClose {
             width: 136px;
             top: 335px;
@@ -403,7 +421,7 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             text-align: center;
             display: block;
         }
-        
+
         .expandImgTxtLeft,
         .expandImgTxtRight {
             display: inline-block;
@@ -419,14 +437,14 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             font-size: 14px;
             font-style: italic;
         }
-        
+
         #imgPopup0 {
             background: url('pages/images/Topic01/T01P39/Group_1.png') no-repeat;
             /* width: 100%; */
             background-size: contain;
             background-position: bottom;
         }
-        
+
         .wrong {
             position: absolute;
             background: url("pages/images/common/wrong.png");
@@ -436,7 +454,7 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             left: 155px;
             display: none;
         }
-        
+
         .right {
             position: absolute;
             background: url("pages/images/common/checkbox_correct.png");
@@ -447,11 +465,11 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             display: none;
             transform: rotate(0deg);
         }
-        
+
         .bulletpoints {
             display: none;
         }
-        
+
         .textBullets {
             font-size: 16px;
             width: 500px;
@@ -459,44 +477,56 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             position: absolute;
             top: 16px;
         }
-        
+
         .alertIconBox {
             position: absolute;
-            width: 748px;
-            left: 195px;
+            width: 709px;
+            left: 260px;
             top: 46px;
-            height: 99px;
+            height: 135px;
             /* background-position: center; */
             background: #FFFFFF;
             /* box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75); */
-            border: 2px solid #F6A87A;
-            border-radius: 5px;
+            border: 2px solid #000;
+            border-radius: 25px;
             opacity: 1;
             /* display: none; */
         }
-        
+
+        .alertBoxCtn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: -5px;
+        }
+
         .alertIcon {
             position: absolute;
-            top: 8px;
-            left: 8px;
+            top: 0px;
+            left: 20px;
             z-index: 1;
-            display: none; width: 100%; font-weight:bold
+            display: none;
+            width: 96%;
+            font-weight: bold
         }
-        
+
         .bullet.align {
             top: -15px;
             position: absolute;
             width: 445px;
             margin-left: 15px;
         }
-        
+
         .alertText {
             top: 76px !important;
+            padding-left: 83px;
         }
+
         /* ul {
             list-style-image: url('pages/images/common/bullet.png');
         } */
-        
+
         .noteText {
             position: absolute;
             top: 339px;
@@ -505,25 +535,26 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             width: 330px;
             line-height: 20px;
         }
-        
+
         .showtext {
             display: none;
-            list-style: none;
+            list-style: disc;
         }
-        
+
         .marginText {
-            margin-top: 84px;
-            width: 717px;
+            margin-top: 118px;
+            width: 610px;
         }
+
         .marginText35 {
             /* margin-top: 35px!important; */
         }
-        
+
         .boxInst {
             top: 479px;
             left: 866px;
         }
-        
+
         .headingText {
             position: absolute;
             left: 435px;
@@ -531,42 +562,86 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             font-family: OpenSansRegular;
             display: none;
         }
-        
+
         #popoverClose {
             bottom: 12px;
             right: 55px;
         }
-       li.not-bullet { margin-top:20px}
-       li.not-bullet:before {background: none!important; width:0!important;}
-        .listitem2{ margin:0px; padding:10px 20px 0 5px; list-style:none}
-		.listitem2 li{ position:relative; font-size:16px; color:#000; margin-bottom:0px; padding-left:0px; list-style: none;}
-       
-		.listitem2 li:before{ background: none!important; left:0px; width:13px; height:13px; position:absolute; content:""; top:5px}
-		.listitem2 li a{ color:#D7722C; cursor:pointer}
+
+        li.not-bullet {
+            margin-top: 20px
+        }
+
+        li.not-bullet:before {
+            background: none !important;
+            width: 0 !important;
+        }
+
+        .listitem2 {
+            margin: -10px 15px;
+            padding: 0px 20px 0 5px;
+            list-style: none
+        }
+
+        .listitem2 li {
+            position: relative;
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 0px;
+            padding-left: 0px;
+            list-style: none;
+        }
+
+        .listitem2 li:before {
+            background: none !important;
+            left: 0px;
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            content: "";
+            top: 5px
+        }
+
+        .listitem2 li a {
+            color: #D7722C;
+            cursor: pointer
+        }
+
         .listitem2 li span {
             top: -1px;
             position: relative;
             left: -2px;
-            border: 2px solid #5B5B5B;
-            background: #fff;
-            width: 5px;
-            height: 5px;
+            border: 2px solid #000;
+            background: #000;
+            width: 3px;
+            height: 3.2px;
             border-radius: 50%;
-            display: inline-block; margin-right:6px
+            display: inline-block;
+            margin-right: 6px
         }
-       .TCol{
-        width:12%;
-       }
-       .ECol{
-        width: 90%;
-        margin-top: -98px;
-        margin-left: 20px;
-       }
-       .img-padding{
-        margin-top: 17px;
-        width: 50%;
-        margin-bottom: 17px;
-       }
+
+        .TCol {
+            width: 20%;
+        }
+
+        .ECol {
+            width: 84%;
+            /* margin-top: -98px; */
+            margin-left: -35px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .ECol>ul {
+            padding: 0px;
+        }
+
+        .img-padding {
+            margin-top: 5px;
+            width: 43%;
+            margin-left: 7px;
+            margin-bottom: 0px;
+        }
     </style>
     <script>
         glossaryFuncPageLevel();
@@ -580,156 +655,156 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
         var idd = 0;
 
         var updateContentArray = [{
-                time: "1",
-                carry: "",
-                event: "",
-                show: "",
-                hide: "",
-                transcript: "As a reminder, an abnormal CBC does not always mean that an infant has an infection. For example, infants with Trisomy, 13, 18, and 21 may have abnormal white blood cell counts, but not necessarily sepsis.Conversely, an infant with an infection may have a normal CBC in the early phase of illness. The time between the onset of infection and the first change in the CBC may be as long as 4 to 6 hours. The CBC is a screening tool that should not be usedby itself to decide to withhold or start antibiotics. As you evaluate the infant for possible sepsis, always consider clinical history, patient condition, clinical signs and any other available laboratory data.<br> Click Next to continue."
-            }, {
-                time: "0",
-                carry: "",
-                event: "",
-                show: "",
-                hide: "",
-                transcript: "",
-                animation: [{
-                    target: ".bullet_Text",
-                    duration: "0.5",
-                    activity: {
-                        'display': 'block',
-                        'opacity':'1'
-                    }
-                }]
-            }, {
-                time: "2",
-                carry: "",
-                event: "",
-                show: "",
-                hide: "",
-                transcript: "",
-                animation: [{
-                    target: ".alertIcon",
-                    duration: "0.5",
-                    activity: {
-                        'display': 'block'
-                    }
-                }]
-            }, {
-                time: "2",
-                carry: "",
-                event: "",
-                show: "",
-                hide: "",
-                transcript: "",
-                animation: [{
-                    target: ".showlist0",
-                    duration: "0.5",
-                    activity: {
-                        'display': 'list-item'
-                    }
-                }]
-            },
+            time: "1",
+            carry: "",
+            event: "",
+            show: "",
+            hide: "",
+            transcript: "In summary, a CBC is a useful blood test to assess an infant’s response to an infection, and to also look for other treatable causes of deterioration such as anemia or polycythemia. But, it’s important to remember two things. First, an abnormal CBC does not always mean that an infant has an infection. Second, an infection may be present even if the CBC results are normal, especially in the early phase of illness. For that reason, if concerned about sepsis, it can be beneficial to trend the CBC results. When evaluating the infant for possible sepsis and deciding if antibiotics should be started, always consider the patient history, risk factors for sepsis, clinical signs, patient condition, CBC results if one was obtained, and any other available laboratory data. <br> Click Next to continue."
+        }, {
+            time: "0",
+            carry: "",
+            event: "",
+            show: "",
+            hide: "",
+            transcript: "",
+            animation: [{
+                target: ".bullet_Text",
+                duration: "0.5",
+                activity: {
+                    'display': 'block',
+                    'opacity': '1'
+                }
+            }]
+        }, {
+            time: "2",
+            carry: "",
+            event: "",
+            show: "",
+            hide: "",
+            transcript: "",
+            animation: [{
+                target: ".alertIcon",
+                duration: "0.5",
+                activity: {
+                    'display': 'block'
+                }
+            }]
+        }, {
+            time: "2",
+            carry: "",
+            event: "",
+            show: "",
+            hide: "",
+            transcript: "",
+            animation: [{
+                target: ".showlist0",
+                duration: "0.5",
+                activity: {
+                    'display': 'list-item'
+                }
+            }]
+        },
 
-            {
-                time: "6.5",
-                carry: "",
-                event: "",
-                show: "",
-                hide: "",
-                transcript: "",
-                animation: [{
-                    target: ".showlist1",
-                    duration: "0.5",
-                    activity: {
-                        'display': 'list-item'
-                    }
-                }]
-            }, {
-                time: "9",
-                carry: "",
-                event: "",
-                show: "",
-                hide: "",
-                transcript: "",
-                animation: [{
-                    target: ".showlist2",
-                    duration: "0.5",
-                    activity: {
-                        'display': 'list-item'
-                    }
-                }]
-            }, {
-                time: "12",
-                carry: "",
-                event: "",
-                show: "",
-                hide: "",
-                transcript: "",
-                animation: [{
-                    target: ".showlist3",
-                    duration: "0.5",
-                    activity: {
-                        'display': 'list-item'
-                    }
-                }]
-            },{
-                time: "20",
-                carry: "",
-                event: "",
-                show: "",
-                hide: "",
-                transcript: "",
-                animation: [{
-                    target: ".showlist6",
-                    duration: "0.5",
-                    activity: {
-                        'display': 'list-item'
-                    }
-                }]
-            }, {
-                time: "24",
-                carry: "",
-                event: "",
-                show: "",
-                hide: "",
-                transcript: "",
-                animation: [{
-                    target: ".showlist7",
-                    duration: "0.5",
-                    activity: {
-                        'display': 'list-item'
-                    }
-                }]
-            }, {
-                time: "25",
-                carry: "",
-                event: "",
-                show: "",
-                hide: "",
-                transcript: "",
-                animation: [{
-                    target: ".showlist8",
-                    duration: "0.5",
-                    activity: {
-                        'display': 'list-item'
-                    }
-                }]
-            }, {
-                time: "26",
-                carry: "",
-                event: "",
-                show: "",
-                hide: "",
-                transcript: "",
-                animation: [{
-                    target: ".showlist9",
-                    duration: "0.5",
-                    activity: {
-                        'display': 'list-item'
-                    }
-                }]
-            },
+        {
+            time: "6.5",
+            carry: "",
+            event: "",
+            show: "",
+            hide: "",
+            transcript: "",
+            animation: [{
+                target: ".showlist1",
+                duration: "0.5",
+                activity: {
+                    'display': 'list-item'
+                }
+            }]
+        }, {
+            time: "9",
+            carry: "",
+            event: "",
+            show: "",
+            hide: "",
+            transcript: "",
+            animation: [{
+                target: ".showlist2",
+                duration: "0.5",
+                activity: {
+                    'display': 'list-item'
+                }
+            }]
+        }, {
+            time: "12",
+            carry: "",
+            event: "",
+            show: "",
+            hide: "",
+            transcript: "",
+            animation: [{
+                target: ".showlist3",
+                duration: "0.5",
+                activity: {
+                    'display': 'list-item'
+                }
+            }]
+        }, {
+            time: "20",
+            carry: "",
+            event: "",
+            show: "",
+            hide: "",
+            transcript: "",
+            animation: [{
+                target: ".showlist6",
+                duration: "0.5",
+                activity: {
+                    'display': 'list-item'
+                }
+            }]
+        }, {
+            time: "24",
+            carry: "",
+            event: "",
+            show: "",
+            hide: "",
+            transcript: "",
+            animation: [{
+                target: ".showlist7",
+                duration: "0.5",
+                activity: {
+                    'display': 'list-item'
+                }
+            }]
+        }, {
+            time: "25",
+            carry: "",
+            event: "",
+            show: "",
+            hide: "",
+            transcript: "",
+            animation: [{
+                target: ".showlist8",
+                duration: "0.5",
+                activity: {
+                    'display': 'list-item'
+                }
+            }]
+        }, {
+            time: "26",
+            carry: "",
+            event: "",
+            show: "",
+            hide: "",
+            transcript: "",
+            animation: [{
+                target: ".showlist9",
+                duration: "0.5",
+                activity: {
+                    'display': 'list-item'
+                }
+            }]
+        },
         ];
 
         function fnAudioFinishItemComp() {
@@ -740,7 +815,7 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
         var __dataXml;
         var __clickCount = 0;
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             disableNextBtn();
             var ele = document.getElementsByTagName('div');
             for (var i = 0; i < ele.length; i++) {
@@ -767,11 +842,11 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
         }
 
         /* function fnPlaySectionAudio(gCurrentIndex){
-        	indexAudio = (gCurrentIndex);
-        	audioId = "audio_"+gCurrentIndex;
-        	fnHideShowAudioPlayer( false );
-        	updateContentArray = eval("popupSectionArray"+(gCurrentIndex));
-        	initAudioPlayer(gItemAudioPath[gCurrentIndex])
+            indexAudio = (gCurrentIndex);
+            audioId = "audio_"+gCurrentIndex;
+            fnHideShowAudioPlayer( false );
+            updateContentArray = eval("popupSectionArray"+(gCurrentIndex));
+            initAudioPlayer(gItemAudioPath[gCurrentIndex])
         } */
 
         function fnCompletion() {
@@ -783,7 +858,7 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
 
         }
 
-        $(".clsIconImg").on("click", function() {
+        $(".clsIconImg").on("click", function () {
             pauseAudio();
 
             //debugger;
@@ -795,7 +870,7 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             $(".modal").show();
         });
 
-        $(".closepopup").on("click", function() {
+        $(".closepopup").on("click", function () {
             playAudio();
             $(".modal").hide()
             $(".mainContainer").removeClass("blur");
@@ -847,46 +922,52 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
 <body>
     <div class="pg-pageContent" UNSELECTABLE="on">
         <div class="mainContainer">
-          
+
             <div class="bullet_Text">
-               
+
                 <div class="alertIconBox showtext showlist0" style="list-style: none;">
                     <div class="alertIcon">
-                        <div >
-                        <div class="TCol"><img src="pages/images/Topic01/T01P12/warning.svg" class="img-padding" alt="" border="0"></div>
-                        <div class="ECol">
-                            <ul>
-                        <li style="font-size: 16px;" class="showtext showlist0">An abnormal CBC does not always mean an infant has an infection.                           
-                             
-                        </li>
-                        <li style="font-size: 16px;" class="showtext showlist0"> An infant with an infection may have a normal CBC in the early phase of
-                            illness.
-                        </li>
-                        <li style="font-size: 16px;" class="showtext showlist0"> The time between onset of infection and the first change in the CBC may
-                            be as long as 4 to 6 hours.
-                        </li>
-                    </ul>
-                    </div>
-                </div>
+                        <div class="alertBoxCtn">
+                            <div class="TCol"><img src="pages/images/Topic01/T01P12/warning.svg" class="img-padding"
+                                    alt="" border="0"></div>
+                            <div class="ECol">
+                                <ul>
+                                    <li style="font-size: 16px;" class="showtext showlist0">
+                                        CBC useful to assess infant’s response to an infection or other treatable causes
+                                        of deterioration
+                                    </li>
+                                    <li style="font-size: 16px;" class="showtext showlist0">
+                                        An abnormal CBC does not always mean an infant has an infection
+                                    </li>
+                                    <li style="font-size: 16px;" class="showtext showlist0">
+                                        An infant with an infection may have a normal in the early phase of illness
+                                    </li>
+                                    <li style="font-size: 16px;" class="showtext showlist0">
+                                        Trend results
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <ul class="alertText">
                     <!-- <li class="showtext marginText showlist0">Increased risk of <a href="javascript:void(0)" class="glossarytag" textDesc="An acute emergency that occurs after the delivery of the head when one or both shoulders get caught or stuck above the mother’s pubic bone. Risk factors include maternal obesity, fetal macrosomia, maternal diabetes, and prior history of shoulder dystocia.">shoulder dystocia</a>, which occurs because of excessive fat deposition in the upper chest area.</li> -->
-                    <li class="showtext marginText showlist3">CBC is a screening tool and <strong  style="text-decoration: underline;">should not</strong> be used by itself to decide to withhold or start antibiotics.
-
-
-
+                    <li class="showtext marginText showlist3">
+                        When evaluating the infant for possible sepsis and deciding if antibiotics should be started,
+                        consider:
                     </li>
-                    <li class="showtext marginText35 showlist6  not-bullet">  <p style="margin-left:-19px">As you evaluate the infant for possible sepsis,
-                        always consider:</p>
+                    <li class="showtext marginText35 showlist6  not-bullet">
+                        <!-- <p style="margin-left:-19px">As you evaluate the infant for possible sepsis,
+                            always consider:</p> -->
 
                         <ul class="listitem2">
-                            <li class="showtext showlist7"><span></span>Clinical history</li>
-                            <li class="showtext showlist8"><span></span>Patient condition</li>
-                            <li class="showtext showlist9"><span></span>Clinical signs</li>
-                            <li class="showtext showlist9"><span></span>Other available laboratory
-                                data.</li>
-                            
+                            <li class="showtext showlist7"><span></span>Patient history </li>
+                            <li class="showtext showlist8"><span></span>Risk factors for sepsis </li>
+                            <li class="showtext showlist9"><span></span>Clinical signs </li>
+                            <li class="showtext showlist9"><span></span>Patient condition </li>
+                            <li class="showtext showlist9"><span></span>CBC results and other available laboratory data
+                            </li>
+
                         </ul>
 
                     </li>
@@ -905,9 +986,9 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
                     </div>
                     <div class="clsIconImg zoom_btn" id="icon01"></div>
                 </div> -->
-            </div>
+                </div>
 
-            <!-- <div class="CaseStudy" id="case_study_popup">
+                <!-- <div class="CaseStudy" id="case_study_popup">
                 <div class="caseStudyContent">
                     <div class="ModalTxtImg"></div>
                     <div class="closepopup"></div>
@@ -916,23 +997,23 @@ transform: matrix(0, 0, 0, 0, 0, 0); */
             </div> -->
 
 
-            <div class="boxInst">
-                <div class="instNextClick"></div>
-                <div class="next_click"><em> Click Next to continue.</em></div>
+                <div class="boxInst">
+                    <div class="instNextClick"></div>
+                    <div class="next_click"><em> Click Next to continue.</em></div>
+                </div>
             </div>
-        </div>
-        <div class="modal" id="case_study_popup">
-            <div class="modalContent medium" unselectable="on">
-                <div class="modalTxtImg" unselectable="on"></div>
-                <a class="closepopup zoom_close_btn" href="javascript:void(0)" title="Click to Close"></a>
-                <!-- <div class="clickToContinue expandImgTxtRight clickToClose">Click to Close</div> -->
-                <div class="popover left-arrow" id="popoverClose">
-                    <div class="arrow" style="top: 50%;"></div>
-                    <div class="popover-content">Click to close image.</div>
+            <div class="modal" id="case_study_popup">
+                <div class="modalContent medium" unselectable="on">
+                    <div class="modalTxtImg" unselectable="on"></div>
+                    <a class="closepopup zoom_close_btn" href="javascript:void(0)" title="Click to Close"></a>
+                    <!-- <div class="clickToContinue expandImgTxtRight clickToClose">Click to Close</div> -->
+                    <div class="popover left-arrow" id="popoverClose">
+                        <div class="arrow" style="top: 50%;"></div>
+                        <div class="popover-content">Click to close image.</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>

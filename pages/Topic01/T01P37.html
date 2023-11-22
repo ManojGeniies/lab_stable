@@ -135,8 +135,8 @@
         ];
         var updateContentArray0 = [{ time: "0.0", carry: "", event: "", show: "", hide: "", transcript: "That’s correct. An I/T ratio greater than 0.2 should raise suspicion that the infant might be responding to a bacterial infection. <br>Click Next to continue." }];
         var updateContentArray1 = [{ time: "0.0", carry: "", event: "", show: "", hide: "", transcript: "Here is some feedback on your response. An I/T ratio greater than 0.2 should raise suspicion that the infant might be responding to a bacterial infection. <br>Click Next to continue." }];
-        var updateContentArray2 = [{ time: "0.0", carry: "", event: "", show: "", hide: "", transcript: "Here is some feedback on your response. Does this I/T ratio raise suspicion for infection?" }];
-        var updateContentArray3 = [{ time: "0.0", carry: "", event: "", show: "", hide: "", transcript: "That’s correct. Does this I/T ratio raise suspicion for infection?" }];
+        var updateContentArray2 = [{ time: "0.0", carry: "", event: "", show: "", hide: "", transcript: "That calculation is not correct. Please review the correct values provided. Does this clinical history and I/T ratio raise suspicion for infection? " }];
+        var updateContentArray3 = [{ time: "0.0", carry: "", event: "", show: "", hide: "", transcript: "That calculation is correct. Does this clinical history and I/T ratio raise suspicion for infection?" }];
 
 
 
@@ -258,7 +258,7 @@
         }
 
         var correctOptions = [0];
-        function completeScreen(){
+        function completeScreen() {
             $(".boxInst").show();
             enableNextBtn();
             fnDesiableNext(false);
@@ -319,8 +319,8 @@
             /* Final sum*/
             var final_total = (top_total / bottom_total).toFixed(2);
             $('.practice .numberBox[name="final_total"]').val(parseFloat(final_total));
-            
-            /*SUBMIT*/  
+
+            /*SUBMIT*/
             if (!anyZero) {
                 $('.cSubmitBtn[data-submit="calculation"]').addClass('active');
                 $('.cSubmitBtn[data-submit="calculation"].active').off().on('click', function () {
@@ -335,7 +335,7 @@
                     if (!anyZero) {
                         var itration = {
                             'metas_top': 2,
-                            'bands_top':20,
+                            'bands_top': 20,
                             'metas_bottom': 2,
                             'bands_bottom': 20,
                             'segs_bottom': 42,
@@ -352,6 +352,9 @@
                             if (value == itration[$(this).attr('name')]) {
                                 $(this).parents('.inputwrapper').find('.tickmark').addClass('correct');
                             } else {
+
+
+
                                 $(this).parents('.inputwrapper').find('.tickmark').addClass('wrong');
                                 anyWrong = true;
                             }
@@ -377,19 +380,25 @@
                         $('.practice .numberBox[name="final_total"]').val(parseFloat(final_total));
                         if (final_total == itration['final_total']) {
                             $('.practice .numberBox[name="final_total"]').parents('.inputwrapper').find('.tickmark').addClass('correct');
+
+                            console.log(">>>>>>>> correct",);
+                            document.getElementById("ansCorrectedPopupLink").style.display = "inline-block"
                         } else {
                             $('.practice .numberBox[name="final_total"]').parents('.inputwrapper').find('.tickmark').addClass('wrong');
+
+                            console.log(">>>>>>>> in-correct",);
+                            document.getElementById("ansIncorrectedPopupLink").style.display = "inline-block"
                         }
                         /*actions*/
                         if (anyWrong) {
                             $('.calculationBox.correctAnswer').show();
                             fnPlaySectionAudio(2);
                         }
-                        else{
+                        else {
                             fnPlaySectionAudio(3);
                         }
                         $('.left_bottom, .bottomTxt').css({ 'display': 'inline-block' });
-                      
+
                         $('.cSubmitBtn[data-submit="calculation"]').hide();
                     }
                 })
@@ -584,8 +593,8 @@
         }
 
         .content_txt1 {
-            border-radius: 5px;
-            box-shadow: 0px 1px 1px 1px #ccc;
+            border-radius: 25px;
+            /* box-shadow: 0px 1px 1px 1px #ccc; */
             font-size: 16px;
             padding: 16px;
             background: #fff;
@@ -597,8 +606,8 @@
             margin: 0 auto;
             margin-top: 20px;
             background: rgba(255, 255, 255, 0.6);
-            height: 400px;
-            border-radius: 5px;
+            height: 390px;
+            border-radius: 25px;
         }
 
         .leftbox {
@@ -649,15 +658,16 @@
         }
 
         .instuctionBox {
-            background: #3A5569;
+            background: #ffffff;
             margin: 16px;
-            padding: 18px;
-            border-radius: 5px;
+            padding: 0px 0px 25px 0px;
+            border: 2px solid black;
+            border-radius: 25px;
             line-height: 18px;
-            color: white;
-            box-shadow: 0 0 5px #3A5569;
-            width: 87%;
-}
+            /* color: white; */
+            /* box-shadow: 0 0 5px #3A5569; */
+            width: 92%;
+        }
 
         .instuctionBox span {
             display: block;
@@ -668,9 +678,9 @@
             background: #ffffff;
             margin: 8px 16px 16px 8px;
             padding: 1px 15px;
-            border-radius: 5px;
+            border-radius: 25px;
             color: black;
-            box-shadow: 0 0 5px #333;
+            /* box-shadow: 0 0 5px #333; */
         }
 
         .calculationBox.correctAnswer,
@@ -686,7 +696,7 @@
         #leftbox,
         #rightbox {
             top: 10px;
-            height: 380px;
+            height: 370px;
         }
 
         h4 {
@@ -763,7 +773,7 @@
             line-height: 21px;
             float: right;
             border: 2px solid transparent;
-           
+
         }
 
         .cSubmitBtn.enable:hover {
@@ -773,13 +783,13 @@
         }
 
         .cSubmitBtn.active {
-            background: #5B5B5B;
+            background: #05222e;
             color: #fff;
             cursor: pointer
         }
 
         .cSubmitBtn.active:hover {
-            border: 2px solid #707070;
+            border: 2px solid #05222e;
             background: #fff;
             color: #000
         }
@@ -787,7 +797,7 @@
         .left_bottom.leftCnt {
             display: none;
             width: 100%;
-            margin-top: 10px;
+            margin-top: 0px;
         }
 
         .inputwrapper label {
@@ -825,19 +835,62 @@
         .cSubmitBtn[data-submit="calculation"] {
             margin-right: 16px;
         }
-        .cSubmitBtn[data-submit="question"]{
+
+        .cSubmitBtn[data-submit="question"] {
             margin-top: -46px;
         }
+
         .instuctionBox strong {
             /* font-family: OpenSansBold; */
         }
+
         .boxInst {
             position: absolute;
             top: 489px;
             left: 905px;
         }
-        .instuctionBox td strong{
+
+        .instuctionBox td strong {
             font-size: 14px;
+        }
+
+        .tableBorderLines {
+            /* width: 100%; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: baseline;
+            border-bottom: 2px solid #000;
+            padding: 3px 21px 1px 58px;
+        }
+
+        .tableBorderDottedLines {
+            /* width: 100%; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 2px dotted #000;
+            padding: 3px 70px 3px 67px;
+            font-size: 0.85em;
+        }
+
+        .AnswerCorrectLink {
+            text-align: right;
+            padding-right: 20px;
+            margin-top: -11px;
+            font-size: medium;
+            position: absolute;
+            bottom: -30px;
+            right: 10px;
+        }
+
+        #ansCorrectedPopupLink {
+            display: none;
+        }
+
+        #ansIncorrectedPopupLink {
+            display: none;
         }
     </style>
 </head>
@@ -863,35 +916,77 @@
 
                         <div class="instuctionBox">
                             <table style="width:100%">
-                                <tr>
-                                    <td><strong>White blood cells (WBC):</strong></td>
-                                    <td align="right">6,200 (6.2 x 10<sup>3</sup>/μL)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Segmented neutrophils (segs):</strong></td>
-                                    <td align="right">42 (%)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Band neutrophils (bands):</strong></td>
-                                    <td align="right">20 (%)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Metamyelocytes (metas):</strong></td>
-                                    <td align="right">2 (%)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Lymphocytes:</strong></td>
-                                    <td align="right">35 (%)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Eosinophils*:</strong></td>
-                                    <td align="right">0 (%)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Basophils*:</strong></td>
-                                    <td align="right">0 (%)</td>
-                                </tr>
+                                <thead>
+                                    <tr>
+                                        <div class="tableBorderLines">
+                                            <div><strong>White blood cells (WBC) Count</strong></div>
+                                            <div><strong>6,200 (6.2 x 10<sup>3</sup>/μL)</strong></div>
+                                        </div>
+
+                                    </tr>
+                                </thead>
+                                <tbody style="position: relative;">
+                                    <span style="
+                                        position: absolute;
+                                        transform: rotate(-90deg);
+                                        font-size: 14px;
+                                        left: -50px;
+                                        bottom: 186px;
+                                        font-weight: bold;
+                                        background-color: white;
+                                        padding: 15px 26px 15px 47px;
+                                        border: 2px solid black;
+                                        border-top-left-radius: 25px;
+                                    ">WBC Differential
+                                    </span>
+
+                                    <tr>
+                                        <div class="tableBorderDottedLines">
+                                            <div>Segmented neutrophils (segs)</div>
+                                            <div>42 (%)</div>
+                                        </div>
+
+                                    </tr>
+                                    <tr>
+                                        <div class="tableBorderDottedLines">
+                                            <div>Band neutrophils (bands)</div>
+                                            <div>20 (%)</div>
+                                        </div>
+
+                                    </tr>
+                                    <tr>
+                                        <div class="tableBorderDottedLines">
+                                            <div>Metamyelocytes (metas)</div>
+                                            <div>2 (%)</div>
+                                        </div>
+
+                                    </tr>
+                                    <tr>
+                                        <div class="tableBorderDottedLines">
+                                            <div>Lymphocytes</div>
+                                            <div>36 (%)</div>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="tableBorderDottedLines">
+                                            <div>Eosinophils*</div>
+                                            <div>0 (%)</div>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="tableBorderDottedLines">
+                                            <div>Basophils*</div>
+                                            <div>0 (%)</div>
+                                        </div>
+                                    </tr>
+                                </tbody>
+
                             </table>
+                            <span
+                                style="color: red; font-size: 10px; padding: 3px 15px 0px 0px; font-style: italic;">*Values
+                                may be 0% if
+                                these cells are not present in the differential count for
+                                that CBC. </span>
                         </div>
                     </div>
                     <div class="left_bottom leftCnt ">
@@ -995,6 +1090,7 @@
                                 </div>
                             </div>
 
+
                         </div>
                     </div>
                     <div class="cSubmitBtn" data-submit="calculation">Submit</div>
@@ -1068,6 +1164,62 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Popup link -->
+                <a href="javascript:void(0)" glossaryTitle="Feedback to consider" class="glossarytag AnswerCorrectLink"
+                    id="ansIncorrectedPopupLink"
+                    textDesc="For this infant, there was a history of prolonged rupture of membranes (for 24 hours which is a risk factor for sepsis). The infant was initially well, then clinically deteriorated, which should raise concern that the infant may have an infection. On the CBC, 34% of the neutrophils were immature forms. This elevated I/T ratio should also raise concern that the bone marrow is responding to a bacterial infection by sending immature forms into the bloodstream before they have had time to fully mature.">
+                    Feedback to consider
+                </a>
+
+
+                <!-- Popup -->
+                <div class="modal poupdiv" id="popup4">
+                    <div class="modalContent" unselectable="on">
+                        <div class="popupclose modalclose">
+                            <div class="modalcloseicon"></div>
+                        </div>
+                        <div class="heading">Feedback to consider</div>
+                        <div class="linenew"></div>
+                        <div class="desc">
+                            For this infant, there was a history of prolonged rupture of membranes (for 24
+                            hours which is a risk factor for sepsis). The infant was initially well, then clinically
+                            deteriorated, which should raise concern that the infant may have an infection. On the CBC,
+                            34% of the neutrophils were immature forms. This elevated I/T ratio should also raise
+                            concern that the bone marrow is responding to a bacterial infection by sending immature
+                            forms into the bloodstream before they have had time to fully mature.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popup link -->
+                <a href="javascript:void(0)" glossaryTitle="Feedback to support your answer"
+                    class="glossarytag AnswerCorrectLink" id="ansCorrectedPopupLink"
+                    textDesc="For this infant, there was a history of prolonged rupture of membranes (for 24 hours which is a risk factor for sepsis). The infant was initially well, then clinically deteriorated, which should raise concern that the infant may have an infection. On the CBC, 34% of the neutrophils were immature forms. This elevated I/T ratio should also raise concern that the bone marrow is responding to a bacterial infection by sending immature forms into the bloodstream before they have had time to fully mature.">
+                    Feedback to support your answer
+                </a>
+
+
+                <!-- Popup -->
+                <div class="modal poupdiv" id="popup4">
+                    <div class="modalContent" unselectable="on">
+                        <div class="popupclose modalclose">
+                            <div class="modalcloseicon"></div>
+                        </div>
+                        <div class="heading">Feedback to support your answer</div>
+                        <div class="linenew"></div>
+                        <div class="desc">
+                            For this infant, there was a history of prolonged rupture of membranes (for 24 hours which
+                            is a risk factor for sepsis). The infant was initially well, then clinically deteriorated,
+                            which should raise concern that the infant may have an infection. On the CBC, 34% of the
+                            neutrophils were immature forms. This elevated I/T ratio should raise concern that the bone
+                            marrow is responding to a bacterial infection by sending immature forms into the bloodstream
+                            before they have had time to fully mature.
+                        </div>
+                    </div>
+                </div>
+
+
                 <div style="clear:both"></div>
             </div>
         </div>
