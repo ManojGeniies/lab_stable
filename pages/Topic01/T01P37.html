@@ -351,9 +351,12 @@
                             userValues[$(this).attr('name')] = value;
                             if (value == itration[$(this).attr('name')]) {
                                 $(this).parents('.inputwrapper').find('.tickmark').addClass('correct');
+
+                                console.log(">>>>>>>> correct",);
+                                document.getElementById("ansCorrectedPopupLink").style.display = "inline-block"
                             } else {
 
-
+                                console.log(">>>>>>>> in-correct",);
 
                                 $(this).parents('.inputwrapper').find('.tickmark').addClass('wrong');
                                 anyWrong = true;
@@ -380,14 +383,8 @@
                         $('.practice .numberBox[name="final_total"]').val(parseFloat(final_total));
                         if (final_total == itration['final_total']) {
                             $('.practice .numberBox[name="final_total"]').parents('.inputwrapper').find('.tickmark').addClass('correct');
-
-                            console.log(">>>>>>>> correct",);
-                            document.getElementById("ansCorrectedPopupLink").style.display = "inline-block"
                         } else {
                             $('.practice .numberBox[name="final_total"]').parents('.inputwrapper').find('.tickmark').addClass('wrong');
-
-                            console.log(">>>>>>>> in-correct",);
-                            document.getElementById("ansIncorrectedPopupLink").style.display = "inline-block"
                         }
                         /*actions*/
                         if (anyWrong) {
@@ -881,15 +878,11 @@
             margin-top: -11px;
             font-size: medium;
             position: absolute;
-            bottom: -30px;
+            bottom: -3px;
             right: 10px;
         }
 
         #ansCorrectedPopupLink {
-            display: none;
-        }
-
-        #ansIncorrectedPopupLink {
             display: none;
         }
     </style>
@@ -1161,17 +1154,25 @@
                                 </div>
                             </div>
 
+                            <!-- Popup link -->
+                            <a href="javascript:void(0)" glossaryTitle="Feedback to consider"
+                                class="glossarytag AnswerCorrectLink"
+                                textDesc="For this infant, there was a history of prolonged rupture of membranes (for 24 hours which is a risk factor for sepsis). The infant was initially well, then clinically deteriorated, which should raise concern that the infant may have an infection. On the CBC, 34% of the neutrophils were immature forms. This elevated I/T ratio should also raise concern that the bone marrow is responding to a bacterial infection by sending immature forms into the bloodstream before they have had time to fully mature.">
+                                Feedback to consider
+                            </a>
+
                         </div>
                     </div>
+
+
                 </div>
 
                 <!-- Popup link -->
-                <a href="javascript:void(0)" glossaryTitle="Feedback to consider" class="glossarytag AnswerCorrectLink"
-                    id="ansIncorrectedPopupLink"
+                <a href="javascript:void(0)" glossaryTitle="Feedback to support your answer."
+                    class="glossarytag AnswerCorrectLink" id="ansCorrectedPopupLink"
                     textDesc="For this infant, there was a history of prolonged rupture of membranes (for 24 hours which is a risk factor for sepsis). The infant was initially well, then clinically deteriorated, which should raise concern that the infant may have an infection. On the CBC, 34% of the neutrophils were immature forms. This elevated I/T ratio should also raise concern that the bone marrow is responding to a bacterial infection by sending immature forms into the bloodstream before they have had time to fully mature.">
-                    Feedback to consider
+                    Feedback to support your answer.
                 </a>
-
 
                 <!-- Popup -->
                 <div class="modal poupdiv" id="popup4">
@@ -1179,7 +1180,7 @@
                         <div class="popupclose modalclose">
                             <div class="modalcloseicon"></div>
                         </div>
-                        <div class="heading">Feedback to consider</div>
+                        <div class="heading">Feedback to support your answer</div>
                         <div class="linenew"></div>
                         <div class="desc">
                             For this infant, there was a history of prolonged rupture of membranes (for 24
@@ -1192,21 +1193,13 @@
                     </div>
                 </div>
 
-                <!-- Popup link -->
-                <a href="javascript:void(0)" glossaryTitle="Feedback to support your answer"
-                    class="glossarytag AnswerCorrectLink" id="ansCorrectedPopupLink"
-                    textDesc="For this infant, there was a history of prolonged rupture of membranes (for 24 hours which is a risk factor for sepsis). The infant was initially well, then clinically deteriorated, which should raise concern that the infant may have an infection. On the CBC, 34% of the neutrophils were immature forms. This elevated I/T ratio should also raise concern that the bone marrow is responding to a bacterial infection by sending immature forms into the bloodstream before they have had time to fully mature.">
-                    Feedback to support your answer
-                </a>
-
-
                 <!-- Popup -->
                 <div class="modal poupdiv" id="popup4">
                     <div class="modalContent" unselectable="on">
                         <div class="popupclose modalclose">
                             <div class="modalcloseicon"></div>
                         </div>
-                        <div class="heading">Feedback to support your answer</div>
+                        <div class="heading">Correct values provided</div>
                         <div class="linenew"></div>
                         <div class="desc">
                             For this infant, there was a history of prolonged rupture of membranes (for 24 hours which

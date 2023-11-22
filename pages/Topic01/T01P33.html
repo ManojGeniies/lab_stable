@@ -151,10 +151,60 @@
 
     .sectionTop {
       position: absolute;
-      top: 0;
-      height: 30px;
+      top: 30px;
+      left: 66px;
+      height: 97px;
+      width: 82%;
+      padding: 7px 29px;
+      background-color: white;
+      border-radius: 25px;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .sectionTop>ul>li {
+      padding-bottom: 18px;
+    }
+
+    .sectionBottom {
+      position: absolute;
+      top: 193px;
+      left: 66px;
       width: 100%;
-      padding: 16px 0
+      text-align: center;
+    }
+
+    .sectionBottomHeading {
+      width: 86%;
+      padding-bottom: 30px;
+    }
+
+    .box1 {
+      border: 1px solid black;
+      border-radius: 25px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      padding: 31px 7px 0px;
+      width: 159px;
+    }
+
+    .box1>ul {
+      text-align: left;
+      font-size: .8em;
+      padding: 2px 5px 2px 23px;
+    }
+
+    .sectionBottomBoxs {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .box1Heading {
+      font-size: .8em;
     }
 
     .sectionContent {
@@ -519,7 +569,82 @@
 
 
   <div class="pg-pageContent" UNSELECTABLE="on">
-    <div><img src="pages/images/Topic01/T01P33/Untitled.png"></div>
+
+    <div class="sectionContainer">
+      <div class="sectionTop">
+        <ul>
+          <li>Neutrophils are the WBCs primarily responsible for killing and digesting bacteria.</li>
+          <li>Neutrophil function is impaired in term and preterm infants. </li>
+        </ul>
+      </div>
+      <div class="sectionBottom">
+        <div class="sectionBottomHeading">
+          <strong>
+            Neutrophil response is impaired in term and preterm infants
+          </strong>
+        </div>
+        <div class="sectionBottomBoxs">
+          <div class="box1">
+            <div class="box1Heading">
+              <strong>
+                Slow movement
+              </strong>
+              (chemotaxis)
+            </div>
+            <ul>
+              <li>Neutrophils do not reach the site of infection as quickly as they are needed.</li>
+            </ul>
+          </div>
+          <div class="box1">
+            <div class="box1Heading">
+              <strong>
+                Stiffer cell <br> membrane
+              </strong>
+
+            </div>
+            <ul>
+              <li>Difficulty migrating into infected tissue.</li>
+            </ul>
+          </div>
+          <div class="box1">
+            <div class="box1Heading">
+              <strong>
+                Impaired Phagocytosis
+              </strong>
+              (engulfing / ingestion) of pathogens.
+            </div>
+            <ul>
+              <li>Ineffective elimination of bacteria or other foreign substances.</li>
+            </ul>
+          </div>
+          <div class="box1">
+            <div class="box1Heading">
+              <strong>
+                Impaired / slow ‘tagging’ (opsonization) of the microorganism for phagocytosis.
+              </strong>
+
+            </div>
+            <ul>
+              <li>Impaired phagocytic activity of neutrophils.</li>
+            </ul>
+          </div>
+          <div class="box1">
+            <div class="box1Heading">
+              <strong>
+                Impaired ability to make neutrophil extracellular traps (NETs) that capture and destroy microbes
+              </strong>
+
+            </div>
+            <ul>
+
+              <li>Ineffective elimination of bacteria.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div><img src="pages/images/Topic01/T01P33/Untitled.png"></div> -->
     <!-- <div><img src="pages/images/Topic01/T01P33/img9_text.png"></div> -->
     <!-- <div id="TabPopup5" class="clsTabPopup">
       <div class="sectionContent">
