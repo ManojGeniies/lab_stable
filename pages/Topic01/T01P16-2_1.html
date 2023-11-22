@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title></title>
+
+    <style>
+      /* Sliding entrances */
+      @-webkit-keyframes slideInDown {
+        from {
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+          visibility: visible;
+        }
+
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      @keyframes slideInDown {
+        from {
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+          visibility: visible;
+        }
+
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      .animate__slideInDown {
+        -webkit-animation-name: slideInDown;
+        animation-name: slideInDown;
+      }
+      @-webkit-keyframes slideInLeft {
+        from {
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+          visibility: visible;
+        }
+
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      @keyframes slideInLeft {
+        from {
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+          visibility: visible;
+        }
+
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      .animate__slideInLeft {
+        -webkit-animation-name: slideInLeft;
+        animation-name: slideInLeft;
+      }
+      @-webkit-keyframes slideInRight {
+        from {
+          -webkit-transform: translate3d(50%, 0, 0);
+          transform: translate3d(50%, 0, 0);
+          visibility: visible;
+        }
+
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      @keyframes slideInRight {
+        from {
+          -webkit-transform: translate3d(50%, 0, 0);
+          transform: translate3d(50%, 0, 0);
+          visibility: visible;
+        }
+
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      .animate__slideInRight {
+        -webkit-animation-name: slideInRight;
+        animation-name: slideInRight;
+      }
+      @-webkit-keyframes slideInUp {
+        from {
+          -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+          visibility: visible;
+        }
+
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      @keyframes slideInUp {
+        from {
+          -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+          visibility: visible;
+        }
+
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      .animate__slideInUp {
+        -webkit-animation-name: slideInUp;
+        animation-name: slideInUp;
+      }
+      .mainContainer {
+        position: absolute;
+        width: 100%;
+        height: 545px;
+        left: 0px;
+        top: 0px;
+        opacity: 1;
+      }
+      .clsTabPopup {
+        position: absolute;
+        width: 1085px;
+        height: 540px;
+        top: 0;
+        left: 0;
+      }
+      .sectionTop {
+        position: absolute;
+        top: 0;
+        height: 30px;
+        width: 100%;
+        padding: 16px 0;
+      }
+      .sectionContent {
+        position: absolute;
+        top: 13px;
+        height: 495px;
+        width: 1055px;
+        left: 15px;
+        right: 15px;
+        color: #000;
+      }
+      .topImgCnt {
+        position: relative;
+      }
+      .small_expand,
+      .open_map {
+        background: url(pages/images/Topic01/T01P58/small_expand.png) no-repeat !important;
+        width: 28px;
+        height: 28px !important;
+        position: absolute !important;
+        bottom: 24px;
+        right: 10px;
+        display: none;
+        left: inherit !important;
+        top: inherit !important;
+        float: inherit !important;
+        text-decoration: none !important;
+        border-radius: inherit !important;
+        margin-left: 0 !important;
+        background-color: inherit !important;
+        padding: 0 !important;
+      }
+      .small_expand:hover,
+      .open_map:hover {
+        background: url(pages/images/Topic01/T01P58/small_expand_hover.png)
+          no-repeat !important;
+      }
+      .small_expand1 {
+        background: url(pages/images/Topic01/T01P58/small_expand.png) no-repeat !important;
+        width: 28px;
+        height: 28px !important;
+        position: absolute !important;
+        bottom: 7px;
+        right: 10px;
+        display: none;
+        left: inherit !important;
+        top: inherit !important;
+        float: inherit !important;
+        text-decoration: none !important;
+        border-radius: inherit !important;
+        margin-left: 0 !important;
+        background-color: inherit !important;
+        padding: 0 !important;
+      }
+      .small_expand1:hover {
+        background: url(pages/images/Topic01/T01P58/small_expand_hover.png)
+          no-repeat !important;
+      }
+      .open_map {
+        right: 33px;
+        margin-top: 2px;
+      }
+      .sectionLeft {
+        height: 100%;
+      }
+      .sectionRight {
+        width: 790px;
+        height: 507px;
+        top: 20px;
+        position: absolute;
+        left: 264px;
+      }
+      .rightTop {
+        height: 42px;
+        left: 5px;
+        position: relative;
+      }
+      .rightTop a {
+        left: 0;
+        top: 0;
+        padding: 0 65px;
+        background: #fff;
+        margin: 0;
+        position: relative;
+        float: left;
+        margin-left: -5px;
+        font-family: OpenSansSemiBold;
+        text-decoration: none;
+        color: #000;
+        height: 42px;
+        line-height: 42px;
+        border-top-right-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-top-right-radius: 5px;
+        font-size: 16px;
+        cursor: default;
+      }
+      .sectionRight .assessmentShow a {
+        cursor: default;
+      }
+      .rightTop a.active {
+        border-top-right-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-top-right-radius: 5px;
+        background: #3a5569;
+        margin-right: 0;
+        z-index: 10;
+        color: #fff;
+      }
+      .rightTop a.active.cdefault {
+        cursor: default;
+      }
+      .rightTop a.active:after,
+      .rightTop a.active:before,
+      .rightTop a.active:hover:before {
+        top: 98%;
+        left: 45%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      .rightTop a.active:after,
+      .rightTop a.active:hover:after {
+        border-top-color: #3a5569;
+        border-width: 10px;
+        margin-left: 0;
+      }
+      .rightTop a.active:before,
+      .rightTop a.active:hover:before {
+        border-top-color: #3a5569;
+        border-width: 10px;
+        margin-left: 0;
+      }
+      .rightTop a.active:nth-child(2),
+      .rightTop a.active:hover:nth-child(2) {
+        -webkit-border-top-left-radius: 5px;
+        border-top-left-radius: 5px;
+        -moz-border-top-left-radius: 5px;
+      }
+      .rightTop a:nth-child(2) {
+        -webkit-border-top-left-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+      .sectionContentArea {
+        border-top-right-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        -webkit-bottom-top-right-radius: 5px;
+        -moz-border-bottom-right-radius: 5px;
+      }
+      #topImgCnt1 {
+        /* background: url(pages/images/Topic01/T01P58/img0.png) no-repeat top center; */
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      }
+      #topImgCnt2 {
+        /* background: url(pages/images/Topic01/T01P58/img0.png) no-repeat top center; */
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      }
+      #imgPopup1 {
+        background: url(pages/images/Topic01/T01P58/img1.png) no-repeat center;
+        background-size: cover;
+      }
+      /*#case_study_popup .modalContent {width:55%; height:420px; border-radius:10px}
+	#case_study_popup .modalContent .modalinner{ padding:30px; position:relative}
+	#imgPopup0{ background-size:100% 100%; width:100%; height:360px}
+	#case_study_popup .modalContent .modalinner .modalclose{ position:absolute; top:5px; right:0px; width:30px; height:30px }
+	#case_study_popup .modalContent .modalinner .modalclose .modalcloseicon{background:url(pages/images/Topic01/T01P58/close-icon.png) no-repeat; background-size:24px 24px; width:24px; height:24px ; cursor:pointer}
+	#case_study_popup .modalContent .modalinner .modalclose .modalcloseicon:hover{background:url(pages/images/Topic01/T01P58/close-hover-icon.png) no-repeat; background-size:24px 24px; width:24px; height:24px }
+	#case_study_popup .closepopup{ display:none} 
+	#case_study_popup .modalTextBottom{ display:none}
+	#case_study_popup .popover.left-arrow{ display:none}*/
+      .sectionContent {
+        padding: 0px;
+        background: #fff;
+        border-radius: 25px;
+        overflow: hidden;
+      }
+      #content2 .sectionLeft {
+        left: 14px;
+        position: absolute;
+        width: 523px;
+        height: 301px;
+        top: 26px;
+      }
+      .sectionLeft {
+        width: 384px;
+        background: #fff;
+      }
+      .sectionRight {
+        width: 515px;
+        left: 510px;
+      }
+      .sectionContentArea {
+        padding: 0px 10px 0px 19px;
+      }
+      .iconlist {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        width: 90%;
+      }
+      .iconlist li {
+        position: relative;
+        margin-bottom: 3px;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 17px;
+      }
+      /*.iconlist li:before{ background:url(pages/images/Topic01/T01P58/bullet.png) no-repeat; left:0px; width:13px; height:13px; position:absolute; content:""; top:5px}*/
+      .iconlist li:before {
+        content: "";
+        background: #000000;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 6px;
+        left: 0px;
+      }
+      .iconlist li a {
+        color: #d7722c;
+        cursor: pointer;
+      }
+      .error1 {
+        border: solid 2px #05222e;
+        border-radius: 25px;
+        width: 96%;
+        position: absolute;
+        display: none;
+      }
+      .error1 .error1_inner {
+        position: relative;
+        padding: 0px 10px;
+        color: #000;
+        font-size: 16px;
+        font-family: "OpenSansRegular";
+        line-height: 22px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .error1 .error1_inner img {
+        position: absolute;
+        width: 35px;
+        height: 34px;
+        left: 10px;
+        top: -17px;
+      }
+      .topImgtxt {
+        background: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        bottom: 0px;
+        padding: 10px;
+        color: #000;
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .txt1 {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 10px 0px;
+      }
+
+      .sectionLeftBox {
+        position: relative;
+        height: 100%;
+        padding: 5px;
+        width: 274px;
+      }
+      .topImgboxinner {
+        border: double 6px #ccc;
+        position: relative;
+        height: 100%;
+      }
+      .content2 .sectionRight .sectionContentArea {
+        height: 265px;
+        margin-top: 100px;
+      }
+      .content3 .sectionRight .sectionContentArea {
+        height: 265px;
+        margin-top: 100px;
+      }
+      .sectionContentAreainner {
+        width: 80%;
+        margin: 20px 0px 0px 50px;
+      }
+      .sectionContentAreainner .contenttext {
+        font-size: 14px;
+        line-height: 20px;
+        position: relative;
+      }
+      .sectionContentAreainner .contenttext2 {
+        margin-top: 30px;
+      }
+      #content1 {
+        visibility: visible;
+      }
+
+      /*.small_expand{ display:block}*/
+      .poupdiv .modalContent {
+        width: 455px;
+        height: auto !important;
+        padding: 20px 18px;
+        top: 30%;
+      }
+      .poupdiv .modalContent .heading {
+        color: #d7722c;
+        font-size: 18px;
+        text-align: center;
+      }
+      .poupdiv .modalContent .linenew {
+        height: 2px;
+        background: #d7722c;
+        margin: 5px auto;
+        width: 77%;
+      }
+      .poupdiv .modalContent .desc {
+        color: #000;
+        font-size: 14px;
+        text-align: left;
+      }
+      .poupdiv .popupclose {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      .poupdiv .popupclose img {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+      .poupdiv .modalclose {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        width: 30px;
+        height: 30px;
+      }
+      .poupdiv .modalclose .modalcloseicon {
+        background: url(pages/images/Topic01/T01P58/close-icon.png) no-repeat;
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+      .poupdiv .modalclose .modalcloseicon:hover {
+        background: url(pages/images/Topic01/T01P44/close-hover-icon.png)
+          no-repeat;
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+      }
+      /*.popover.clickToEnlarge{ display:block}*/
+      .abs {
+        position: absolute;
+      }
+      .box1 {
+        background: #fbe5d6;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: bold;
+        padding: 10px 20px;
+        left: 0px;
+        width: 250px;
+        top: 50px;
+      }
+      .box2 {
+        background: #f4b183;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: bold;
+        padding: 10px 20px;
+        left: 0px;
+        width: 250px;
+        top: 120px;
+      }
+      .box3 {
+        background: #bd7c4d;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 20px;
+        left: 0px;
+        width: 250px;
+        top: 190px;
+        color: #fff;
+      }
+      .error1 {
+        top: 340px;
+        left: 10px;
+        height: 80px;
+      }
+      .error1 .error1_inner {
+        width: 200px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .topImgCntbox {
+        width: 384px;
+        height: 510px;
+      }
+      .iconlist2 {
+        margin: 0px 0px 10px 30px;
+        padding: 0px;
+        list-style: none;
+        width: 90%;
+      }
+      .iconlist2 li {
+        position: relative;
+        margin-bottom: 3px;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 25px;
+      }
+      .iconlist2 li:before {
+        background: url(pages/images/Topic01/T01P44/bullet.png) no-repeat;
+        left: 0px;
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        content: "";
+        top: 5px;
+      }
+      .iconlist2 li a {
+        color: #d7722c;
+        cursor: pointer;
+      }
+      .pdflink1 {
+        position: absolute;
+        top: 488px !important;
+        left: 20px;
+        padding-left: 40px;
+      }
+      .pdflink1 img {
+        position: absolute;
+        margin-left: -40px;
+        margin-top: -5px;
+      }
+      .pdflink1 a {
+        font-size: 14px;
+        line-height: 22px;
+        color: #000;
+      }
+      .pdflink1 a:hover {
+        color: #d7722c;
+      }
+      /*#list1, #list2, #list2_1, #list2_2, #list2_3, #list3, #list3_1, #list3_2, #list3_3, #list4, #list4_1, #list4_2, #list4_3,#list4_4, #list5,#pdflink{visibility:hidden; opacity: 0;}*/
+
+      .pageclose_txt {
+        position: absolute;
+        width: 135px;
+        height: 44px;
+        top: 48px;
+        left: 800px;
+        background: url(media/images/player/common/pdf_close_inst.png);
+      }
+      #pageClsText {
+        position: absolute;
+        width: 115px;
+        height: 29px;
+        top: 15px;
+        left: 16px;
+        font-family: OpenSansRegular;
+        font-size: 16px;
+        font-style: italic;
+        color: #172430;
+      }
+      #pageRefCloseBtn_id {
+        position: absolute;
+        width: 29px;
+        height: 29px;
+        top: 7px;
+        left: 900px;
+        cursor: pointer;
+        background: url(media/images/player/common/close.png);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      #pageid_RefCloseBtn:hover #pageclose_txt {
+        background: url(media/images/player/common/pdf_close_inst.png);
+      }
+      #pagereferences {
+        margin-left: 0;
+        margin-top: 45px;
+        color: #333;
+        width: 800px;
+        min-height: 412px;
+        overflow-y: auto;
+        position: absolute;
+        height: 412px;
+      }
+      #pagereferences ul {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 1%;
+        margin: 0;
+        margin-top: 10px;
+      }
+      #pagereferences ul li {
+        border: 0 none;
+        margin-left: -4px;
+        margin-right: 5px;
+        vertical-align: bottom;
+        width: 4%;
+      }
+      #closeMainDiv .glossaryclosetip {
+        margin-left: 70%;
+        color: #fff;
+        font-family: OpenSansRegular;
+        font-size: 79.2%;
+      }
+      .closepopup,
+      .open_map_close {
+        position: absolute;
+        width: 92px;
+        height: 47px;
+        background: url(pages/images/Topic01/T01P02/close_expand.png) no-repeat;
+        bottom: 30px;
+        right: -47px;
+        cursor: pointer;
+        z-index: 1000;
+        text-decoration: none;
+      }
+      .closepopup:hover,
+      .open_map_close:hover {
+        background: url(pages/images/Topic01/T01P02/close_expand_hover.png)
+          no-repeat;
+      }
+      #case_study_popup .modalContent {
+        box-shadow: initial !important;
+        background: transparent !important;
+      }
+      #pageClsResourcesPopup {
+        position: absolute;
+        z-index: 1070;
+        top: 0;
+        height: 99%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+      }
+      #pageid_ReferencesBG {
+        position: absolute;
+        height: 457px;
+        width: 940px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 40px;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+      #pageid_RefTitleBar {
+        font-size: 36px;
+        background-color: #4d667b;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        left: 0;
+        top: 0;
+        font-family: OpenSansRegular;
+        width: 942px;
+        height: 44px;
+        position: absolute;
+      }
+      #pageid_ReftitleText {
+        position: absolute;
+        color: #fff;
+        font-size: 18px;
+        left: 11px;
+        top: 10px;
+      }
+      #pageid_RefCloseBtn {
+        position: absolute;
+        width: 29px;
+        height: 29px;
+        top: 7px;
+        left: 900px;
+        cursor: pointer;
+        background: url(media/images/player/common/close.png);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      #pageRefTitleBar_id {
+        font-size: 36px;
+        background-color: #4d667b;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        left: 0;
+        top: 0;
+        font-family: OpenSansRegular;
+        width: 942px;
+        height: 44px;
+        position: absolute;
+      }
+      #pageReftitleText_id {
+        position: absolute;
+        color: #fff;
+        font-size: 18px;
+        left: 11px;
+        top: 10px;
+      }
+      .pageclose_txt {
+        position: absolute;
+        width: 135px;
+        height: 44px;
+        top: 48px;
+        left: 800px;
+        background: url(media/images/player/common/pdf_close_inst.png);
+      }
+      .pdflink {
+        position: absolute;
+        top: 44px;
+        width: 100%;
+        height: 413px;
+        border-radius: 0 0 10px 10px;
+      }
+      ._viewed {
+        color: blue;
+      }
+      .long-arrow {
+        position: relative;
+        top: -7px;
+      }
+      #case_study_popup .modalContent {
+        width: 562px;
+        height: auto;
+        border-radius: 7px;
+      }
+      .modalTxtImg {
+        height: 376px;
+      }
+      #case_study_popup .closepopup {
+        bottom: -2px;
+      }
+      #case_study_popup .popover {
+        bottom: 12px;
+      }
+      .sectionRight {
+        width: 515px;
+        left: 496px;
+      }
+      .sectionLeft,
+      .topImgCntbox {
+        width: 484px;
+      }
+      .clsAllTabs2 {
+        position: absolute;
+        height: 406px;
+
+        width: 965px;
+        top: 40px;
+        background-position: left;
+
+        background: #ffffff;
+        border-radius: 6px;
+
+        -webkit-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+        padding: 5px 40px;
+        display: none;
+        animation: left_to_right 1s ease;
+      }
+      .clsAllTabs3 {
+        position: absolute;
+        height: 406px;
+
+        width: 985px;
+        top: 40px;
+        background-position: left;
+
+        background: #ffffff;
+        border-radius: 6px;
+
+        -webkit-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+        padding: 5px 30px;
+        display: none;
+        animation: left_to_right 1s ease;
+      }
+
+      #content3 {
+        display: none;
+      }
+
+      .family-font {
+        font-size: 16px;
+        font-family: inherit;
+      }
+      .boxInst {
+        top: 484px;
+      }
+      .ul-class {
+        margin-left: -5.5%;
+        list-style-image: none;
+        margin-top: 4px;
+      }
+
+      .div-margin {
+        margin-top: -8px;
+      }
+      .imagePhoto1 {
+        background: url(pages/images/Topic01/T01P16/infection_fetus.png);
+        width: 396px;
+        height: 399px;
+        background-size: cover;
+        margin-bottom: 10px;
+      }
+      .green-color {
+        color: green;
+        font-weight: bold;
+      }
+
+      .error1 {
+        border: solid 2px #05222e;
+        border-radius: 25px;
+        width: 95%;
+        position: absolute;
+      }
+      .error1 .error1_inner {
+        position: relative;
+        color: #000;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 91%;
+        padding-left: 104px;
+        font-family: "OpenSansRegular";
+        top: 19px;
+      }
+      .error1 .error1_inner img {
+        width: 65px;
+        height: 65px;
+        padding: 6px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pg-pageContent" UNSELECTABLE="on">
+      <div id="TabPopup5" class="clsTabPopup">
+        <div id="content1">
+          <div class="sectionContent">
+            <div class="sectionLeft">
+              <div class="topImgCntbox">
+                <div class="topImgCnt" id="topImgCnt1">
+                  <div class="imagePhoto1">&nbsp;</div>
+                  <span
+                    style="
+                      margin: 24px 0px 0px 80px;
+                      font-size: 16px;
+                      font-family: inherit;
+                    "
+                    >The <span class="green-color">green color</span> represents
+                    bacterial invasion</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sectionRight">
+            <div class="firstShow">
+              <div class="sectionContentArea">
+                <div class="information" unselectable="on" id="firstContent">
+                  <br />
+
+                  <div>
+                    <strong
+                      >The terms intraamniotic infection and chorioamnionitis
+                      are often used interchangeably.</strong
+                    >
+                  </div>
+                  <ul class="bullet">
+                    <li>Not all chorioamnionitis is caused by infection</li>
+                  </ul>
+                  <div><strong>Intraamniotic infection</strong></div>
+                  <ul class="bullet">
+                    <li>
+                      Most commonly caused by bacteria that ascend into the
+                      amniotic cavity from the vagina
+                    </li>
+                    <li>
+                      Causes inflammation of any combination of the amniotic
+                      fluid, placenta, fetus, fetal membranes, or decidua
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--<div id="content2" >
+				<div class="sectionContent">
+					<div class="sectionLeft">
+						<div class="topImgCntbox">
+							<div class="topImgCnt" id="topImgCnt2" unselectable="on" >
+								
+                <div>
+                  <video oncontextmenu="return false;" id="myVideo" poster="pages/images/Topic01/T01P32/video.png"
+                  disablepictureinpicture controls controlsList="nodownload noremoteplayback">
+                  <source src="pages/video/T01P16/intraamniotic_infection_final.mp4" type="video/mp4">
+              </video>
+            </div>	
+                    </div>
+						</div>
+					</div>
+					
+				</div>
+				
+				
+			</div>-->
+      <div id="content2">
+        <div class="sectionContent">
+          <div class="sectionLeft">
+            <div class="topImgCntbox">
+              <div class="topImgCnt" id="topImgCnt2" unselectable="on">
+                <div>
+                  <video
+                    autoplay
+                    oncontextmenu="return false;"
+                    id="myVideo"
+                    poster="pages/images/Topic01/T01P32/video.png"
+                    disablepictureinpicture
+                    controls
+                    controlsList="nodownload noremoteplayback"
+                  >
+                    <source
+                      src="pages/video/T01P16_1/intraamniotic_infection_final.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sectionRight">
+            <div class="firstShow">
+              <div class="sectionContentArea">
+                <div class="information" unselectable="on" id="firstContent">
+                  <br />
+
+                  <div>
+                    <strong
+                      >Suspected or confirmed Triple I criteria include a
+                      maternal fever with one or more of the following:</strong
+                    >
+                  </div>
+                  <ul class="bullet">
+                    <li>
+                      Fetal tachycardia, > 160 beats per minute for 10 minutes
+                      or longer.
+                    </li>
+                    <li>
+                      Maternal white blood cell count greater than 15,000, in
+                      the absence of corticosteroids.
+                    </li>
+                    <li>Purulent cervical discharge, by speculum exam.</li>
+                    <li>
+                      Evidence of microbial invasion of the amniotic cavity by
+                      biochemical or microbiologic analysis.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="error1" class="error1">
+            <div class="error1_inner">
+              <img src="pages/images/Topic01/T01P12/warning.svg" />
+              A markedly elevated maternal temperature > 39 degrees C., even in
+              the absence of other signs may also indicate intraamniotic
+              infection.
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="case_study_popup">
+          <div class="modalContent" unselectable="on">
+            <div class="modalinner">
+              <div class="modalTxtImg" unselectable="on"></div>
+              <a
+                class="closepopup zoom_close_btn"
+                href="javascript:void(0)"
+                title="Click to Close"
+              ></a>
+              <!-- <div class="clickToContinue expandImgTxtRight clickToClose">Click to Close</div> -->
+              <div class="popover left-arrow">
+                <div class="arrow" style="top: 50%"></div>
+                <div class="popover-content">Click to close image.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- Main Container--->
+    <div class="boxInst">
+      <div class="instNextClick"></div>
+      <div class="next_click"><em> Click Next to continue.</em></div>
+    </div>
+
+    <script>
+      manifest = [
+        {
+          src: "pages/images/Topic01/T01P02/img1.png",
+          id: "1",
+        },
+        {
+          src: "pages/images/Topic01/T01P02/image_01_small.png",
+          id: "2",
+        },
+      ];
+
+      var audioPath = "pages/audio/Topic01/T01P58/T01P58-1";
+      clickViewMoreInfo();
+      var currCue = 0;
+      var idd = 0;
+      var __curState = 0;
+      var clickTabCount = 0;
+      var clickTabCount1 = 0;
+
+      var updateContentArray = [
+        {
+          time: "0",
+          carry: "",
+          event: "",
+          show: "",
+          transcript:
+            "One to 3 percent of infants will develop neonatal sepsis, however, intraamniotic infection frequently results in preterm birth and the many associated complications of prematurity, such as lung injury, retinopathy of prematurity, and cerebral palsy. Maternal consequences of intraamniotic infection include dysfunctional labor, postpartum hemorrhage, postpartum infection, adult respiratory distress syndrome, and in rare cases, maternal death. Suspected or confirmed Triple I criteria are listed on the screen. In addition to these criteria, the American College of Obstetricians and Gynecologists considers a markedly elevated maternal temperature of 39 degrees Celsius or higher, to be a clinically important sign that is most likely due to infection. Therefore, a diagnosis of intraamniotic infection is also assigned if the maternal temperature is markedly elevated, even if there are no other signs such as those listed here. <br/> Click Next to continue.",
+          animation: [
+            {
+              target: "#content2",
+              duration: "0.5",
+              activity: {
+                display: "block",
+              },
+            },
+          ],
+        },
+
+        {
+          time: "70",
+          carry: "",
+          event: "",
+          show: "",
+          animation: [
+            {
+              target: "#error1",
+              duration: "0.5",
+              activity: {
+                display: "block",
+              },
+            },
+          ],
+        },
+
+        /*{ 
+		time: "72", carry: "", event: "", show: "", hide: "#content2", 
+		//transcript: "Suspected or confirmed Triple I (said Triple-eye) criteria are listed on the screen. In addition to these criteria, the American College of Obstetricians and Gynecologists considers a markedly elevated maternal temperature of 39 degrees Celsius or higher, to be a clinically important sign that is most likely due to infection. Therefore, a diagnosis of intraamniotic infection is also assigned if the maternal temperature is markedly elevated, even if there are no other signs such as those listed here. <br/> Click Next to continue." ,
+    animation: [{
+                    target: "#content3",
+                    duration: "0.5",
+                    activity: {
+						 'display': 'block',
+
+                        
+                    }
+                }]
+	}, */
+      ];
+
+      function fnAudioFinishItemComp() {
+        fnAudioFinishPageComp();
+      }
+
+      var __dataXml;
+
+      var audplayer = document.getElementById("audioplayer");
+
+      $(document).ready(function () {
+        //$(".clickToEnlarge").show();
+        // $(".small_expand").show();
+        // $(".small_expand1").show();
+        // disableNextBtn();
+        //$(".clickToEnlarge").show();
+        // $(".small_expand").show();
+        // $(".small_expand1").show();
+        var ele = document.getElementsByTagName("div");
+        for (var i = 0; i < ele.length; i++) {
+          ele[i].setAttribute("unselectable", "on");
+        }
+        var n = isInArray("M1L0T1P58", gCompPageArr);
+        if (n == true) {
+          enableNextBtn();
+          fnDesiableNext(false);
+        }
+      });
+
+      function audioReset() {
+        gAudioId = "";
+        onTimelineEnd();
+      }
+
+      function isInArray(value, array) {
+        return array.indexOf(value) > -1;
+      }
+
+      function fnPlaySectionAudio(gCurrentIndex) {
+        indexAudio = gCurrentIndex;
+        audioId = "audio_" + gCurrentIndex;
+        gAudioId = audioId;
+        fnHideShowAudioPlayer(false);
+        updateContentArray = eval("updateContentArray" + gCurrentIndex);
+        initAudioPlayer(gItemAudioPath[gCurrentIndex]);
+      }
+
+      function fnCompletion() {
+        console.log("end");
+        var _getCount1 = clickTabCount + clickTabCount1;
+        console.log("start new");
+        enableNextBtn();
+        $(".boxInst").show();
+        fnAudioFinishItemComp();
+      }
+
+      function fnOnAudioComplete() {
+        if (gAudioId == "startAudio") {
+          console.log("start audio");
+          audplayer.pause();
+          audplayer.currentTime = 0;
+          $(".clickToEnlarge").show();
+          $(".small_expand").show();
+          $(".small_expand1").show();
+          enableNextBtn();
+          fnDesiableNext(false);
+          $(".boxInst").show();
+        } else {
+          fnCompletion();
+          enableNextBtn();
+          $(".boxInst").show();
+          $(".clickToEnlarge").show();
+          $(".small_expand").show();
+          $(".small_expand1").show();
+          gCompPageArr.push("M1L0T1P58");
+          fnAudioFinishItemComp();
+          audplayer.pause();
+          audplayer.currentTime = 0;
+        }
+      }
+      $(".glossarytag").on("click", function () {
+        glossaryFuncPageLevel();
+      });
+
+      $(".small_expand")
+        .off()
+        .on("click", function () {
+          pauseAudio();
+          $("#TabPopup5 #case_study_popup.modal").show();
+          $("#TabPopup5 .sectionTop").addClass("blur");
+          $("#TabPopup5 .sectionContent").addClass("blur");
+          $(".modalTxtImg").attr("id", "imgPopup" + $(this).attr("click_id"));
+        });
+
+      $(".small_expand1")
+        .off()
+        .on("click", function () {
+          pauseAudio();
+          $("#TabPopup5 .modal").show();
+          $("#TabPopup5 .sectionTop").addClass("blur");
+          $("#TabPopup5 .sectionContent").addClass("blur");
+          $(".boxInst").addClass("blur");
+          $(".modalTxtImg").attr("id", "imgPopup" + $(this).attr("click_id"));
+          $(".modalTextBottom").hide();
+          $("#ModalTextBottom" + $(this).attr("click_id")).show();
+          $(".modalContent").addClass("maxBot");
+          $(".modalContent").removeClass("maxBot0");
+        });
+
+      $(".closepopup, .modalclose")
+        .off()
+        .on("click", function () {
+          playAudio();
+          $("#TabPopup5 .modal").removeAttr("style");
+          $("#TabPopup5 .sectionTop").removeClass("blur");
+          $("#TabPopup5 .sectionContent").removeClass("blur");
+          $(".boxInst").removeClass("blur");
+        });
+
+      $(".popup").on("click", function () {
+        var popid = $(this).attr("popup_id");
+        //alert(popid);
+        pauseAudio();
+        $("#TabPopup5 #popup" + popid).show();
+        $("#TabPopup5 .sectionTop").addClass("blur");
+        $("#TabPopup5 .sectionContent").addClass("blur");
+      });
+      $(".popupclose").on("click", function () {
+        playAudio();
+        $("#TabPopup5 #popup").removeAttr("style");
+        $("#TabPopup5 .sectionTop").removeClass("blur");
+        $("#TabPopup5 .sectionContent").removeClass("blur");
+      });
+      $("#_clickImg0pdf").on("click", function () {
+        console.log("hello");
+        // $('#pageClsResourcesPopup .pdflink').attr('src', 'pages/Topic01/pdf/Page17.pdf');
+        fnPauseAudio();
+        // $('#pageReftitleText_id').html('Case Presentation - Neonatologist from Sweden');
+        disabledAllButtons();
+        $("#pageClsResourcesPopup").show();
+      });
+      $("#pageClsResourcesPopup").hide();
+      $("#pageRefCloseBtn_id").click(function () {
+        enabledAllButtons();
+        fnPlayAudio();
+        //$("#pageClsResourcesPopup").hide();
+        $("#pageClsResourcesPopup").hide();
+        //$("#pageid_RefTitleBar").show()
+      });
+      function pauseAudio() {
+        if (!fnPauseAudio()) {
+          console.log(true);
+          fnPauseAudio();
+        } else {
+          playPauseAudio();
+          console.log(false);
+        }
+      }
+
+      function playAudio() {
+        if (!fnPauseAudio()) {
+          console.log(true);
+          playPauseAudio();
+        }
+      }
+    </script>
+  </body>
+</html>
