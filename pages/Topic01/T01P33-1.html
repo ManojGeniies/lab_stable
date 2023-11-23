@@ -598,12 +598,12 @@
 
         <h4 class="main-my-heading">Neutrophil Maturation </h4>
         <div class="sectionTop">
-          <ul>
-            <li>In the bone narrow -> neutrophils mature in stages.</li>
+          <ul class="text-first">
+            <li class>In the bone narrow -> neutrophils mature in stages.</li>
             <li>Maturation process takes <img src="pages/images/Topic01/T01P33/calendar.png" class="cal"> 2
               weeks.
             </li>
-            <li>Mature segmented neutrophils are released into the bloodstream <br> <img
+            <li class="text-second">Mature segmented neutrophils are released into the bloodstream <br> <img
                 src="pages/images/Topic01/T01P33/clock.png" class="cal"> circulate for 6 to 8 hours, then
               migrate into the tissues where they live for about 24 hours.</li>
           </ul>
@@ -653,14 +653,19 @@
 
   var updateContentArray = [
     {
-      time: "0.0", carry: "", event: "", show: "#img0,#img01,#img02,#img1,#img1_text,#img2,#img2_text,#img3,#img4,#img4_text,#img5,#img5_text,#img6,#img6_text,#img7,#img7_text,#img8,#img8_text", hide: "#lefttxt,#lefttxt1,#lefttxt2",
+      time: "0.0", carry: "", event: "", show: "", hide: "",
       transcript: "In the bone marrow, the neutrophil matures from the myeloblast to the promyelocyte, to the myelocyte, to the metamyelocyte, to the band neutrophil, and finally to the mature, segmented neutrophil. This process of maturation takes approximately 2 weeks.  Once neutrophils are released into the bloodstream, they circulate for about 6 to 8 hours, then they migrate into the tissue where they live for approximately 24 hours. <div>Click on each tab to learn more about these factors, then click continue.</div>"
+
     },
     {
-      time: "2", carry: "", event: "", show: "#img9,#img9_text", hide: "",
-      animation: [{ target: ".boxInst", duration: "0.5", activity: { 'display': 'block' } }]
+      time: "2", carry: "", event: "", show: "text-second", hide: "text-animation",
+      animation: [{ target: ".img_height_cls", duration: "1.5", activity: { 'display': 'block' } }]
     }, {
-      time: "34", carry: "", event: "", show: "", hide: "",
+      time: "34", carry: "", event: "", show: "", hide: "img_height_cls",
+      animation: [{ target: ".boxInst", duration: "1.5", activity: { 'display': 'block' } }]
+    },
+    {
+      time: "34", carry: "", event: "", show: "", hide: "img_height_cls",
       animation: [{ target: ".boxInst", duration: "0.5", activity: { 'display': 'block' } }]
     }
   ];

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136" height="138" viewBox="0 0 136 138">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1209" data-name="Rectangle 1209" width="53.315" height="44.854" fill="none" stroke="#414141" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="Group_5324" data-name="Group 5324" transform="translate(-285 -198)">
+    <rect id="Rectangle_39" data-name="Rectangle 39" width="136" height="138" transform="translate(285 198)" fill="#f6a87a"/>
+    <text id="Unmute" transform="translate(352 308)" fill="#05222e" font-size="28" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="-55" y="0">Unmute</tspan></text>
+    <g id="Group_4871" data-name="Group 4871" transform="translate(326.999 226)" clip-path="url(#clip-path)">
+      <path id="Path_1761" data-name="Path 1761" d="M19.207,1.344,8.6,13.185a2.884,2.884,0,0,1-2.148.96H1.938A1.438,1.438,0,0,0,.5,15.583v7.944a1.438,1.438,0,0,0,1.438,1.438H6.455a2.884,2.884,0,0,1,2.148.96l10.6,11.841a.757.757,0,0,0,1.321-.5V1.849A.757.757,0,0,0,19.207,1.344Z" transform="translate(3.255 3.079)" fill="#05222e"/>
+      <path id="Path_1768" data-name="Path 1768" d="M13.682,23.516,30.687,6.51" transform="translate(16.968 7.413)" fill="none" stroke="#05222e" stroke-linecap="round" stroke-width="4"/>
+      <path id="Path_1769" data-name="Path 1769" d="M0,17.005,17.006,0" transform="translate(30.649 30.929) rotate(-90)" fill="none" stroke="#05222e" stroke-linecap="round" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

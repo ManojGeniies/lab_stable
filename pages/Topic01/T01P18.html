@@ -4,300 +4,363 @@
 
 <head>
 
-	<title></title>
+    <title></title>
 
-	<script>
+    <script>
 
-		manifest = [
+        manifest = [
             { src: 'pages/images/Topic01/T01P18/EV01_01.png', id: '1' },
             { src: 'pages/images/Topic01/T01P18/graph.svg', id: '2' },
             { src: 'pages/images/Topic01/T01P18/Herpesvesiclesmouth.png', id: '3' },
             { src: 'pages/images/Topic01/T01P18/Congenitalherpes-scalp.png', id: '4' },
             { src: 'pages/images/Topic01/T01P18/sickinfantherpes.png', id: '5' },
-		];
+        ];
 
-	</script>
+    </script>
 
-	<style type="text/css">
-		.mainContainer {
+    <style type="text/css">
+        .mainContainer {
 
-			position: absolute;
+            position: absolute;
 
-			width: 1060px;
+            width: 1060px;
 
-			height: 460px;
+            height: 460px;
 
-			left: 20px;
+            left: 20px;
 
-			top: 20px;
+            top: 20px;
 
-			opacity: 1;
+            opacity: 1;
 
-		}
-
-		#idPatchMain {
-
-			top: 22px;
-
-			left: 2px;
-
-			background-position: left;
-
-			height: 64px;
-
-			background: #FFFFFF;
-
-			border-radius: 6px;
-
-			width: 960px;
-
-			-webkit-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
-
-			-moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
-
-			box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
-
-			border-radius: 5px;
-
-			-moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
-
-			padding: 10px 20px;
-
-		}
-
-		.clsText {
-
-			position: relative;
-
-			font-size: 16px;
-
-			font-family: OpenSansRegular;
-
-			line-height: 25px;
-
-			color: #000000;
-
-			opacity: 0;
-
-		}
-
-		#idText1 {
-
-			top: 16px;
-
-			left: 0px;
-
-			width: 100%;
-
-			text-align: left;
-
-			font-family: OpenSansRegular;
-
-			font-size: 16px;
-
-			opacity: 1;
-
-		}
-
-		.ClsTabInside {
-
-			position: absolute;
-
-			width: 110px;
-
-			height: 110px;
-
-			top: 9px;
-
-			border-radius: 50%;
-
-			background-size: contain;
-
-			opacity: 0;
-
-		}
-
-		.clsAllTabs {
-
-			position: absolute;
-
-			height: 444px;
-
-			width: 1000px;
-
-			top: 21px;
-
-			background-color: white;
-
-			background-position: left;
-
-
-			display: none;
-
-			animation: left_to_right 1s ease; line-height: 42px;
         }
-        @keyframes left_to_right {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
+        #idPatchMain {
 
-.clsAllTabs2 {
-	position: absolute;
-    height: 406px;
+            top: 22px;
 
-     width: 965px;
-          top: 40px;
+            left: 2px;
+
             background-position: left;
-           
+
+            height: 64px;
+
             background: #FFFFFF;
-           
+
+            border-radius: 6px;
+
+            width: 960px;
+
+            -webkit-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+
+            -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+
+            box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+
+            border-radius: 5px;
+
+            -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
+
+            padding: 10px 20px;
+
+        }
+
+        .clsText {
+
+            position: relative;
+
+            font-size: 16px;
+
+            font-family: OpenSansRegular;
+
+            line-height: 25px;
+
+            color: #000000;
+
+            opacity: 0;
+
+        }
+
+        #idText1 {
+
+            top: 16px;
+
+            left: 0px;
+
+            width: 100%;
+
+            text-align: left;
+
+            font-family: OpenSansRegular;
+
+            font-size: 16px;
+
+            opacity: 1;
+
+        }
+
+        .ClsTabInside {
+
+            position: absolute;
+
+            width: 110px;
+
+            height: 110px;
+
+            top: 9px;
+
+            border-radius: 50%;
+
+            background-size: contain;
+
+            opacity: 0;
+
+        }
+
+        .clsAllTabs {
+
+            position: absolute;
+
+            height: 444px;
+
+            width: 1000px;
+
+            top: 21px;
+
+            background-color: white;
+
+            background-position: left;
+
+
+            display: none;
+
+            animation: left_to_right 1s ease;
+            line-height: 42px;
+        }
+
+        @keyframes left_to_right {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        .clsAllTabs2 {
+            position: absolute;
+            height: 406px;
+
+            width: 965px;
+            top: 40px;
+            background-position: left;
+
+            background: #FFFFFF;
+
             padding: 5px 40px;
             display: none;
-            animation: left_to_right 1s ease; 
+            animation: left_to_right 1s ease;
         }
-        @keyframes left_to_right {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.clsAllTabs3 {
-	position: absolute;
-    height: 455px;
 
-     width: 985px;
-          top: 0px;
+        @keyframes left_to_right {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .clsAllTabs3 {
+            position: absolute;
+            height: 455px;
+
+            width: 985px;
+            top: 0px;
             background-position: left;
-           
+
             background: #FFFFFF;
             border-radius: 6px;
-           
-           
+
+
             padding: 5px 30px;
             display: none;
-            animation: left_to_right 1s ease; 
+            animation: left_to_right 1s ease;
         }
+
         @keyframes left_to_right {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.slide-text {font-size: 16px!important; position: absolute; display: none; bottom:16px;
-            animation: left_to_right 1s ease; 
-        }
-   
+            from {
+                opacity: 0;
+            }
 
-.slide-text2 {font-size: 14px!important; position: relative; display: none; bottom:40px; 
-            animation: left_to_right 1s ease; 
+            to {
+                opacity: 1;
+            }
         }
+
+        .slide-text {
+            font-size: 16px !important;
+            position: absolute;
+            display: none;
+            bottom: 16px;
+            animation: left_to_right 1s ease;
+        }
+
+
+        .slide-text2 {
+            font-size: 14px !important;
+            position: relative;
+            display: none;
+            bottom: 40px;
+            animation: left_to_right 1s ease;
+        }
+
         @keyframes left_to_right {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-      
-.clsAllTabs2 p {font-size: 16px;}
+            from {
+                opacity: 0;
+            }
 
-		.clsAllTabsImage {
+            to {
+                opacity: 1;
+            }
+        }
 
-			position: absolute;
+        .clsAllTabs2 p {
+            font-size: 16px;
+        }
 
-			left: 206px;
+        .clsAllTabsImage {
 
-			top: 20px;
+            position: absolute;
 
-			height: 300px;
+            left: 206px;
+
+            top: 20px;
+
+            height: 300px;
 
         }
-        
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    
-    .paraText{
-        font-size: 15px !important;
-    }
- }
 
-		.paraText {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
-			position: absolute;
+            .paraText {
+                font-size: 15px !important;
+            }
+        }
 
-			top: -10px;
+        .paraText {
 
-			font-size: 18px;
+            position: absolute;
 
-			font-family: OpenSansRegular;
-			font-weight: bold;
-            left:0px;
+            top: -10px;
+
+            font-size: 18px;
+
+            font-family: OpenSansRegular;
+            font-weight: bold;
+            left: 0px;
             width: 100%;
             text-align: center;
 
 
 
-		}
+        }
 
-		.paraText2 {
+        .paraText2 {
 
-			position: absolute;
+            position: absolute;
 
-			width: 305px;
+            width: 305px;
 
-			top: 295px;
+            top: 295px;
 
-			left: 519px;
+            left: 519px;
 
-			font-size: 16px;
+            font-size: 16px;
 
-			font-family: OpenSansRegular;
+            font-family: OpenSansRegular;
 
-			display: none;
+            display: none;
 
-		}
+        }
 
-		.boxInst {
+        .boxInst {
 
-			position: absolute;
+            position: absolute;
 
-			top: 490px;
+            top: 490px;
 
-			left: 905px;
+            left: 905px;
 
-		}
+        }
 
-		.listitem{ margin:0px; padding:0px; list-style:none; position: absolute;
-    top: 0px; }
-	    .listitem li{ position:relative; font-size:16px; color:#000; margin-bottom:10px; padding-left:17px}
-        .listitem li:before{content: ''; background: #000000; border-radius: 50%; width: 8px; height: 8px; position: absolute; top: 7px;left:0}
-		.listitem li a{ color:#F6A87A; cursor:pointer}
-        .listitem li.nodot:before{
+        .listitem {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            position: absolute;
+            top: 0px;
+        }
+
+        .listitem li {
+            position: relative;
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 10px;
+            padding-left: 17px
+        }
+
+        .listitem li:before {
+            content: '';
+            background: #000000;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 7px;
+            left: 0
+        }
+
+        .listitem li a {
+            color: #F6A87A;
+            cursor: pointer
+        }
+
+        .listitem li.nodot:before {
             display: none;
         }
-        .box2 .listitem{
+
+        .box2 .listitem {
             position: relative;
             line-height: 21px;
         }
 
-        .box3 .listitem{
+        .box3 .listitem {
             line-height: 21px;
             position: relative;
         }
 
-        .listitem2{ margin:0px; padding:0px 20px 0 10px; list-style:none}
-		.listitem2 li{ position:relative; font-size:16px; color:#000; margin-bottom:5px; padding-left:5px; list-style: none; line-height: 18px; font-weight:normal}
-       
-        .listitem2:before{
+        .listitem2 {
+            margin: 0px;
+            padding: 0px 20px 0 10px;
+            list-style: none
+        }
+
+        .listitem2 li {
+            position: relative;
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 5px;
+            padding-left: 5px;
+            list-style: none;
+            line-height: 18px;
+            font-weight: normal
+        }
+
+        .listitem2:before {
             background: #FFFFFF;
             border: 1px solid;
             width: 8px;
@@ -305,16 +368,24 @@
             border-radius: 50%;
             position: absolute;
         }
-		.listitem2 li:before{ width: 8px;
-    height: 8px;
-    position: absolute;
-    content: "";
-    top: 7px;
-    border-color: #000;
-    background: #000;
-    z-index: 10;
-    left: 4px;}
-		.listitem2 li a{ color:#F6A87A; cursor:pointer}
+
+        .listitem2 li:before {
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            content: "";
+            top: 7px;
+            border-color: #000;
+            background: #000;
+            z-index: 10;
+            left: 4px;
+        }
+
+        .listitem2 li a {
+            color: #F6A87A;
+            cursor: pointer
+        }
+
         .listitem2 li span {
             top: 0px;
             position: relative;
@@ -324,15 +395,39 @@
             width: 5px;
             height: 5px;
             border-radius: 50%;
-            display: inline-block;margin-right: 7px;
+            display: inline-block;
+            margin-right: 7px;
         }
 
-		#list1,#list2,#list3, #list41, #list42, #list43, #list44, #list45, #list46, #list47, .box2, .box3, .line { visibility:hidden}
-		#list1 {margin-top:15px}
-		#list2 {margin-top:0px}
-        #list3 {margin-top:55px}
+        #list1,
+        #list2,
+        #list3,
+        #list41,
+        #list42,
+        #list43,
+        #list44,
+        #list45,
+        #list46,
+        #list47,
+        .box2,
+        .box3,
+        .line {
+            visibility: hidden
+        }
 
-		.pageclose_txt {
+        #list1 {
+            margin-top: 15px
+        }
+
+        #list2 {
+            margin-top: 0px
+        }
+
+        #list3 {
+            margin-top: 55px
+        }
+
+        .pageclose_txt {
             position: absolute;
             width: 135px;
             height: 44px;
@@ -347,8 +442,8 @@
             padding: 20px 50px;
             top: 30%
         }
-    
-       
+
+
         .poupdiv .modalContent .heading {
             color: #D7722C;
             font-size: 18px;
@@ -401,39 +496,40 @@
             width: 24px;
             height: 24px
         }
+
         a.popup {
             color: #d7722c;
         }
 
 
-		.ClsImage1 .imageDesc,
+        .ClsImage1 .imageDesc,
         .ClsImage2 .imageDesc {
             top: 217px;
         }
-        
+
         .ClsImage1 {
             position: absolute;
             width: 273px;
             height: 300px;
             top: 120px;
             background: #FFFFFF;
-           
+
             left: 297px;
-           margin-left: 60px;
+            margin-left: 60px;
         }
-        
+
         .ClsImage2 {
             position: absolute;
             width: 273px;
-            height:250px;
+            height: 250px;
             top: 120px;
             background: #FFFFFF;
-           
-            left:670px;
-         
-            
+
+            left: 670px;
+
+
         }
-        
+
         .clsSubImage {
             position: absolute;
             width: 249px;
@@ -442,13 +538,13 @@
             left: 12px;
             border-radius: 10px;
         }
-        
+
         .subFirstImage {
             position: absolute;
             width: 100%;
             height: 100%;
         }
-        
+
         .subSecImage {
             position: absolute;
             width: 225px;
@@ -456,8 +552,8 @@
             left: 35px;
             top: 15px;
         }
-        
-      
+
+
         /* #clsImg1{
 				background: url('pages/images/Topic01/T01P24/img_03_small.png') no-repeat;
 		    top: 185px;
@@ -469,27 +565,27 @@
 			    position: relative;
 			    top: 14px;
 			} */
-        
+
         .expandMap {
             position: relative;
             top: 8px;
         }
-        
+
         .expandMap .clickToEnlarge {
             top: 2px;
             left: 123px;
         }
-        
+
         .expandMap .small_expand {
             right: 37px;
             margin-top: 2px;
         }
-        
+
         .open_map_close {
             top: 301px;
             right: -38px !important;
         }
-        
+
         /* .closepopup, */
         .open_map_close {
             position: absolute;
@@ -502,11 +598,11 @@
             z-index: 1000;
             text-decoration: none;
         }
-        
+
         /* .closepopup:hover {
             background: url('pages/images/Topic01/T01P22/close_expand_hover.png') no-repeat;
         } */
-        
+
         .closebutton {
             position: absolute;
             width: 92px;
@@ -518,11 +614,11 @@
             z-index: 1000;
             text-decoration: none;
         }
-        
+
         .closebutton:hover {
             background: url('pages/images/Topic01/T01P22/close_expand_hover.png') no-repeat;
         }
-        
+
         #case_study_popup1>.caseStudyContent>.closebutton {
             position: absolute;
             width: 55px;
@@ -534,10 +630,11 @@
             z-index: 1000;
             text-decoration: none;
         }
-        
+
         #case_study_popup1>.caseStudyContent>.closebutton:hover {
             background: url('pages/images/Topic01/T01P18/videClose_hover.png') no-repeat;
         }
+
         /* #closeId0{
 			  left: 455px;
 			}
@@ -545,7 +642,7 @@
 			  left: 490px;
 			  background: url('pages/images/Topic01/T01P24/enlarge_text_inverted.png') no-repeat;
 			} */
-        
+
         .clickToClose {
             width: 156px;
             height: 42px;
@@ -561,7 +658,7 @@
             font-family: OpenSansRegular;
             font-style: italic;
         }
-        
+
         .videoToClose {
             width: 160px;
             height: 46px;
@@ -575,8 +672,8 @@
             background: url('pages/images/Topic01/T01P18/enlarge_text.png') no-repeat;
             font-family: OpenSansRegular;
         }
-        
-        .small_expand{
+
+        .small_expand {
             background: url(pages/images/Topic01/T01P22/small_expand.svg) !important;
             position: absolute;
             cursor: pointer;
@@ -584,12 +681,13 @@
             height: 29px;
             bottom: 9px;
             right: 6px;
-            background-position: 0px 0;           
+            background-position: 0px 0;
             background-size: cover !important;
-            background-repeat:no-repeat ;
-            display:none;
+            background-repeat: no-repeat;
+            display: none;
             opacity: .6;
         }
+
         .open_map {
             background: url('pages/images/Topic01/T01P18/small_expand.png');
             width: 28px;
@@ -605,22 +703,23 @@
             background-color: inherit;
             padding: 0px;
             cursor: pointer;
-          
+
         }
-        .small_expand:hover{
+
+        .small_expand:hover {
             opacity: 1;
         }
-        
+
         /*  {
             background: url('pages/images/Topic01/T01P18/small_expand_hover.png');
         } */
-        
+
         section {
             /* position: absolute; */
             width: 100%;
             height: 100%;
         }
-        
+
         .Clsback {
             position: relative;
             width: 242px;
@@ -633,7 +732,7 @@
             border-radius: 5px;
             display: none;
         }
-        
+
         ._link {
             position: absolute;
             top: 440px;
@@ -649,7 +748,7 @@
             border-bottom: 1px solid #4D667B;
             font-style: initial;
         }
-        
+
         .videolink {
             position: absolute;
             top: 465px;
@@ -663,6 +762,7 @@
             font-style: initial;
             display: none;
         }
+
         /* .subSeImage{
 				position: absolute;
 		    width: 161px;
@@ -670,19 +770,19 @@
 		    top: 20px;
 		    left: 38px;
 			} */
-        
+
         #subImg0 {
             background: url('pages/images/Topic01/T01P24/EV01_11.png') no-repeat;
         }
-        
+
         #subImg1 {
             background: url('pages/images/Topic01/T01P24/EV01_12.png') no-repeat;
         }
-        
+
         #subImg2 {
             background: url('pages/images/Topic01/T01P24/EV01_13.png') no-repeat;
         }
-        
+
         .subText {
             position: absolute;
             width: 210px;
@@ -693,7 +793,7 @@
             font-size: 14px;
             font-style: initial;
         }
-        
+
         /* .ClsTextTab {
             position: absolute;
             width: 68%;
@@ -702,30 +802,30 @@
             left: 320px;
             float: left;
             /* background: #FFFFFF; */
-            /* border-radius: 5px; */
-            /* display: none; */
-        /* } */ 
-		.expandMap {
+        /* border-radius: 5px; */
+        /* display: none; */
+        /* } */
+        .expandMap {
             position: relative;
             top: 8px;
         }
-        
+
         .expandMap .clickToEnlarge {
             top: 2px;
             left: 123px;
         }
-        
+
         .expandMap .small_expand {
             right: 37px;
             margin-top: 2px;
         }
-        
+
         .open_map_close {
             top: 301px;
             right: -38px !important;
         }
-        
-        .closepopup{
+
+        .closepopup {
             position: absolute;
             width: 41px;
             height: 41px;
@@ -733,13 +833,14 @@
             bottom: 7px;
             right: 16px;
             cursor: pointer;
-            z-index: 1000;              
+            z-index: 1000;
             background-position: 0px 0;
-              
+
             background-size: cover !important;
-            background-repeat:no-repeat ;
+            background-repeat: no-repeat;
             opacity: .6;
         }
+
         .open_map_close {
             position: absolute;
             width: 92px;
@@ -751,14 +852,15 @@
             z-index: 1000;
             text-decoration: none;
         }
-        .closepopup:hover{
+
+        .closepopup:hover {
             opacity: 1;
         }
-        
+
         /*  {
             background: url('pages/images/Topic01/T01P22/close_expand_hover.png') no-repeat;
         } */
-        
+
         .closebutton {
             position: absolute;
             width: 92px;
@@ -770,11 +872,11 @@
             z-index: 1000;
             text-decoration: none;
         }
-        
+
         .closebutton:hover {
             background: url('pages/images/Topic01/T01P22/close_expand_hover.png') no-repeat;
         }
-        
+
         #case_study_popup1>.caseStudyContent>.closebutton {
             position: absolute;
             width: 55px;
@@ -786,10 +888,11 @@
             z-index: 1000;
             text-decoration: none;
         }
-        
+
         #case_study_popup1>.caseStudyContent>.closebutton:hover {
             background: url('pages/images/Topic01/T01P18/videClose_hover.png') no-repeat;
         }
+
         /* #closeId0{
 			  left: 455px;
 			}
@@ -797,7 +900,7 @@
 			  left: 490px;
 			  background: url('pages/images/Topic01/T01P24/enlarge_text_inverted.png') no-repeat;
 			} */
-        
+
         .clickToClose {
             width: 156px;
             height: 42px;
@@ -813,7 +916,7 @@
             font-family: OpenSansRegular;
             font-style: italic;
         }
-        
+
         .videoToClose {
             width: 160px;
             height: 46px;
@@ -827,8 +930,8 @@
             background: url('pages/images/Topic01/T01P18/enlarge_text.png') no-repeat;
             font-family: OpenSansRegular;
         }
-        
-       
+
+
         .Clsback {
             position: relative;
             width: 242px;
@@ -841,7 +944,7 @@
             border-radius: 5px;
             display: none;
         }
-        
+
         ._link {
             position: absolute;
             top: 440px;
@@ -857,7 +960,7 @@
             border-bottom: 1px solid #4D667B;
             font-style: initial;
         }
-        
+
         .videolink {
             position: absolute;
             top: 465px;
@@ -871,6 +974,7 @@
             font-style: initial;
             display: none;
         }
+
         /* .subSeImage{
 				position: absolute;
 		    width: 161px;
@@ -878,22 +982,22 @@
 		    top: 20px;
 		    left: 38px;
 			} */
-        
-			.ClsImage0 {
+
+        .ClsImage0 {
             position: absolute;
             width: 273px;
             height: 213px;
             top: 112px;
             background: #FFFFFF;
-             left:46px;
+            left: 46px;
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
             -ms-transition: all 0.3s ease-in-out;
             -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
-             display:none
+            display: none
         }
-        
+
         .mainImage {
             position: absolute;
             background: url('pages/images/Topic01/T01P24/img1.png') no-repeat;
@@ -904,54 +1008,54 @@
             top: 225px;
             display: none;
         }
-        
+
         .subImage {
             position: absolute;
             background-size: 100% 100%;
             top: 100px;
             display: none;
         }
-        
+
         #sub0 {
             background: url('pages/images/Topic01/T01P24/EV01_02.png') no-repeat;
             left: 35px;
             height: 297px;
         }
-        
+
         #sub1 {
             background: url('pages/images/Topic01/T01P24/EV01_01.png') no-repeat;
             left: 315px;
             height: 331px;
         }
-        
+
         #sub2 {
             background: url('pages/images/Topic01/T01P24/EV01_03.png') no-repeat;
             left: 750px;
             height: 283px;
         }
-        
+
         .ClsImage1 .imageDesc,
         .ClsImage2 .imageDesc {
             top: 217px;
         }
-        
+
         .ClsImage1 {
             position: absolute;
             width: 273px;
             height: 213px;
             top: 112px;
             background: #FFFFFF;
-            
-       
+
+
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
             -ms-transition: all 0.3s ease-in-out;
             -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
-            left:297px;
-            display:none
+            left: 297px;
+            display: none
         }
-        
+
         .ClsImage2 {
             position: absolute;
             width: 273px;
@@ -963,10 +1067,9 @@
             -ms-transition: all 0.3s ease-in-out;
             -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
-            display:none
-            
+            display: none
         }
-        
+
         .clsSubImage {
             position: absolute;
             width: 249px;
@@ -975,13 +1078,13 @@
             left: 12px;
             border-radius: 10px;
         }
-        
+
         .subFirstImage {
             position: absolute;
             width: 100%;
             height: 100%;
         }
-        
+
         .subSecImage {
             position: absolute;
             width: 225px;
@@ -989,20 +1092,20 @@
             left: 35px;
             top: 15px;
         }
-        
+
         #clsSubin1 {
             background: url('pages/images/Topic01/T01P18/injection.png') no-repeat;
             background-position: top;
-            top:20px;
+            top: 20px;
             left: 60px;
-            position: absolute; 
+            position: absolute;
             width: 439px;
             height: 111px;
             background-size: cover;
         }
 
         #clsSubin2 {
-            background: url('pages/images/Topic01/T01P18/calender.svg') no-repeat;           
+            background: url('pages/images/Topic01/T01P18/calender.svg') no-repeat;
             background-position: top;
             top: 15px;
             left: 765px;
@@ -1014,7 +1117,8 @@
             line-height: 42px;
             background-size: contain;
         }
-        .acyclovir_heading{
+
+        .acyclovir_heading {
             background: #DEDEDE;
             font-size: 16px;
             color: #000000;
@@ -1025,62 +1129,68 @@
             height: 55px;
             line-height: 55px;
             left: 140px;
+            border-radius: 25px;
         }
-        .calender_heading{
 
+        .calender_heading {
             background: #DEDEDE;
-    font-size: 16px;
-    color: #000000;
-    width: 315px;
-    text-align: left;
-    position: absolute;
-    top: 185px;
-    height: 83px;
-    right: 24px;
-    padding: 8px 6px;
-    display: none;
+            font-size: 14px;
+            color: #000000;
+            width: 315px;
+            text-align: left;
+            position: absolute;
+            top: 185px;
+            height: 83px;
+            right: 24px;
+            padding: 8px 6px;
+            display: none;
+            border-radius: 25px;
 
         }
-        .list-points{
-    font-size: 16px;
-    color: #000000;
-    width: 100%;
-    left: 0px;
-    text-align: left;
-    position: absolute;
-    top: 295px;
-    height: 160px;
-    right: 24px;
-    padding: 8px 6px;
-    display: none;
+
+        .list-points {
+            font-size: 16px;
+            color: #000000;
+            width: 100%;
+            left: 0px;
+            text-align: left;
+            position: absolute;
+            top: 295px;
+            height: 160px;
+            right: 24px;
+            padding: 8px 6px;
+            display: none;
         }
 
-        .list-points .listitem li:before{
+        .list-points .listitem li:before {
             top: 7px;
         }
 
         @keyframes left_to_right {
-  from {
-   opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
         #clsSub0 {
             background: url('pages/images/Topic01/T01P18/Herpesvesiclesmouth.png') no-repeat;
-           
+
             background-position: top;
             /* margin: 0 auto; */
             top: 0px;
             left: 0px;
             border-radius: 25px;
         }
+
         /* #clsImg0{
 				background: url('pages/images/Topic01/T01P24/img_02_small.png') no-repeat;
 		    top: 185px;
 			} */
-        
+
         #clsSub1 {
             background: url('pages/images/Topic01/T01P18/Congenitalherpes-scalp.png') no-repeat;
             background-size: 249px 192px;
@@ -1090,7 +1200,7 @@
             left: 0px;
             border-radius: 25px;
         }
-        
+
         #clsSub2 {
             background: url('pages/images/Topic01/T01P18/sickinfantherpes.png') no-repeat;
             background-size: 249px 192px;
@@ -1100,6 +1210,7 @@
             left: 0px;
             border-radius: 25px;
         }
+
         /* #clsImg1{
 				background: url('pages/images/Topic01/T01P24/img_03_small.png') no-repeat;
 		    top: 185px;
@@ -1111,27 +1222,27 @@
 			    position: relative;
 			    top: 14px;
 			} */
-        
+
         .expandMap {
             position: relative;
             top: 8px;
         }
-        
+
         .expandMap .clickToEnlarge {
             top: 2px;
             left: 123px;
         }
-        
+
         .expandMap .small_expand {
             right: 37px;
             margin-top: 2px;
         }
-        
+
         .open_map_close {
             top: 301px;
             right: -38px !important;
         }
-        
+
         /* .closepopup, */
         .open_map_close {
             position: absolute;
@@ -1144,11 +1255,11 @@
             z-index: 1000;
             text-decoration: none;
         }
-        
+
         /* .closepopup:hover {
             background: url('pages/images/Topic01/T01P22/close_expand_hover.png') no-repeat;
         } */
-        
+
         .closebutton {
             position: absolute;
             width: 92px;
@@ -1160,11 +1271,11 @@
             z-index: 1000;
             text-decoration: none;
         }
-        
+
         .closebutton:hover {
             background: url('pages/images/Topic01/T01P22/close_expand_hover.png') no-repeat;
         }
-        
+
         #case_study_popup1>.caseStudyContent>.closebutton {
             position: absolute;
             width: 55px;
@@ -1176,11 +1287,11 @@
             z-index: 1000;
             text-decoration: none;
         }
-        
+
         #case_study_popup1>.caseStudyContent>.closebutton:hover {
             background: url('pages/images/Topic01/T01P24/videClose_hover.png') no-repeat;
         }
-      
+
         .clickToClose {
             width: 156px;
             height: 42px;
@@ -1196,7 +1307,7 @@
             font-family: OpenSansRegular;
             font-style: italic;
         }
-        
+
         .videoToClose {
             width: 160px;
             height: 46px;
@@ -1210,10 +1321,10 @@
             background: url('pages/images/Topic01/T01P24/enlarge_text.png') no-repeat;
             font-family: OpenSansRegular;
         }
-        
-       
-      
-        
+
+
+
+
         .Clsback {
             position: relative;
             width: 242px;
@@ -1226,36 +1337,115 @@
             border-radius: 5px;
             display: none;
         }
-        
-	.small_expand, .popover.clickToEnlarge{ display:block !important}
-	.popover.clickToEnlarge{right: 45px;bottom: 8px;}
-	
-	#id_sliderContainer,.clsPause span.clsPlayPauseBtnIcon,#clsPlayPauseBtn{ display:block !important}
-	#popup1.modal{ width:95% !important}
-	#imgPopup1 {background: url(pages/images/Topic01/T01P18/Herpesvesiclesmouthbig.png) no-repeat center; background-size:cover;}
-	#imgPopup2 {background: url(pages/images/Topic01/T01P18/Congenitalherpes-scalpbig.png) no-repeat center; background-size:cover;}
-	#imgPopup3 {background: url(pages/images/Topic01/T01P18/Group108.png) no-repeat center; background-size:contain;}
-	.modalContent{box-shadow:initial !important; background:transparent !important; border-radius: 0!important;}
-    #case_study_popup0 .modalContent {height:auto; width:573px!important; border-radius:10px !important}
-    #case_study_popup1 .modalContent {height:auto; width:578px; border-radius:10px !important}
-    #case_study_popup2 .modalContent {height:auto; width:578px; border-radius:10px !important}
-    .modalContent {height:414px; width:578px;}
-    #case_study_popup0 .modalContent .modalTxtImg {border-radius: 0!important; width:100%; height:380px; border-radius:25px !important}
-	#case_study_popup1 .modalContent .modalTxtImg {border-radius: 0!important; width:100%; height:380px; border-radius:25px !important}
-	#case_study_popup2 .modalContent .modalTxtImg {border-radius: 0!important; width:100%; height:380px;border-radius:25px !important}
-	/* .modal .closepopup{bottom: 0px;} */
-	.modal .popover{bottom: 9px;}
-	.clsAllTabs{width: 1060px; left: -13px; top:0px; height: 482px;}
-    .ClsTextTab {
-        position: absolute;
-        width: 40%;
-        height: auto;
-        top: 125px;
-        left: 602px;
-        float: left;
-        border-radius: 5px;
-        opacity: 0;
+
+        .small_expand,
+        .popover.clickToEnlarge {
+            display: block !important
         }
+
+        .popover.clickToEnlarge {
+            right: 45px;
+            bottom: 8px;
+        }
+
+        #id_sliderContainer,
+        .clsPause span.clsPlayPauseBtnIcon,
+        #clsPlayPauseBtn {
+            display: block !important
+        }
+
+        #popup1.modal {
+            width: 95% !important
+        }
+
+        #imgPopup1 {
+            background: url(pages/images/Topic01/T01P18/Herpesvesiclesmouthbig.png) no-repeat center;
+            background-size: cover;
+        }
+
+        #imgPopup2 {
+            background: url(pages/images/Topic01/T01P18/Congenitalherpes-scalpbig.png) no-repeat center;
+            background-size: cover;
+        }
+
+        #imgPopup3 {
+            background: url(pages/images/Topic01/T01P18/Group108.png) no-repeat center;
+            background-size: contain;
+        }
+
+        .modalContent {
+            box-shadow: initial !important;
+            background: transparent !important;
+            border-radius: 0 !important;
+        }
+
+        #case_study_popup0 .modalContent {
+            height: auto;
+            width: 573px !important;
+            border-radius: 10px !important
+        }
+
+        #case_study_popup1 .modalContent {
+            height: auto;
+            width: 578px;
+            border-radius: 10px !important
+        }
+
+        #case_study_popup2 .modalContent {
+            height: auto;
+            width: 578px;
+            border-radius: 10px !important
+        }
+
+        .modalContent {
+            height: 414px;
+            width: 578px;
+        }
+
+        #case_study_popup0 .modalContent .modalTxtImg {
+            border-radius: 0 !important;
+            width: 100%;
+            height: 380px;
+            border-radius: 25px !important
+        }
+
+        #case_study_popup1 .modalContent .modalTxtImg {
+            border-radius: 0 !important;
+            width: 100%;
+            height: 380px;
+            border-radius: 25px !important
+        }
+
+        #case_study_popup2 .modalContent .modalTxtImg {
+            border-radius: 0 !important;
+            width: 100%;
+            height: 380px;
+            border-radius: 25px !important
+        }
+
+        /* .modal .closepopup{bottom: 0px;} */
+        .modal .popover {
+            bottom: 9px;
+        }
+
+        .clsAllTabs {
+            width: 1060px;
+            left: -13px;
+            top: 0px;
+            height: 482px;
+        }
+
+        .ClsTextTab {
+            position: absolute;
+            width: 40%;
+            height: auto;
+            top: 125px;
+            left: 602px;
+            float: left;
+            border-radius: 5px;
+            opacity: 0;
+        }
+
         .listcnt {
             position: relative;
             top: 24px;
@@ -1268,6 +1458,7 @@
             left: 0px;
             /* display: none; */
         }
+
         .arrowHolder {
             position: absolute;
             top: 8px;
@@ -1279,237 +1470,289 @@
             -webkit-border-radius: 50%;
             -khtml-border-radius: 50%;
         }
+
         .OptionCLSS {
             position: relative;
             left: -9px;
             font-style: initial;
-            box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.75);
-           padding :10px;
-           background: #fff;
-           width: 86%;
-          
-           
+            box-shadow: 2px 2px 8px -1px rgba(0, 0, 0, 0.75);
+            padding: 10px;
+            background: #fff;
+            width: 86%;
+
+
         }
-        .yellowBorder{
-   
-   /* border: 2px solid #E4BA4E; */
-   border: 1px solid #D7722C;
-   border-radius: 5px; padding: 10px;
-   background: #FFF;
-          border-radius:5px;
-        height: 39px;
-   
-}
-.clsIcon{position: absolute;
-    background: url(pages/images/Topic01/T01P12/warning.svg);
-    width: 35px;
-    height: 34px;
-    left:20px;
-    top: 26px;
-    background-size: contain;}
-    .pdf-icon {position: absolute;
-    bottom: -10px;
-    width: 50%;
-    left: 0px;
-    height: auto;
-    }
-    .OptionTxtCLSS:before, ul.bullet li:before {background:transparent; width: 0;}
+
+        .yellowBorder {
+
+            /* border: 2px solid #E4BA4E; */
+            border: 1px solid #D7722C;
+            border-radius: 5px;
+            padding: 10px;
+            background: #FFF;
+            border-radius: 5px;
+            height: 39px;
+
+        }
+
+        .clsIcon {
+            position: absolute;
+            background: url(pages/images/Topic01/T01P12/warning.svg);
+            width: 35px;
+            height: 34px;
+            left: 20px;
+            top: 26px;
+            background-size: contain;
+        }
+
+        .pdf-icon {
+            position: absolute;
+            bottom: -10px;
+            width: 50%;
+            left: 0px;
+            height: auto;
+        }
+
+        .OptionTxtCLSS:before,
+        ul.bullet li:before {
+            background: transparent;
+            width: 0;
+        }
+
         .OptionCLSS {
             position: relative;
             left: -9px;
             font-style: initial;
-            box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.75);
-           padding :10px;
-           background: #fff;
-           width: 86%;
-          
-           
+            box-shadow: 2px 2px 8px -1px rgba(0, 0, 0, 0.75);
+            padding: 10px;
+            background: #fff;
+            width: 86%;
+
+
         }
+
         .clsNextText {
-    position: absolute;
-    font-size: 16px;
-    font-family: OpenSansRegular;
-    width: 74%;
-    top: 22px;
-    left:78px;font-weight: bold;
-}
-.error1{ margin:28px 18px 4px; border:solid 2px #05222e; width:41%; position:relative;   
-top: 334px;
-left: 6px;
-opacity: 0;
-}
-	.error1 .error1_inner{ position:relative;  color:#000; font-size:16px; line-height:22px;  display: flex; flex-direction: row; align-items: center;}
-	.error1 .error1_inner img{ width:60px; height:60px; padding: 6px;}
-    .txt-caution {
-        position: relative;
-        top: 0px;
-        left: 12px;
-      }
-      .graph-img{
-        background: url(pages/images/Topic01/T01P18/graph.svg);
-        width: 332.35px;
-    height: 270px;
-    left: 308.89px;
-    top: 70px;
-    background-size: cover;
-    position: absolute;
-    z-index: 100;
-}
-    .pdf-icon {position: absolute;
-    bottom: -10px;
-    width: 50%;
-    left: 0px;
-    height: auto;
-      }
-      .casesTxt{
-        font-family: OpenSansSemiBold;
-        font-size: 18px;
-        position: absolute;
-        line-height: 24px;
-        text-align: center;
-      }
-      .txt45{
-        top: 88px;
-        left: 52px;
-      }
-      .txt25{
-        top: 45px;
-        left: 199px;
-      }
-      .txt30{
-        top: 152px;
-    left: 187px;
+            position: absolute;
+            font-size: 16px;
+            font-family: OpenSansRegular;
+            width: 74%;
+            top: 22px;
+            left: 78px;
+            font-weight: bold;
+        }
 
-      }
-      .box1{
-        background: #FFE7BA;
-    padding: 16px 20px;
-    background: #FFE7BA;
-    width: 207px;
-    position: absolute;
-    left: 37px;
-    top: 70px;
-    margin-top: 0px !important;
-    font-size: 16px;
-    line-height: 24px;
-      }
-      .box2{
-        background: #E3F1FF;
-    width: 310px;
-    position: absolute;
-    height: 99px;
-    left: 647px;
-    top: 340px;
-    padding: 10px 10px;
-    font-size: 16px;
-      }
-      .box3{
-        background: #FFD1B5;
-    width: 310px;
-    height: 228px;
-    position: absolute;
-    left: 665px;
-    padding: 10px 10px;
-    font-size: 16px;
-    top: 70px;
-      }
-      .line{
-        width: 100px;
-        background: url(pages/images/Topic01/T01P18/line.svg);
-        position: absolute;
-      }
-      .line1{
-        width: 67px;
-        height: 2px;
-        left:284px;
-        top:112px;
-      }
-      .line2{
-        width: 67px;
-    height: 2px;
-    left: 597px;
-    top: 112px;
-      }
-      .line3{
-        width: 87px;
-        height: 84px;
-        background: url(pages/images/Topic01/T01P18/line2.png);
-        left: 560px;
-        top: 306px;
-      }
-	</style>
+        .error1 {
+            margin: 28px 18px 4px;
+            border: solid 2px #05222e;
+            width: 41%;
+            position: relative;
+            top: 334px;
+            left: 6px;
+            opacity: 0;
+        }
 
-	<script>
+        .error1 .error1_inner {
+            position: relative;
+            color: #000;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
-		glossaryFuncPageLevel();
+        .error1 .error1_inner img {
+            width: 60px;
+            height: 60px;
+            padding: 6px;
+        }
 
-		var audioPath = "pages/audio/Topic01/T01P18/T01P18";
+        .txt-caution {
+            position: relative;
+            top: 0px;
+            left: 12px;
+        }
 
-		var currCue = 0;
+        .graph-img {
+            background: url(pages/images/Topic01/T01P18/graph.svg);
+            width: 332.35px;
+            height: 270px;
+            left: 308.89px;
+            top: 70px;
+            background-size: cover;
+            position: absolute;
+            z-index: 100;
+        }
 
-		var idd = 0;
+        .pdf-icon {
+            position: absolute;
+            bottom: -10px;
+            width: 50%;
+            left: 0px;
+            height: auto;
+        }
 
-		var clickTabCount = 0;
+        .casesTxt {
+            font-family: OpenSansSemiBold;
+            font-size: 18px;
+            position: absolute;
+            line-height: 24px;
+            text-align: center;
+        }
 
-		var clickTabCount1 = 0;
+        .txt45 {
+            top: 88px;
+            left: 52px;
+        }
 
-		var updateContentArray = [
+        .txt25 {
+            top: 45px;
+            left: 199px;
+        }
 
-			
+        .txt30 {
+            top: 152px;
+            left: 187px;
 
-			{ time: "0", carry: "", event: "", show: ".clsAllTabs", hide: "",  
-             transcript: 
-             //"Both Type 1 or Type 2 HSV infection can present in newborns in one of three ways. The first is a localized disease limited to the skin, eyes, and/or mouth, abbreviated SEM. The second involves the central nervous system,although the skin, eyes, and/or mouth may also be involved. The third is disseminated disease involving multiple organs, including the liver, adrenal glands, and lungs, but also possibly involving the central nervous system. Infants with disseminated disease are critically ill with shock, extensive liver and lung involvment, and disseminated intravascular coagulation or DIC. The risk of dying is highest in these infants. Signs may include skin vesicles; however, some infants with HSV infection never develop skin lesions. Other signs include fever, poor feeding, lethargy, irritability, or seizures. Fever, especially in the first 2 or 3 weeks of life should raise suspicion for HSV infection If the history and/or presentation suggest HSV infection, treatment with an antiviral medication such as Acyclovir should be started while awaiting culture or polymerase chain reaction (PCR) (said P-C-R) testing. If HSV infection is diagnosed, then antiviral therapy is usually given for 2 to 3 weeks, but in some cases, treatment may need to be longer. If HSV infection is diagnosed, antiviral therapy is usually given for 2 to 3 weeks, but in some cases, treatment may need to be longer. Consult the American Academy of Pediatrics, Committee on Infectious Diseases <strong> Red Book</strong>, for neonatal HSV treatment algorithms.<br> Click Next to continue.", 
-             "Both Type 1 or Type 2 HSV infection can present in infants in one of three ways. The first is disease limited to the skin, eyes, and/or mouth. The second involves the central nervous system, although the skin, eyes, and/or mouth may also be involved. The third is disseminated disease involving multiple organs, including the liver, adrenal glands, and lungs. These infants are at the highest risk of dying. 60 to 70% will have CNS involvement, and up to half will have no skin vesicles. These infants are critically ill with shock and. disseminated intravascular coagulation or DIC (said D-I-C). Signs of HSV may include skin vesicles; however, some infants with HSV infection never develop skin lesions. Other signs include fever, poor feeding, lethargy, irritability, or seizures. Fever, especially in the first 2 or 3 weeks of life should raise suspicion for HSV infection. If the history and/or presentation suggest HSV infection, treatment with an intravenous antiviral medication such as Acyclovir should be started while awaiting culture or polymerase chain reaction testing. If HSV infection is diagnosed, antiviral therapy is usually given IV (said eye-vee) for 2 to 3 weeks, but in some cases, treatment may need to be longer.  If HSV infection is diagnosed, antiviral therapy is usually given for 2 to 3 weeks, but in some cases, treatment may need to be longer. Consult the American Academy of Pediatrics, Committee on Infectious Diseases <strong> Red Book</strong>, for neonatal HSV treatment algorithms.<br> Click Next to continue.", 
-             animation: [{ target: ".clsAllTabs", duration: "0.5", activity: { "display": "block" } }] },
+        }
 
-             {
+        .box1 {
+            background: #FFE7BA;
+            padding: 16px 20px;
+            background: #FFE7BA;
+            width: 207px;
+            position: absolute;
+            left: 37px;
+            top: 70px;
+            margin-top: 0px !important;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .box2 {
+            background: #E3F1FF;
+            width: 310px;
+            position: absolute;
+            height: 99px;
+            left: 647px;
+            top: 340px;
+            padding: 10px 10px;
+            font-size: 16px;
+        }
+
+        .box3 {
+            background: #FFD1B5;
+            width: 310px;
+            height: 228px;
+            position: absolute;
+            left: 665px;
+            padding: 10px 10px;
+            font-size: 16px;
+            top: 70px;
+        }
+
+        .line {
+            width: 100px;
+            background: url(pages/images/Topic01/T01P18/line.svg);
+            position: absolute;
+        }
+
+        .line1 {
+            width: 67px;
+            height: 2px;
+            left: 284px;
+            top: 112px;
+        }
+
+        .line2 {
+            width: 67px;
+            height: 2px;
+            left: 597px;
+            top: 112px;
+        }
+
+        .line3 {
+            width: 87px;
+            height: 84px;
+            background: url(pages/images/Topic01/T01P18/line2.png);
+            left: 560px;
+            top: 306px;
+        }
+    </style>
+
+    <script>
+
+        glossaryFuncPageLevel();
+
+        var audioPath = "pages/audio/Topic01/T01P18/T01P18";
+
+        var currCue = 0;
+
+        var idd = 0;
+
+        var clickTabCount = 0;
+
+        var clickTabCount1 = 0;
+
+        var updateContentArray = [
+
+
+
+            {
+                time: "0", carry: "", event: "", show: ".clsAllTabs", hide: "",
+                transcript:
+                    //"Both Type 1 or Type 2 HSV infection can present in newborns in one of three ways. The first is a localized disease limited to the skin, eyes, and/or mouth, abbreviated SEM. The second involves the central nervous system,although the skin, eyes, and/or mouth may also be involved. The third is disseminated disease involving multiple organs, including the liver, adrenal glands, and lungs, but also possibly involving the central nervous system. Infants with disseminated disease are critically ill with shock, extensive liver and lung involvment, and disseminated intravascular coagulation or DIC. The risk of dying is highest in these infants. Signs may include skin vesicles; however, some infants with HSV infection never develop skin lesions. Other signs include fever, poor feeding, lethargy, irritability, or seizures. Fever, especially in the first 2 or 3 weeks of life should raise suspicion for HSV infection If the history and/or presentation suggest HSV infection, treatment with an antiviral medication such as Acyclovir should be started while awaiting culture or polymerase chain reaction (PCR) (said P-C-R) testing. If HSV infection is diagnosed, then antiviral therapy is usually given for 2 to 3 weeks, but in some cases, treatment may need to be longer. If HSV infection is diagnosed, antiviral therapy is usually given for 2 to 3 weeks, but in some cases, treatment may need to be longer. Consult the American Academy of Pediatrics, Committee on Infectious Diseases <strong> Red Book</strong>, for neonatal HSV treatment algorithms.<br> Click Next to continue.", 
+                    "Both Type 1 or Type 2 HSV infection can present in infants in one of three ways. The first is disease limited to the skin, eyes, and/or mouth. The second involves the central nervous system, although the skin, eyes, and/or mouth may also be involved. The third is disseminated disease involving multiple organs, including the liver, adrenal glands, and lungs. These infants are at the highest risk of dying. 60 to 70% will have CNS involvement, and up to half will have no skin vesicles. These infants are critically ill with shock and. disseminated intravascular coagulation or DIC (said D-I-C). Signs of HSV may include skin vesicles; however, some infants with HSV infection never develop skin lesions. Other signs include fever, poor feeding, lethargy, irritability, or seizures. Fever, especially in the first 2 or 3 weeks of life should raise suspicion for HSV infection. If the history and/or presentation suggest HSV infection, treatment with an intravenous antiviral medication such as Acyclovir should be started while awaiting culture or polymerase chain reaction testing. If HSV infection is diagnosed, antiviral therapy is usually given IV (said eye-vee) for 2 to 3 weeks, but in some cases, treatment may need to be longer.  If HSV infection is diagnosed, antiviral therapy is usually given for 2 to 3 weeks, but in some cases, treatment may need to be longer. Consult the American Academy of Pediatrics, Committee on Infectious Diseases <strong> Red Book</strong>, for neonatal HSV treatment algorithms.<br> Click Next to continue.",
+                animation: [{ target: ".clsAllTabs", duration: "0.5", activity: { "display": "block" } }]
+            },
+
+            {
                 time: "5",
                 carry: "",
                 event: "",
                 show: ".line1",
                 hide: "",
-               transcript: ""
+                transcript: ""
             },
-			{
+            {
                 time: "5",
                 carry: "",
                 event: "",
                 show: "#list1",
                 hide: "",
-               transcript: ""
+                transcript: ""
             },
 
-			{
+            {
                 time: "7",
                 carry: "",
                 event: "",
                 show: "#list41",
                 hide: ""
             },
-			{
+            {
                 time: "8",
                 carry: "",
                 event: "",
                 show: "#list42",
                 hide: ""
             },
-			{
+            {
                 time: "9",
                 carry: "",
                 event: "",
                 show: "#list43",
                 hide: ""
-               
+
             },
-			
-			{
+
+            {
                 time: "11",
                 carry: "",
                 event: "",
                 show: "#list2",
                 hide: ""
-            
+
             },
 
             {
@@ -1520,7 +1763,7 @@ opacity: 0;
                 hide: ""
             },
 
-			{
+            {
                 time: "12",
                 carry: "",
                 event: "",
@@ -1534,34 +1777,34 @@ opacity: 0;
                 event: "",
                 show: ".line2",
                 hide: ""
-              
+
             },
 
-			{
+            {
                 time: "17",
                 carry: "",
                 event: "",
                 show: ".box3",
                 hide: ""
-              
+
             },
 
-			{
+            {
                 time: "20",
                 carry: "",
                 event: "",
                 show: "#list45",
                 hide: ""
-              
+
             },
-			{
+            {
                 time: "28",
                 carry: "",
                 event: "",
                 show: "#list46",
                 hide: ""
             },
-			{
+            {
                 time: "29",
                 carry: "",
                 event: "",
@@ -1588,10 +1831,10 @@ opacity: 0;
                 event: "",
                 show: ".error1",
                 hide: "",
-                animation:[{}]
-               
+                animation: [{}]
+
             },
-			{
+            {
                 time: "32.0",
                 carry: "",
                 event: "",
@@ -1602,13 +1845,13 @@ opacity: 0;
                     target: ".clsAllTabs",
                     duration: "0.5",
                     activity: {
-						 'display': 'none',
-                      
+                        'display': 'none',
+
                     }
                 }]
             },
-           
-			{
+
+            {
                 time: "33.0",
                 carry: "",
                 event: "",
@@ -1619,8 +1862,8 @@ opacity: 0;
                     target: ".clsAllTabs2",
                     duration: "0.5",
                     activity: {
-						 'display': 'block',
-   
+                        'display': 'block',
+
                     }
                 }]
             },
@@ -1636,7 +1879,7 @@ opacity: 0;
                     target: ".ClsImage0",
                     duration: "0.5",
                     activity: {
-						 'display': 'block',
+                        'display': 'block',
 
                     }
                 }]
@@ -1653,7 +1896,7 @@ opacity: 0;
                     target: ".ClsImage1",
                     duration: "0.5",
                     activity: {
-						 'display': 'block',
+                        'display': 'block',
 
                     }
                 }]
@@ -1669,13 +1912,13 @@ opacity: 0;
                     target: ".ClsImage2",
                     duration: "0.5",
                     activity: {
-						 'display': 'block',
-                         
-  
+                        'display': 'block',
+
+
                     }
                 }]
             },
-            
+
             {
                 time: "36.0",
                 carry: "",
@@ -1687,8 +1930,8 @@ opacity: 0;
                     target: ".slide-text",
                     duration: "0.5",
                     activity: {
-						 'display': 'block',
-     
+                        'display': 'block',
+
                     }
                 }]
             },
@@ -1703,8 +1946,8 @@ opacity: 0;
                     target: ".slide-text2",
                     duration: "0.5",
                     activity: {
-						 'display': 'block',
-     
+                        'display': 'block',
+
                     }
                 }]
             },
@@ -1719,9 +1962,9 @@ opacity: 0;
                     target: ".clsAllTabs2",
                     duration: "0.5",
                     activity: {
-						 'display': 'none',
+                        'display': 'none',
 
-                        
+
                     }
                 }]
             },
@@ -1736,13 +1979,13 @@ opacity: 0;
                     target: ".clsAllTabs3",
                     duration: "0.5",
                     activity: {
-						 'display': 'block',
+                        'display': 'block',
 
-                        
+
                     }
                 }]
             },
-          
+
 
             {
                 time: "59",
@@ -1769,145 +2012,145 @@ opacity: 0;
                 ]
             },
 
-		];
+        ];
 
-		function fnAudioFinishItemComp() {
+        function fnAudioFinishItemComp() {
 
-			fnAudioFinishPageComp();
+            fnAudioFinishPageComp();
 
-			fnUpdatePageCompletionCounter(0);
+            fnUpdatePageCompletionCounter(0);
 
-		}
+        }
 
-		var __dataXml;
+        var __dataXml;
 
-		$(document).ready(function () {
+        $(document).ready(function () {
             restrictBacknMenuOnAssistment();
 
-			disableNextBtn();
+            disableNextBtn();
 
-			var ele = document.getElementsByTagName('div');
+            var ele = document.getElementsByTagName('div');
 
-			for (var i = 0; i < ele.length; i++) {
+            for (var i = 0; i < ele.length; i++) {
 
-				ele[i].setAttribute("unselectable", "on");
+                ele[i].setAttribute("unselectable", "on");
 
-			}
+            }
 
 
 
-			var n = isInArray("M1L0T1P18", gCompPageArr);
+            var n = isInArray("M1L0T1P18", gCompPageArr);
 
-			console.log(n);
+            console.log(n);
 
-			if (n == true) {
+            if (n == true) {
 
-				enableNextBtn();
+                enableNextBtn();
 
-				// fnGlowNextBtn();
+                // fnGlowNextBtn();
 
-				fnDesiableNext(false);
+                fnDesiableNext(false);
 
-			}
+            }
 
-		});
+        });
 
 
 
-		function isInArray(value, array) {
+        function isInArray(value, array) {
 
-			return array.indexOf(value) > -1;
+            return array.indexOf(value) > -1;
 
-		}
+        }
 
 
 
-		function audioReset() {
+        function audioReset() {
 
-			gAudioId = "";
+            gAudioId = "";
 
-			onTimelineEnd();
+            onTimelineEnd();
 
-		}
+        }
 
-		function fnPlayItemAudio(gCurrentIndex) {
+        function fnPlayItemAudio(gCurrentIndex) {
 
-			audioindex = (gCurrentIndex);
+            audioindex = (gCurrentIndex);
 
-			gAudioId = "audio_" + gCurrentIndex;
+            gAudioId = "audio_" + gCurrentIndex;
 
-			fnHideShowAudioPlayer(false);
+            fnHideShowAudioPlayer(false);
 
-			updateContentArray = eval("popupContentArray" + (gCurrentIndex));
+            updateContentArray = eval("popupContentArray" + (gCurrentIndex));
 
-			initAudioPlayer(gItemAudioPath[gCurrentIndex])
+            initAudioPlayer(gItemAudioPath[gCurrentIndex])
 
-		}
+        }
 
 
 
-		var succRefFunc = function fnInitPage(oXML) {
+        var succRefFunc = function fnInitPage(oXML) {
 
-			gPageXMLObj = oXML;
+            gPageXMLObj = oXML;
 
-		}
+        }
 
-		var errRefFunc = function fnXMLLoadError() {
+        var errRefFunc = function fnXMLLoadError() {
 
-			alert("Error loading XML file.");
+            alert("Error loading XML file.");
 
-		}
+        }
 
 
 
-		function fnCompletion() {
+        function fnCompletion() {
 
-			console.log("sdfsdf");
+            console.log("sdfsdf");
 
-			enableNextBtn();
+            enableNextBtn();
 
-			fnAudioFinishItemComp();
+            fnAudioFinishItemComp();
 
-			$(".boxInst").show();
+            $(".boxInst").show();
 
-		}
+        }
 
 
 
-		function fnOnAudioComplete() {
+        function fnOnAudioComplete() {
 
-			if (gAudioId == "startAudio") {
+            if (gAudioId == "startAudio") {
 
-				fnCompletion();
+                fnCompletion();
 
-				gCompPageArr.push("M1L0T1P18");
+                gCompPageArr.push("M1L0T1P18");
 
-				//fnClick();
+                //fnClick();
 
-				//enableNextBtn();
+                //enableNextBtn();
 
-				//fnAudioFinishItemComp();
+                //fnAudioFinishItemComp();
 
-			} else {
+            } else {
 
-				$("#idTick0" + selectedIndex).css({ "opacity": "1" });
+                $("#idTick0" + selectedIndex).css({ "opacity": "1" });
 
-				$("#clsTabTxt" + selectedIndex).css({ 'color': '#80848b' });
+                $("#clsTabTxt" + selectedIndex).css({ 'color': '#80848b' });
 
-				$(".ClsTab").removeClass("clsDisable");
+                $(".ClsTab").removeClass("clsDisable");
 
-				$("#TabImage" + selectedIndex).addClass("clsDisable");
+                $("#TabImage" + selectedIndex).addClass("clsDisable");
 
-				fnCompletion();
+                fnCompletion();
 
-				if ($(".clsVisited").length === 2) {
+                if ($(".clsVisited").length === 2) {
 
-				}
+                }
 
-			}
+            }
 
-		}
-		$('#pageClsResourcesPopup').hide();
+        }
+        $('#pageClsResourcesPopup').hide();
         $("#pageRefCloseBtn_id").click(function () {
             enabledAllButtons();
             fnPlayAudio();
@@ -1933,105 +2176,105 @@ opacity: 0;
             $('.modal').removeAttr("style");
 
         });
-		
-		$(".small_expand").off().on("click", function() {
 
-    pauseAudio();
+        $(".small_expand").off().on("click", function () {
 
-    //audioReset();
-    $("#case_study_popup0").show();
+            pauseAudio();
 
-    $(".mainContainer").addClass("blur");
+            //audioReset();
+            $("#case_study_popup0").show();
 
-    $(".modalTxtImg").attr('id', 'imgPopup' + $(this).attr('click_id'));
+            $(".mainContainer").addClass("blur");
 
-    
+            $(".modalTxtImg").attr('id', 'imgPopup' + $(this).attr('click_id'));
 
 
 
 
-});
-
-$(".small_expand1").off().on("click", function() {
-
-    pauseAudio();
-
-    //audioReset();
-
-    $("#TabPopup5 .modal").show();
-
-    $("#TabPopup5 .sectionTop").addClass("blur");
-
-    $("#TabPopup5 .sectionContent").addClass("blur");
-    $('.boxInst').addClass("blur");
-
-    $(".modalTxtImg").attr('id', 'imgPopup' + $(this).attr('click_id'));
-
-    $('.modalTextBottom').hide();
-
-    $('#ModalTextBottom' + $(this).attr('click_id')).show();
 
 
+        });
 
-    $('.modalContent').addClass('maxBot');
+        $(".small_expand1").off().on("click", function () {
 
-    $('.modalContent').removeClass('maxBot0');
+            pauseAudio();
+
+            //audioReset();
+
+            $("#TabPopup5 .modal").show();
+
+            $("#TabPopup5 .sectionTop").addClass("blur");
+
+            $("#TabPopup5 .sectionContent").addClass("blur");
+            $('.boxInst').addClass("blur");
+
+            $(".modalTxtImg").attr('id', 'imgPopup' + $(this).attr('click_id'));
+
+            $('.modalTextBottom').hide();
+
+            $('#ModalTextBottom' + $(this).attr('click_id')).show();
 
 
 
-});
+            $('.modalContent').addClass('maxBot');
 
-$(".modalclose").off().on("click", function() {
+            $('.modalContent').removeClass('maxBot0');
 
-    playAudio();
 
-    //audioReset();
-	
-    $(".modal").removeAttr("style");
-	$(".mainContainer").removeClass("blur");
-    $('.boxInst').removeClass("blur");
 
-});
- $(".closepopup").on("click", function() {
+        });
 
-                playAudio();
+        $(".modalclose").off().on("click", function () {
 
-                $("#case_study_popup0").removeAttr("style");
+            playAudio();
 
-               $(".mainContainer").removeClass("blur");
-    $('.boxInst').removeClass("blur");
+            //audioReset();
 
-            });
-            $(".small_expand").on('click', function(){
-               
-    $("#imgPopup1").parents().find(".modalContent").css({ "width": "414px"});
-    $("#imgPopup2").parents().find(".modalContent").css({ "width": "568px"});
+            $(".modal").removeAttr("style");
+            $(".mainContainer").removeClass("blur");
+            $('.boxInst').removeClass("blur");
 
-})
-           
-	</script>
+        });
+        $(".closepopup").on("click", function () {
+
+            playAudio();
+
+            $("#case_study_popup0").removeAttr("style");
+
+            $(".mainContainer").removeClass("blur");
+            $('.boxInst').removeClass("blur");
+
+        });
+        $(".small_expand").on('click', function () {
+
+            $("#imgPopup1").parents().find(".modalContent").css({ "width": "414px" });
+            $("#imgPopup2").parents().find(".modalContent").css({ "width": "568px" });
+
+        })
+
+    </script>
 
 </head>
 
 <body>
 
-	<div class="pg-pageContent" UNSELECTABLE="on">
+    <div class="pg-pageContent" UNSELECTABLE="on">
 
-		<div class="mainContainer">
+        <div class="mainContainer">
 
-		
-			<div class="clsAllTabs borderRadius">
 
-			
+            <div class="clsAllTabs borderRadius">
 
-				<p class="paraText">HSV infection can present in infants in three ways: </p>
+
+
+                <p class="paraText">HSV infection can present in infants in three ways: </p>
 
                 <div class="box1 borderRadius" id="list1">Disease limited to the Skin, Eyes, and/or Mouth (SEM)</div>
 
                 <div class="graph-img">
-                    <div class="casesTxt txt45">45%<br/> of cases</div>
-                    <div class="casesTxt txt25">25%<br/> of cases</div>
-                    <div class="casesTxt txt30">30%<br/> of cases</div>
+                    <div class="casesTxt txt45">45%<br /> of cases</div>
+                    <div class="casesTxt txt25">25%<br /> of cases</div>
+                    <div class="casesTxt txt30">30%<br /> of cases</div>
                 </div>
                 <div class="line line1">&nbsp;</div>
                 <div class="line line2">&nbsp;</div>
@@ -2040,14 +2283,14 @@ $(".modalclose").off().on("click", function() {
                 <div class="box2 borderRadius">
                     <strong>Central Nervous System (CNS) disease</strong>
                     <ul class="listitem">
-                        <li>May also have skin eyes and/or mouth involvement</li>                       
+                        <li>May also have skin eyes and/or mouth involvement</li>
                     </ul>
                 </div>
 
-                <div  class="box3 borderRadius">
+                <div class="box3 borderRadius">
                     <strong>Disseminated disease</strong>
                     <ul class="listitem">
-					
+
                         <!--<li> <strong>45% of cases</strong>
                         </li>
                 <li id="list1">Localized (SEM)
@@ -2057,20 +2300,23 @@ $(".modalclose").off().on("click", function() {
                             <li id="list43"><span></span>Mouth</li>
                         </ul>
                     </li>-->
-                    
-                    <!--<li >
+
+                        <!--<li >
                         <ul class="listitem2">-->
-                            <li id="list455"><span></span>Multiple organs involved – liver, adrenal glands, lungs</li>
-                            <li id="list466"><span></span>60 to 70% have CNS involvement</li>
-                            <li id="list488"><span></span>40 to 50% have no skin vesicles</li>
-                            <li id="list489"><span></span>Shock and <a href="javascript:void(0)" class="glossarytag" textDesc="A condition where blood coagulation is abnormally activated as a complication of severe illness. This abnormal clotting then causes damage to the microvasculature (e.g., the capillaries, arterioles, and venules), and in severe cases can cause<br> organ dysfunction." glossaryTitle="Disseminated intravascular coagulation (DIC)">Disseminated intravascular coagulation (DIC)</a></li>
-                            <!--</ul>
+                        <li id="list455"><span></span>Multiple organs involved – liver, adrenal glands, lungs</li>
+                        <li id="list466"><span></span>60 to 70% have CNS involvement</li>
+                        <li id="list488"><span></span>40 to 50% have no skin vesicles</li>
+                        <li id="list489"><span></span>Shock and <a href="javascript:void(0)" class="glossarytag"
+                                textDesc="A condition where blood coagulation is abnormally activated as a complication of severe illness. This abnormal clotting then causes damage to the microvasculature (e.g., the capillaries, arterioles, and venules), and in severe cases can cause<br> organ dysfunction."
+                                glossaryTitle="Disseminated intravascular coagulation (DIC)">Disseminated intravascular
+                                coagulation (DIC)</a></li>
+                        <!--</ul>
                     </li>-->
-                    
-                </ul>
+
+                    </ul>
                 </div>
 
-				<!--<p class="paraText2">
+                <!--<p class="paraText2">
 					<ul class="listitem">
 					
 						
@@ -2093,9 +2339,11 @@ $(".modalclose").off().on("click", function() {
 				</p>-->
                 <div id="error1" class="error1 borderRadius ">
                     <div class="error1_inner">
-                        <img src="pages/images/Topic01/T01P12/warning.svg"> <span class="txt-caution">The risk of dying is highest in these infants.</span></div>
+                        <img src="pages/images/Topic01/T01P12/warning.svg"> <span class="txt-caution">The risk of dying
+                            is highest in these infants.</span>
+                    </div>
                 </div>
-			</div>
+            </div>
             <!-- <div class="ClsTextTab" id="textTab0">
                 <div class="listcnt" id="showList_0">
                     <div id="arrow_0" class="arrowHolder"></div>
@@ -2108,112 +2356,126 @@ $(".modalclose").off().on("click", function() {
                 </div>
 
             </div> -->
-			<div class="clsAllTabs2 borderRadius">
-<p>Signs may include skin vesicles; however, some infants with HSV infection never develop skin lesions. Other signs include fever, poor feeding, lethargy, irritability, or seizures.</p>
-				<section class="ClsSecItem section" id="section0">
-					<div class="ClsImage0 borderRadius">
-						<div class="clsSubImage" id="clsSubImage0">
-							<div class="subFirstImage" id="clsSub0"></div>
-							
-						   <!--<div class="popover left-arrow clickToEnlarge">
+            <div class="clsAllTabs2 borderRadius">
+                <p>Signs may include skin vesicles; however, some infants with HSV infection never develop skin lesions.
+                    Other signs include fever, poor feeding, lethargy, irritability, or seizures.</p>
+                <section class="ClsSecItem section" id="section0">
+                    <div class="ClsImage0 borderRadius">
+                        <div class="clsSubImage" id="clsSubImage0">
+                            <div class="subFirstImage" id="clsSub0"></div>
+
+                            <!--<div class="popover left-arrow clickToEnlarge">
 								<div class="arrow" style="top: 50%;"></div>
 								<div class="popover-content">Click to enlarge image.</div>
 							</div>-->
-							<a href="javascript:void(0);" title="Click to enlarge image" class="small_expand zoom_btn " click_id="1" >&nbsp;</a>
-						</div>
-	
-					</div>
-					<div class="ClsImage1 borderRadius">
-						<div class="clsSubImage" id="clsSubImage1">
-							<div class="subFirstImage" id="clsSub1"></div>
-							
-							<!-- <div class="subFirstImage" id="clsImg0"></div> -->
-							<!--<div class="popover left-arrow clickToEnlarge">
+                            <a href="javascript:void(0);" title="Click to enlarge image" class="small_expand zoom_btn "
+                                click_id="1">&nbsp;</a>
+                        </div>
+
+                    </div>
+                    <div class="ClsImage1 borderRadius">
+                        <div class="clsSubImage" id="clsSubImage1">
+                            <div class="subFirstImage" id="clsSub1"></div>
+
+                            <!-- <div class="subFirstImage" id="clsImg0"></div> -->
+                            <!--<div class="popover left-arrow clickToEnlarge">
 								<div class="arrow" style="top: 50%;"></div>
 								<div class="popover-content">Click to enlarge image.</div>
 							</div>-->
-							<a href="javascript:void(0);" title="Click to enlarge image" class="small_expand zoom_btn" click_id="2">&nbsp;</a>
-						</div>
-	
-					</div>
-					<div class="ClsImage2 borderRadius">
-						<div class="clsSubImage" id="clsSubImage2">
-							<div class="subFirstImage" id="clsSub2"></div>
-							
-							<!-- <div class="subFirstImage" id="clsImg0"></div> -->
-							<!--<div class="popover left-arrow clickToEnlarge">
+                            <a href="javascript:void(0);" title="Click to enlarge image" class="small_expand zoom_btn"
+                                click_id="2">&nbsp;</a>
+                        </div>
+
+                    </div>
+                    <div class="ClsImage2 borderRadius">
+                        <div class="clsSubImage" id="clsSubImage2">
+                            <div class="subFirstImage" id="clsSub2"></div>
+
+                            <!-- <div class="subFirstImage" id="clsImg0"></div> -->
+                            <!--<div class="popover left-arrow clickToEnlarge">
 								<div class="arrow" style="top: 50%;"></div>
 								<div class="popover-content">Click to enlarge image.</div>
 							</div>-->
-							<a href="javascript:void(0);" title="Click to enlarge image" class="small_expand zoom_btn" click_id="3">&nbsp;</a>
-						</div>
-	
-					</div>
-					
-	
-	
+                            <a href="javascript:void(0);" title="Click to enlarge image" class="small_expand zoom_btn"
+                                click_id="3">&nbsp;</a>
+                        </div>
+
+                    </div>
+
+
+
                 </section>
                 <!--<p class="slide-text">Fever, especially in the first 2 or 3 weeks of life should raise suspicion for HSV infection.</p>-->
-                <p class="slide-text">Fever, especially in the first 4 weeks after birth should raise suspicion for HSV infection </p>
-		
-			</div>
+                <p class="slide-text">Fever, especially in the first 4 weeks after birth should raise suspicion for HSV
+                    infection </p>
+
+            </div>
             <div class="clsAllTabs3 borderRadius">
-              
-                                <section class="ClsSecItem section" id="section0">                                
-                                    <div class="subFirstImage" id="clsSubin1"></div>                                                
-                                    <div class="subFirstImage" id="clsSubin2"></div>                    
-                                    <div class="acyclovir_heading">Antiviral medication</div>
-                                    
-                                    <div class="calender_heading">If HSV infection is diagnosed, antiviral therapy is usually given for 2 to 3 weeks, but in some cases, treatment may need to be longer.</div>                 
-                                </section>
-                                
-                                <div class="list-points">
-                                    <ul class="listitem">
-                
-                                        <li class="nodot"><strong>Suspected HSV Infection</strong>
-                                            <ul>
-                                                <li class="listitem2"><span></span>Treat with antiviral medication (Acyclovir) while awaiting culture or polymerase chain reaction (PCR) testing.</li>
-                                            </ul>
-                                        </li>
-                                        <li class="nodot"><strong>Confirmed HSV Infection</strong>
-                                            <ul>
-                                                <li class="listitem2"><span></span>Give antiviral medication IV for 2 to 3 weeks, or longer as indicated.</li>
-                                        
-                                            </ul>
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                                <p class="slide-text2">Consult the American Academy of Pediatrics, Committee on Infectious Diseases <strong> Red Book</strong>, for neonatal HSV treatment algorithms.</p>
-                        
-                            </div>
-                
-		</div>
 
-	</div>
+                <section class="ClsSecItem section" id="section0">
+                    <div class="subFirstImage" id="clsSubin1"></div>
+                    <div class="subFirstImage" id="clsSubin2"></div>
+                    <div class="acyclovir_heading">Antiviral medication</div>
 
-	<div class="boxInst">
-		<div class="instNextClick"></div>
-		<div class="next_click"><em> Click Next to continue.</em></div>
-	</div>
-    </div>
-    
-	<div class="modal" id="case_study_popup0">
-			<div class="modalContent" unselectable="on">
-				<div class="modalinner modalinner">
-					<div class="modalTxtImg" unselectable="on"></div>
-					<a class="closepopup zoom_close_btn" href="javascript:void(0)" title="Click to Close"></a>
-					<div class="popover left-arrow">
-						<div class="arrow" style="top: 50%;"></div>
-						<div class="popover-content">Click to close image.</div>
-					</div>
-				</div>
-			</div>
+                    <div class="calender_heading">
+                        <!-- If HSV infection is diagnosed, antiviral therapy is usually given for
+                        2 to 3 weeks, but in some cases, treatment may need to be longer. -->
+                        <p>If HSV infection is diagnosed, antiviral therapy is usually given for
+                            2 to 3 weeks, but in some cases, treatment may need to be longer.</p>
+                    </div>
+                </section>
+
+                <div class="list-points">
+                    <ul class="listitem">
+
+                        <li class="nodot"><strong>Suspected HSV Infection</strong>
+                            <ul>
+                                <li class="listitem2"><span></span>Treat with antiviral medication (Acyclovir) while
+                                    awaiting culture or polymerase chain reaction (PCR) testing.</li>
+                            </ul>
+                        </li>
+                        <li class="nodot"><strong>Confirmed HSV Infection</strong>
+                            <ul>
+                                <li class="listitem2"><span></span>Give antiviral medication IV for 2 to 3 weeks, or
+                                    longer as indicated.</li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <p class="slide-text2">Consult the American Academy of Pediatrics, Committee on Infectious Diseases
+                    <strong> Red Book</strong>, for neonatal HSV treatment algorithms.
+                </p>
+
+            </div>
+
         </div>
-        
-        
 
-	<!--<div class="modal" id="case_study_popup2">
+    </div>
+
+    <div class="boxInst">
+        <div class="instNextClick"></div>
+        <div class="next_click"><em> Click Next to continue.</em></div>
+    </div>
+    </div>
+
+    <div class="modal" id="case_study_popup0">
+        <div class="modalContent" unselectable="on">
+            <div class="modalinner modalinner">
+                <div class="modalTxtImg" unselectable="on"></div>
+                <a class="closepopup zoom_close_btn" href="javascript:void(0)" title="Click to Close"></a>
+                <div class="popover left-arrow">
+                    <div class="arrow" style="top: 50%;"></div>
+                    <div class="popover-content">Click to close image.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--<div class="modal" id="case_study_popup2">
 		<div class="modalContent" unselectable="on">
 			<div class="modalinner">
 				<div class="modalclose" ><div class="modalcloseicon"></div></div>
