@@ -1375,6 +1375,7 @@ ul.bullet li {
   float: left;
   position: relative;
   margin: 5px 0;
+  color: #000;
 }
 
 ul.bullet.adj {
@@ -1883,7 +1884,7 @@ ul.alertText li:before {
   font-size: 16px;
   height: 385px;
   background-size: cover;
-  border: 1px solid #05222E;
+  border: 1px solid;
   z-index: 100;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -2521,7 +2522,7 @@ select {
 }
 
 .tagline {
-  color: #000000;
+  color: #05222E;
   font-family: OpenSansRegular;
   margin-top: 10px;
   display: block;
