@@ -1601,6 +1601,7 @@ function enableBackBtnClass() {
 }
 
 function fnGetPage(lCase) {
+  console.log("call getPage" + lCase);
   if (
     gModuleArr[gCurrMod].Lessons[gCurrLess].Topics[gCurrTop].Pages[
       gCurrPage
@@ -1641,16 +1642,20 @@ function fnGetPage(lCase) {
 
   lCurrModNum = gCurrMod;
 
+  console.log("SCase : " + lCase);
+
   switch (lCase) {
     case "SAME":
       break;
-
+    // NEXT START
     case "NEXT":
       enabledAllButtons();
 
       $("#id_transcriptBox #transcripttext").html("");
 
+      console.log("gCurrPageNum 1:" + gCurrPageNum);
       gCurrPageNum++;
+      console.log("gCurrPageNum 2:" + gCurrPageNum);
 
       var lPageId =
         gModuleArr[lCurrModNum].Lessons[lCurrLessNum].Topics[lCurrTopNum].Pages[
@@ -1659,6 +1664,7 @@ function fnGetPage(lCase) {
 
       /** PAGE 14 */
       if (!prevPageRedirect && isInArray(lPageId, page_14)) {
+        console.log("CASE NEXT: 1");
         var nextToVisit = "";
         $.each(page_14, function (i, val) {
           if (nextToVisit == "" && gCompPageArr.indexOf(val) == -1) {
@@ -1673,18 +1679,29 @@ function fnGetPage(lCase) {
       // jumpToNextPageOfMulti(page_14, 'M1L0T1P15');
       /** PAGE 32 */
       if (!prevPageRedirect && isInArray(lPageId, page_32)) {
+        console.log("CASE NEXT: 2");
+        console.log("az-----");
+        console.log("gCompPageArr PUSH:" + gCompPageArr);
         var nextToVisit = "";
         $.each(page_32, function (i, val) {
+          console.log("EACH :" + val);
+          console.log("EACH INDEX:" + gCompPageArr.indexOf(val));
           if (nextToVisit == "" && gCompPageArr.indexOf(val) == -1) {
+            console.log("EACH IN :" + val);
+            console.log();
             nextToVisit = val;
           }
         });
+        console.log("nextToVisit -----:" + nextToVisit);
+        //fnJumpToPageByID(nextToVisit ? nextToVisit : "000000000000"); //jumptonexpage
         fnJumpToPageByID(nextToVisit ? nextToVisit : "M1L0T1P33");
+
         return;
       }
       // jumpToNextPageOfMulti(page_32, 'M1L0T1P13');
       /** PAGE 45 */
       if (!prevPageRedirect && isInArray(lPageId, page_45)) {
+        console.log("CASE NEXT: 3");
         var nextToVisit = "";
         $.each(page_45, function (i, val) {
           if (nextToVisit == "" && gCompPageArr.indexOf(val) == -1) {
@@ -1701,10 +1718,12 @@ function fnGetPage(lCase) {
       var _getPreviousBookMarkPage = assessmentObj.getBookmarkPage();
       console.log("NEXT ", _getPreviousBookMarkPage);
       if (_getPreviousBookMarkPage != "") {
+        console.log("CASE NEXT: if e");
         fnJumpToPageByID(_getPreviousBookMarkPage);
         $("#clsPageNumber").show();
         assessmentObj.resetBookMarkPage();
       } else {
+        console.log("CASE NEXT: if else");
         if (gStartAssessmet) {
           if (gCurrQuestionCnt >= gShowQuestionCnt) {
             //Once All question shown
@@ -1740,6 +1759,7 @@ function fnGetPage(lCase) {
             .Pages.length -
             1
         ) {
+          console.log("CASE NEXT: if else if 1");
           lCurrPgNum++;
           var lPageId =
             gModuleArr[lCurrModNum].Lessons[lCurrLessNum].Topics[
@@ -1747,10 +1767,12 @@ function fnGetPage(lCase) {
             ].Pages[lCurrPgNum].attr("ID");
           fnJumpToPageByID(lPageId);
         } else {
+          console.log("CASE NEXT: if else (else)");
           if (
             lCurrTopNum <
             gModuleArr[lCurrModNum].Lessons[lCurrLessNum].Topics.length - 1
           ) {
+            console.log("CASE NEXT: if else (else) 1");
             lCurrTopNum++;
             lCurrPgNum = 0;
             var lPageId =
@@ -1810,6 +1832,7 @@ function fnGetPage(lCase) {
           lPageId == "M1L0T1P13" ||
           lPageId == "M1L0T1P14"
         ) {
+          console.log("CASE NEXT: if else outer 1");
           //$("#topFrame").addClass("topFrame");
           $("#topFrame .home-btn").hide();
           $("#contentContainer").removeClass("sugar");
@@ -1817,6 +1840,7 @@ function fnGetPage(lCase) {
             $("#topFrame .back-btn").show();
           }
         } else {
+          console.log("CASE NEXT: if else outer 2");
           $("#topFrame .home-btn").show();
           $("#contentContainer").addClass("sugar");
           $("#topFrame .back-btn").hide();
@@ -1825,7 +1849,7 @@ function fnGetPage(lCase) {
       }
 
       break;
-
+    // NEXT PRV END
     case "PREV":
       enabledAllButtons();
       $("#id_transcriptBox #transcripttext").html("");
@@ -2008,6 +2032,7 @@ function fnInitialize() {
 }
 
 function fnRemoveDuplicateValue() {
+  console.log("RM DUP VALUE:");
   var uniqueNames = [];
   $.each(gCompPageArr, function (i, el) {
     if ($.inArray(el, uniqueNames) === -1) uniqueNames.push(el);
@@ -2019,6 +2044,7 @@ function fnRemoveDuplicateValue() {
 function fnLoadPage(lModNum, lLessNum, lTopNum, lPageNum) {
   closeHelpBtnFunc();
   fnRemoveDuplicateValue();
+  console.log("LOAD PAGE");
   //
 
   //console.log("fnLoadPage")
@@ -3407,6 +3433,8 @@ function fnCheckForBookMark() {
         gCompPageArr = new Array();
 
         gCompPageArr = lArrTemp[0].split(",");
+
+        console.log("BookMArk");
       }
 
       if (lArrTemp[1] != "" && lArrTemp[1] != undefined) {
@@ -3525,6 +3553,7 @@ function fnCheckForBookMark() {
 
       // Block ends
     } else {
+      console.log("REASSIGN Ary");
       gCompPageArr = new Array();
 
       gCompModArr = new Array();
@@ -3551,7 +3580,7 @@ function fnCheckForBookMark() {
         lesson_location = "";
 
         //code for reset all mastercontent.xml as fresh launch.
-
+        console.log("REassign 1");
         gCompPageArr = new Array();
 
         gCompModArr = new Array();
@@ -3570,6 +3599,7 @@ function fnCheckForBookMark() {
       //fnLoadPage(gCurrMod, gCurrLess, gCurrTop, gCurrPage);
     }
   } else {
+    console.log("REassign 2");
     gCompPageArr = new Array();
 
     gCompModArr = new Array();
