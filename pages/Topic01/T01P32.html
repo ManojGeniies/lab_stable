@@ -833,6 +833,7 @@
             background-size: cover;
             /* background-position: 40%; */
         }
+
         span.no-audio {
             display: inline-block;
             padding: 10px;
@@ -843,6 +844,7 @@
             /* right: 0; */
             top: -55px;
         }
+
         .OptionTxtCLSS {
             position: relative;
             left: 3px;
@@ -1868,14 +1870,14 @@
             color: #000000;
             text-align: center;
             height: 38px;
-            line-height: 33px;
+            line-height: 38px;
             border-top-right-radius: 5px;
             -webkit-border-top-right-radius: 5px;
             -moz-border-top-right-radius: 5px;
             border-top-left-radius: 5px;
             -webkit-border-top-left-radius: 5px;
             -moz-border-top-left-radius: 5px;
-            font-size: 18px;
+            font-size: 17px;
             cursor: pointer;
             font-family: OpenSansSemiBold;
             width: 261px;
@@ -2373,11 +2375,13 @@
         div#imgdd3 {
             width: 400px;
         }
+
         .tabSection.viewed {
             background-image: url(pages/images/Topic01/T01P16/tick.png) !important;
             background-repeat: no-repeat !important;
             background-position: 98% !important;
         }
+
         #TabPopup .csection .clsIconImg {
             left: 340px !important;
             top: 372px !important
@@ -2416,7 +2420,7 @@
         }
 
         #case_study_popup1 .modalContent {
-            
+
             height: 445px;
             width: 581px;
         }
@@ -2425,21 +2429,27 @@
             position: relative;
             top: -385px;
         }
-        video{
+
+        video {
             max-width: 100%;
             width: 580px;
         }
+
         #case_study_popup1 .modalContent:hover .closing {
             display: block;
         }
-        .tagline{
-            margin-top:2px;
+
+        .tagline {
+            margin-top: 2px;
             /* font-size:14px; */
         }
+
         .modalTxtImg {
             border-radius: 5px;
         }
-        .popover.clickToEnlarge, .popover.icon00 {
+
+        .popover.clickToEnlarge,
+        .popover.icon00 {
             bottom: 5px;
         }
     </style>
@@ -2477,7 +2487,7 @@
                 event: "",
                 show: "",
                 hide: "",
-                transcript: "In the pre-transport or early post-resuscitation stabilization period, the following 4 lab tests are recommended. <br>Click on each tab to learn more about the 4 lab tests."
+                transcript: "In the pre-transport or early post-resuscitation stabilization period, 4 laboratory tests are recommended. <br>Click on each tab to learn more about these tests."
             }
             //{time:"18.0", animation:[{target:".boxInst",  activity:{'display':'block'}}]}
 
@@ -2669,7 +2679,7 @@
             }
             if (gCompPageArr.indexOf("M1L0T1P32_4") > -1) {
                 $('.tabSection[id=3]').addClass("viewed");
-            }              
+            }
             $(".tabSection").on("click", function () {
                 $(".popover").hide();
                 $(".clsIconImg").hide();
@@ -2691,12 +2701,12 @@
                     fnDesiableNext(false);
                 }
                 if (_getId == 1) {
-                    fnJumpToPageByID("M1L0T1P32_1");                   
-                } else if (_getId == 0) {                   
+                    fnJumpToPageByID("M1L0T1P32_1");
+                } else if (_getId == 0) {
                     fnJumpToPageByID("M1L0T1P32_2");
                 } else if (_getId == 2) {
-                  fnJumpToPageByID("M1L0T1P32_3");                    
-                } else if (_getId == 3) {                   
+                    fnJumpToPageByID("M1L0T1P32_3");
+                } else if (_getId == 3) {
                     fnJumpToPageByID("M1L0T1P32_4");
                 } else {
                     enableNextBtn();
@@ -2740,7 +2750,7 @@
         }
 
 
-      
+
         function audioReset() {
 
             gAudioId = "";
@@ -2753,7 +2763,7 @@
 
         var temp = "";
 
-       var succRefFunc = function fnInitPage(oXML) {
+        var succRefFunc = function fnInitPage(oXML) {
 
             gPageXMLObj = oXML;
 
@@ -2920,13 +2930,13 @@
                 console.log("complete first");
                 $(".csection .classPatchleft #icon01, .img-column #icon01").show();
                 $(".csection .classPatchleft .icon00, .img-column #icon01").show();
-               
+
 
             } else {
                 console.log("complete second");
                 $(".csection .classPatchleft #icon01, .img-column #icon01").show();
                 $(".csection .classPatchleft .icon00, .img-column #icon01").show();
-              
+
 
                 fnCompletion();
 
@@ -3023,13 +3033,15 @@
                     <div class="titleText">Initial </div>
                 </div>
                 <div id="tapSection">
-                    <div class="tagline">Click on each tab to learn more about 4 tab tests.</div>
+                    <div class="tagline">Click on each tab to learn more about the 4 laboratory tests.</div>
                     <ul>
-                        <li><a href="javascript:void(0);" class="tabSection" title="Blood Sugar" id="3">Blood Count</a>
+                        <li><a href="javascript:void(0);" class="tabSection" title="Blood Sugar" id="3">Complete Blood
+                                Count</a>
                         </li>
                         <li><a href="javascript:void(0);" class="tabSection" title="Blood Gas" id="2">Blood
-                            Culture</a></li>
-                        <li><a href="javascript:void(0);" class="tabSection" title="Blood Culture" id="1">Blood Glucose</a>
+                                Culture</a></li>
+                        <li><a href="javascript:void(0);" class="tabSection" title="Blood Culture" id="1">Blood
+                                Glucose</a>
                         </li>
                         <li><a href="javascript:void(0);" class="tabSection" title="Blood Count" id="0">Blood Gas</a>
                         </li>
@@ -3162,7 +3174,9 @@
                             </div>
                             <div class="list-cnt showList_4">
                                 <div id="arrow4" class="arrowHolder"></div>
-                                <div id="option4" curid="3" class="OptionCLSS"><span id="opt1" class="OptionTxtCLSS">Use sterile technique when drawing the blood and transferring blood to the <br>culture bottle.</span>
+                                <div id="option4" curid="3" class="OptionCLSS"><span id="opt1" class="OptionTxtCLSS">Use
+                                        sterile technique when drawing the blood and transferring blood to the
+                                        <br>culture bottle.</span>
                                 </div>
                             </div>
                             <a class="videolink" href="javascript:void(0);" id="clickImg3" title="Blood Culture">​<img

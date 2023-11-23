@@ -827,8 +827,9 @@
             background: url("pages/images/Topic01/T01P32/venipuncture.png") no-repeat;
             background-size: cover;
             background-position: 15%;
-            border-bottom-left-radius: 7px;
-           
+            /*border-bottom-left-radius: 7px;*/
+            border-radius: 25px;
+
         }
 
         #image3 {
@@ -836,6 +837,7 @@
             background-size: cover;
             /* background-position: 40%; */
         }
+
         span.no-audio {
             display: inline-block;
             padding: 10px;
@@ -846,6 +848,7 @@
             /* right: 0; */
             top: -55px;
         }
+
         .OptionTxtCLSS {
             position: relative;
             left: 3px;
@@ -900,21 +903,22 @@
         #icon01 {
             right: 10px;
             opacity: 1;
-            z-index: 1000;           
-            top: 372px;        
+            z-index: 1000;
+            top: 372px;
             background: url(pages/images/Topic01/T01P22/small_expand.svg) !important;
             position: absolute;
             cursor: pointer;
             width: 29px;
-            height: 29px;          
+            height: 29px;
             background-position: 0px 0;
-          
+
             background-size: cover !important;
-            background-repeat:no-repeat ;
-            display:none;
+            background-repeat: no-repeat;
+            display: none;
             opacity: .6;
         }
-        #icon01:hover{
+
+        #icon01:hover {
             opacity: 1;
         }
 
@@ -1028,23 +1032,25 @@
             left: 10px;
             cursor: pointer;
         }
-        .closepopup{
+
+        .closepopup {
             position: absolute;
             width: 41px;
             height: 41px;
-            background: url(pages/images/Topic01/T01P22/close_expand.svg) no-repeat;           
+            background: url(pages/images/Topic01/T01P22/close_expand.svg) no-repeat;
             right: 16px;
             cursor: pointer;
-            z-index: 1000;       
+            z-index: 1000;
             /* bottom:40px; */
             background-position: 0px 0;
-               
+
             background-size: cover !important;
-            background-repeat:no-repeat ;
+            background-repeat: no-repeat;
             opacity: .6;
         }
-        .closepopup:hover{
-           opacity: 1;
+
+        .closepopup:hover {
+            opacity: 1;
         }
 
 
@@ -1205,7 +1211,7 @@
             height: 100%;
         }
 
-        .closepopup{
+        .closepopup {
             position: absolute;
             width: 41px;
             height: 41px;
@@ -1213,12 +1219,13 @@
             bottom: 9px;
             right: 3px;
             cursor: pointer;
-            z-index: 1000;          
+            z-index: 1000;
             background-position: 0px 0;
-                
+
             background-size: cover !important;
-            background-repeat:no-repeat ;
+            background-repeat: no-repeat;
         }
+
         .closeVideo {
             position: absolute;
             width: 30px;
@@ -1232,7 +1239,8 @@
             background-size: contain;
             opacity: .6;
         }
-        .closeVideo:hover{
+
+        .closeVideo:hover {
             opacity: 1;
         }
 
@@ -1917,14 +1925,14 @@
             color: #000000;
             text-align: center;
             height: 38px;
-            line-height: 33px;
+            line-height: 38px;
             border-top-right-radius: 5px;
             -webkit-border-top-right-radius: 5px;
             -moz-border-top-right-radius: 5px;
             border-top-left-radius: 5px;
             -webkit-border-top-left-radius: 5px;
             -moz-border-top-left-radius: 5px;
-            font-size: 18px;
+            font-size: 17px;
             cursor: pointer;
             font-family: OpenSansSemiBold;
             width: 261px;
@@ -2188,9 +2196,9 @@
 
         .videolink .video_icon {
             position: relative;
-            top: 6px;
+            top: 9px;
             padding-right: 10px;
-            width: 24%;
+            width: 7%;
         }
 
         #_clickImg0pdf .pdf_icon,
@@ -2416,27 +2424,54 @@
         .modalContent {
             top: 20px;
         }
-        .error1{ margin:28px 18px 4px; border:solid 1px #F6A87A; border-radius:5px; width:89%; position:relative}
-	.error1 .error1_inner{ position:relative;  color:#000; font-size:14px; line-height:22px; font-weight:bold; display: flex; flex-direction: row; align-items: center;}
-	.error1 .error1_inner img{ width:35px; height:35px; padding: 6px;}
+
+        .error1 {
+            margin: 28px 18px 4px;
+            border: solid 1px #F6A87A;
+            border-radius: 5px;
+            width: 89%;
+            position: relative
+        }
+
+        .error1 .error1_inner {
+            position: relative;
+            color: #000;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .error1 .error1_inner img {
+            width: 35px;
+            height: 35px;
+            padding: 6px;
+        }
+
         div#imgdd0,
         div#imgdd1,
         div#imgdd2,
         div#imgdd3 {
             width: 400px;
         }
+
         .tabSection.viewed {
             background-image: url(pages/images/Topic01/T01P16/tick.png) !important;
             background-repeat: no-repeat !important;
             background-position: 98% !important;
         }
+
         #TabPopup .csection .classPatchLeft.clsIconImg {
-            left: 340px ;
+            left: 340px;
             top: 372px !important
         }
-        .clsIconImg{
-            left: 330px !important;          
+
+        .clsIconImg {
+            left: 330px !important;
         }
+
         .clsVideoContainer video {
             width: 90%;
             height: auto;
@@ -2446,7 +2481,8 @@
             position: relative;
             top: 0px;
             left: 0px;
-            width: 140px;
+            width: 580px;
+            /*height: 50px;*/
             font-size: 14px;
             font-family: OpenSansSemiBold !important;
             color: #000000;
@@ -2470,7 +2506,7 @@
         }
 
         #case_study_popup1 .modalContent {
-            
+
             height: 445px;
             width: 581px;
         }
@@ -2479,34 +2515,70 @@
             position: relative;
             top: -385px;
         }
-        video{
+
+        video {
             max-width: 100%;
             width: 580px;
+            border-radius: 25px;
         }
+
         #case_study_popup1 .modalContent:hover .closing {
             display: block;
         }
-        .tagline{
-            margin-top:2px;
+
+        .tagline {
+            margin-top: 2px;
             /* font-size:14px; */
         }
+
         .modalTxtImg {
-            border-radius: 5px;
+            border-radius: 25px;
         }
-        .popover.clickToEnlarge, .popover.icon00 {
+
+        .popover.clickToEnlarge,
+        .popover.icon00 {
             bottom: 5px;
         }
-        .modal .popover{
-            right:52px;
+
+        .modal .popover {
+            right: 52px;
         }
-        .error1{ margin: 2px auto 10px; border:solid 1px #F6A87A; border-radius:5px; width:100%; position:relative;display:none}
-	.error1 .error1_inner{ position:relative; padding: 13px 2px 15px 2px; color:#000; font-size:14px; line-height:22px; font-weight:bold; padding-left:50px;display: flex; flex-direction: row; align-items: center;}
-	.error1 .error1_inner img{ position:absolute; width:35px; height:34px; left:10px; top:8px;}
-    #csection_3 #icon01{
-  left: 330px; 
-  top:372px;
- 
-}
+
+        .error1 {
+            margin: 2px auto 10px;
+            border: solid 2px #05222E;
+            border-radius: 25px;
+            width: 100%;
+            position: relative;
+            display: none
+        }
+
+        .error1 .error1_inner {
+            position: relative;
+            padding: 13px 2px 15px 2px;
+            color: #000;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: bold;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .error1 .error1_inner img {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 3px;
+            top: 4px;
+        }
+
+        #csection_3 #icon01 {
+            left: 330px;
+            top: 372px;
+
+        }
     </style>
 
     <script>
@@ -2587,7 +2659,7 @@
             },
         ];
         var popupContentArray2 = [
-            { time: "0.0", carry: "", event: "", show: "", hide: "", transcript: "If concerned about infection, then a blood culture should be obtained before starting antibiotics. <br>It is very important to obtain at least 1 milliliter of blood for each culture bottle. This minimum volume of blood will increase the likelihood that the microorganism will grow, especially if a low-colony-count bacterial sepsis is present. <br>If concerned about late-onset sepsis, then it’s important to send both aerobic <em>and</em> anaerobic blood cultures, each with a minimum of 1 milliliter of blood per bottle. <br>Use sterile technique when drawing the blood and when transferring blood to the culture bottle.<br>Click on the play button to watch a video of a blood culture being obtained on a newly born late preterm infant with suspected infection." },
+            { time: "0.0", carry: "", event: "", show: "", hide: "", transcript: "When concerned about an infection, obtain a blood culture before starting antibiotics. <br>It is very important to obtain at least 1 milliliter of blood per culture bottle. This minimum volume of blood will increase the likelihood that the microorganism will grow, especially if a low- colony-count bacterial sepsis is present. <br>If concerned about late-onset sepsis, then it's important to send both aerobic <em>and</em> anaerobic blood cultures, each with a minimum of 1 milliliter of blood per bottle. <br>Use sterile technique when drawing the blood and when transferring blood to the culture bottle. <br>Click on the play button to watch a video of a blood culture being drawn. Then, click Next to continue." },
             {
                 time: "2",
                 animation: [{
@@ -2655,9 +2727,9 @@
                     }
                 }]
             },
-           
+
             {
-                time: "10",               
+                time: "10",
                 animation: [{
                     target: "#_clickImg0pdf1",
                     activity: {
@@ -2732,7 +2804,7 @@
             }
             if (gCompPageArr.indexOf("M1L0T1P32_4") > -1) {
                 $('.tabSection[id=3]').addClass("viewed");
-            }               
+            }
             $("#csection_2").show();
             $(".tabSection").on("click", function () {
                 $(".popover").hide();
@@ -2765,7 +2837,7 @@
                 } else if (_getId == 2) {
                     // $("#csection_2").show();
                     // fnPlayItemAudio(2);
-                    fnJumpToPageByID("M1L0T1P32_3");                    
+                    fnJumpToPageByID("M1L0T1P32_3");
                 } else if (_getId == 3) {
                     // $("#csection_3").show();
                     // fnPlayItemAudio(3);
@@ -2814,20 +2886,20 @@
 
 
         /* 
-        	function fnPlaySectionAudio(gCurrentIndex){
+            function fnPlaySectionAudio(gCurrentIndex){
 
-        		indexAudio=(gCurrentIndex);
+                indexAudio=(gCurrentIndex);
 
-        		audioId = "audio_"+gCurrentIndex;
+                audioId = "audio_"+gCurrentIndex;
 
-        		fnHideShowAudioPlayer( false );
+                fnHideShowAudioPlayer( false );
 
-        		updateContentArray = eval("popupSectionArray"+(gCurrentIndex));
+                updateContentArray = eval("popupSectionArray"+(gCurrentIndex));
 
-        		initAudioPlayer(gItemAudioPath[gCurrentIndex])
+                initAudioPlayer(gItemAudioPath[gCurrentIndex])
 
-        	}
-        	*/
+            }
+            */
 
         function audioReset() {
 
@@ -3037,7 +3109,7 @@
 
                 /* $(".clsEnaNxtBtn").on("click",function(){
 
-                	fnJumpToPageByID("M1L0T1P16_5");
+                    fnJumpToPageByID("M1L0T1P16_5");
 
                 }); */
 
@@ -3165,15 +3237,18 @@
                     <div class="titleText">Initial </div>
                 </div>
                 <div id="tapSection">
-                    <div class="tagline">Click on each tab to learn more about 4 tab tests.</div>
+                    <div class="tagline">Click on each tab to learn more about the 4 laboratory tests.</div>
                     <ul>
-                        <li><a href="javascript:void(0);" class="tabSection" title="Blood Sugar" id="3">Blood Count</a>
+                        <li><a href="javascript:void(0);" class="tabSection" title="Blood Sugar" id="3">Complete Blood
+                                Count</a>
                         </li>
-                        <li><a href="javascript:void(0);" class="tabSection active viewed" title="Blood Gas" id="2">Blood Culture</a></li>
-                        <li><a href="javascript:void(0);" class="tabSection" title="Blood Culture" id="1">Blood Glucose</a>
+                        <li><a href="javascript:void(0);" class="tabSection active viewed" title="Blood Gas"
+                                id="2">Blood Culture</a></li>
+                        <li><a href="javascript:void(0);" class="tabSection" title="Blood Culture" id="1">Blood
+                                Glucose</a>
                         </li>
                         <li><a href="javascript:void(0);" class="tabSection" title="Blood Count" id="0">Blood
-                            Gas</a>
+                                Gas</a>
                         </li>
                     </ul>
                 </div>
@@ -3284,10 +3359,11 @@
                                 <div id="arrow2" class="arrowHolder"></div>
                                 <div id="option2" curid="2" class="OptionCLSS"><span id="opt1"
                                         class="OptionTxtCLSS">Obtain at least 1 mL of blood for each culture bottle
-                                        <ol>
-                                            <li>Increases the chance that the bacteria will grow in the sample, especially if there is a low colony-count bacterial
-                                                sepsis</li>
-                                        </ol>
+                                        <!-- <ol> -->
+                                        <li>Increases the chance that the bacteria will grow in the sample,
+                                            especially if there is a low colony-count bacterial
+                                            sepsis</li>
+                                        <!-- </ol> -->
                                     </span>
                                 </div>
                             </div>
@@ -3295,22 +3371,28 @@
                                 <div id="arrow3" class="arrowHolder"></div>
                                 <div id="option3" curid="3" class="OptionCLSS"><span id="opt1" class="OptionTxtCLSS">If
                                         late-onset sepsis suspected<br>
-                                        <ol>
-                                            <li>Obtain both aerobic and anaerobic cultures</li>
-                                            <li>Minimum 1 mL per culture bottle</li>
-                                        </ol>
+                                        <!-- <ol> -->
+                                        <li>Obtain both aerobic and anaerobic cultures</li>
+                                        <li>Minimum 1 mL per culture bottle</li>
+                                        <!-- </ol> -->
 
                                     </span>
                                 </div>
                             </div>
                             <div id="error1" class="error1 ">
                                 <div class="error1_inner">
-                                    <img src="pages/images/Topic01/T01P12/warning.svg"><span style="margin-left: 20px;">If having difficulty obtaining a blood culture, including enough blood, contact the infant’s staff to report the situation and request assistance.</span>
+                                    <img src="pages/images/Topic01/T01P12/warning.svg"><span
+                                        style="margin-left: 20px;">If having difficulty obtaining a blood culture,
+                                        including enough blood, contact the infant’s medical staff to report the
+                                        situation and
+                                        request assistance.</span>
                                 </div>
                             </div>
                             <div class="list-cnt showList_4">
                                 <div id="arrow4" class="arrowHolder"></div>
-                                <div id="option4" curid="3" class="OptionCLSS"><span id="opt1" class="OptionTxtCLSS">Use sterile technique when drawing the blood and transferring blood to the <br>culture bottle.</span>
+                                <div id="option4" curid="3" class="OptionCLSS"><span id="opt1" class="OptionTxtCLSS">Use
+                                        sterile technique when drawing the blood and transferring blood to the
+                                        <br>culture bottle.</span>
                                 </div>
                             </div>
                             <a class="videolink" href="javascript:void(0);" id="clickImg3" title="Blood Culture">
