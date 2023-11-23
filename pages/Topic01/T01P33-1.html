@@ -149,12 +149,40 @@
       opacity: 1
     }
 
-    .sectionTop {
+    /* .sectionTop {
       position: absolute;
       top: 0;
       height: 30px;
       width: 100%;
       padding: 16px 0
+    } */
+
+    .main-my-heading {
+      margin-left: 75px;
+    }
+
+    .img_text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 0px 10px 0px 10px;
+    }
+
+    .sectionTop {
+      position: absolute;
+      top: 75px;
+      left: 66px;
+      height: 375px;
+      width: 82%;
+      padding: 7px 29px;
+      background-color: white;
+      border-radius: 25px;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .sectionTop>ul>li {
+      padding-bottom: 18px;
     }
 
     .sectionContent {
@@ -281,6 +309,10 @@
       -moz-border-bottom-right-radius: 5px
     }
 
+    .img_height_cls {
+      width: 100px;
+    }
+
     .blur {
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
@@ -293,11 +325,23 @@
       filter: blur(12px)
     }
 
+    .cal {
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 22px;
+      height: 22px;
+      top: 4px;
+      position: relative;
+    }
+
     .sectionContentinner {
-      width: 720px;
+      /* width: 720px;
       height: 540px;
-      margin: -10px auto 0px;
-      position: relative
+      margin: -10px auto 0px; */
+      position: relative;
+      display: flex;
+      top: 200px;
+      justify-content: center;
     }
 
     .lefttxt {
@@ -524,7 +568,8 @@
         <!-- <div id="lefttxt" class="lefttxt">White blood cells (WBCs) are involved in protection against infective organisms and foreign substances.</div>
         <div id="lefttxt1" class="lefttxt1">On the first day after birth, in noninfected infants, the WBC count ranges between 5,300, the 5th percentile and 28,200, the 95th percentile)/mm3.</div>
         <div id="lefttxt2" class="lefttxt2">For all gestational ages, a white blood cell count below 5,000 may correlate with neonatal sepsis, especially if the infant is clinically unwell. The lower the number, the more concerning the finding. </div> -->
-        <div class="sectionContentinner">
+
+        <!-- <div class="sectionContentinner">
           <div class="sectionContentinner">
             <div id="img0" class="img0"><img src="pages/images/Topic01/T01P33/img0.png"></div>
             <div id="img01" class="img01 abs"><img src="pages/images/Topic01/T01P33/img0-1.png"></div>
@@ -541,7 +586,7 @@
             <div id="img5" class="abs img5"><img src="pages/images/Topic01/T01P33/img5.png"></div>
             <div id="img5_text" class="abs img5_text"><img src="pages/images/Topic01/T01P33/img5_text.png"></div>
             <div id="img6" class="abs img6"><img src="pages/images/Topic01/T01P33/img6.png"></div>
-            <!-- <div id="img6_text" class="abs img6_text"><img src="pages/images/Topic01/T01P33/img6_text.png"></div> -->
+            <div id="img6_text" class="abs img6_text"><img src="pages/images/Topic01/T01P33/img6_text.png"></div>
             <div id="img7" class="abs img7"><img src="pages/images/Topic01/T01P33/img7.png"></div>
             <div id="img7_text" class="abs img7_text"><img src="pages/images/Topic01/T01P33/img7_text.png"></div>
             <div id="img8" class="abs img8"><img src="pages/images/Topic01/T01P33/img8.png"></div>
@@ -549,6 +594,34 @@
             <div id="img9" class="abs img9"><img src="pages/images/Topic01/T01P33/img9.png"></div>
             <div id="img9_text" class="abs img9_text"><img src="pages/images/Topic01/T01P33/img9_text.png"></div>
           </div>
+        </div> -->
+
+        <h4 class="main-my-heading">Neutrophil Maturation </h4>
+        <div class="sectionTop">
+          <ul>
+            <li>In the bone narrow -> neutrophils mature in stages.</li>
+            <li>Maturation process takes <img src="pages/images/Topic01/T01P33/calendar.png" class="cal"> 2
+              weeks.
+            </li>
+            <li>Mature segmented neutrophils are released into the bloodstream <br> <img
+                src="pages/images/Topic01/T01P33/clock.png" class="cal"> circulate for 6 to 8 hours, then
+              migrate into the tissues where they live for about 24 hours.</li>
+          </ul>
+        </div>
+
+        <div class="sectionContentinner">
+          <!-- <div class="sectionContentinner">
+            <div id="img01" class="img01 abs"><img src="pages/images/Topic01/T01P33/img0-1.png"></div>
+            <div id="img1_text" class="abs img1_text"><img src="pages/images/Topic01/T01P33/img1_text.png"></div>
+          </div> -->
+          <div class="img_text"><img src="pages/images/Topic01/T01P33/i1.png" class="img_height_cls">Myeloblast</div>
+          <div class="img_text"><img src="pages/images/Topic01/T01P33/i2.png" class="img_height_cls">Promyelocyte</div>
+          <div class="img_text"><img src="pages/images/Topic01/T01P33/i3.png" class="img_height_cls">Myelocyte</div>
+          <div class="img_text"><img src="pages/images/Topic01/T01P33/i4.png" class="img_height_cls">Metamyelocyte</div>
+          <div class="img_text"><img src="pages/images/Topic01/T01P33/i5.png" class="img_height_cls">Band neutrophil
+          </div>
+          <div class="img_text"><img src="pages/images/Topic01/T01P33/i6.png" class="img_height_cls">Segmented<br>
+            neutrophil</div>
         </div>
 
       </div>
@@ -581,7 +654,7 @@
   var updateContentArray = [
     {
       time: "0.0", carry: "", event: "", show: "#img0,#img01,#img02,#img1,#img1_text,#img2,#img2_text,#img3,#img4,#img4_text,#img5,#img5_text,#img6,#img6_text,#img7,#img7_text,#img8,#img8_text", hide: "#lefttxt,#lefttxt1,#lefttxt2",
-      transcript: "Neutrophils are the white blood cells primarily responsible for killing and digesting bacteria. In response to an infection, neutrophils are released from the bone marrow into the bloodstream to travel to the site of infection. However, neutrophil function is impaired in term and especially preterm infants because of several factors.<div>Click on each tab to learn more about these factors, then click continue.</div>"
+      transcript: "In the bone marrow, the neutrophil matures from the myeloblast to the promyelocyte, to the myelocyte, to the metamyelocyte, to the band neutrophil, and finally to the mature, segmented neutrophil. This process of maturation takes approximately 2 weeks.  Once neutrophils are released into the bloodstream, they circulate for about 6 to 8 hours, then they migrate into the tissue where they live for approximately 24 hours. <div>Click on each tab to learn more about these factors, then click continue.</div>"
     },
     {
       time: "2", carry: "", event: "", show: "#img9,#img9_text", hide: "",
