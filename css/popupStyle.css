@@ -44,7 +44,7 @@
   top: 11px !important;
   right: 18px !important;
   cursor: pointer !important;
-  background: url(../media/images/new/closebtn.svg) !important;
+  background: url(../media/images/new/closebtn1.png) !important;
   /* background-position: -49px 0px; */
   -webkit-transition: all 0.3s !important;
   -o-transition: all 0.3s !important;
@@ -431,7 +431,7 @@
 .modalContent.height_auto,
 .modalContent.small .modalTxtImg,
 .modalContent.xs_small .modalTxtImg {
-  border-radius: 5px;
+  border-radius: 25px;
 }
 
 .borderRadiusTopLeftRight {
