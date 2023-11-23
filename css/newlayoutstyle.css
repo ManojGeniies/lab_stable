@@ -20,6 +20,7 @@ textarea {
   display: block !important;
   border-radius: 4px;
 }
+
 .borderLine {
   width: 2px;
   background: #05222e;
@@ -27,9 +28,11 @@ textarea {
   position: absolute;
   top: 0px;
 }
+
 .transcriptLeft {
   left: 242px;
 }
+
 .transcriptRight {
   left: 837px;
 }
@@ -82,6 +85,7 @@ textarea {
   /* min-height: 34px; */
   margin: 2px 14px;
 }
+
 #transcripttext::-ms-scrollbar-track {
   /* box-shadow: inset 0 0 5px grey; */
   border-radius: 5px;
@@ -187,6 +191,7 @@ span.tooltip {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .no-touch .ClsToolbtn:hover:not(.clsToolDisabled) {
   width: 100px;
   height: 67px;
@@ -199,6 +204,7 @@ span.tooltip {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 /* .ClsToolbtnSelected span.ClsToolbtnIcon {
     background: url("../media/images/player/common/4x/pinImg.png") no-repeat !important;
     background-position: -32px 0px !important;
@@ -276,6 +282,7 @@ span.tooltip {
   opacity: 0.5 !important;
   cursor: default !important;
 }
+
 .PlayerRectangle {
   width: 346px;
   height: 42px;
@@ -290,6 +297,7 @@ span.tooltip {
   flex-direction: row;
   flex-wrap: nowrap;
 }
+
 #course-Icon {
   position: relative;
   left: 63px;
@@ -309,6 +317,7 @@ span.tooltip {
   left: 2px;
   position: relative;
 }
+
 .lineClassforheader {
   /* border: 2px solid #414141; */
   background-color: #414141;
@@ -319,6 +328,7 @@ span.tooltip {
   border-radius: 50px;
   display: none;
 }
+
 .headClass {
   clear: both;
   float: left;
@@ -333,6 +343,7 @@ span.tooltip {
   /* background: url(../media/images/player/common/top_bar_sugar.png) no-repeat; */
   z-index: 11100;
 }
+
 #clsSpeedBtn {
   position: absolute;
   left: 0px;
@@ -345,6 +356,7 @@ span.tooltip {
   background: url("../media/images/new/speedbtn.png") no-repeat;
   background-size: contain;
 }
+
 #clsSpeedBtn:hover {
   position: absolute;
   left: 0px;
@@ -368,6 +380,7 @@ span.tooltip {
   transition: all 0.2s;
   cursor: pointer;
 }
+
 .clsPlay {
   background: url("../media/images/new/play-btn.png") no-repeat;
   background-position: 0px 0px;
@@ -394,6 +407,7 @@ span.clsPlayPauseBtnIcon {
   background-size: cover;
   cursor: pointer;
 }
+
 /* .no-touch .clsPlay:hover span.clsPlayPauseBtnIcon {
     position: absolute;
     width: 19px;
@@ -464,6 +478,7 @@ span.clsPlayPauseBtnIcon {
   background-position: 0px 0px;
   background-size: cover;
 }
+
 #clsReplay:hover {
   background: url(../media/images/new/reply-btn-hover.png) no-repeat;
   background-position: 0px 0px;
@@ -511,6 +526,7 @@ span.clsPlayPauseBtnIcon {
   top: 1px;
   left: 839px;
 }
+
 #clsAudioOffBtn {
   position: absolute;
   width: 68px;
@@ -525,6 +541,7 @@ span.clsPlayPauseBtnIcon {
 }
 
 @media all and (max-device-width: 768px) {
+
   #clsAudioOnBtn,
   #clsAudioOffBtn {
     display: none;
@@ -677,6 +694,7 @@ background-size: cover;
   align-content: center;
   padding-top: 4px;
 }
+
 .nextButtonCenter {
   width: 100%;
   height: 100%;
@@ -686,6 +704,7 @@ background-size: cover;
   align-content: center;
   padding-top: 4px;
 }
+
 /* Next Button */
 
 /***********************************/
@@ -817,6 +836,7 @@ background-size: cover;
   left: 0px;
   background-color: #05222e;
 }
+
 #id_slider-vertical {
   position: absolute;
   width: 14px;
@@ -836,6 +856,7 @@ background-size: cover;
   left: 5px;
   background-color: rgba(65, 65, 65, 0.4);
 }
+
 .ui-widget-content {
   border: none;
 }
@@ -862,6 +883,7 @@ background-size: cover;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   z-index: 10000;
 }
+
 #id_slider-vertical a {
   outline: 0 !important;
   background-color: #414141;
@@ -872,6 +894,7 @@ background-size: cover;
   border-radius: 15px;
   box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
 }
+
 #clsMnuBtn {
   position: absolute;
   width: 68px;
@@ -961,8 +984,7 @@ background-size: cover;
   height: 33px;
   top: 8px;
   left: 135px;
-  background: url(../media/images/player/common/Video_Resources_Normal.svg)
-    no-repeat;
+  background: url(../media/images/player/common/Video_Resources_Normal.svg) no-repeat;
   transform: matrix(1, 0, 0, 1, 0, 0);
   -ms-transform: matrix(1, 0, 0, 1, 0, 0);
   -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
@@ -972,8 +994,7 @@ background-size: cover;
 }
 
 .no-touch #clsVideoRefBtn:hover:not(.clsRefDis) {
-  background: url("../media/images/player/common/Video_Resources_Over.png")
-    no-repeat;
+  background: url("../media/images/player/common/Video_Resources_Over.png") no-repeat;
   cursor: pointer;
   transform: matrix(1.1, 0, 0, 1.1, 0, 0);
   -ms-transform: matrix(1.1, 0, 0, 1.1, 0, 0);
@@ -1056,6 +1077,7 @@ background-size: cover;
   background-position: center center;
   background-size: contain;
 }
+
 #clsGlosBtn span,
 #clsRefBtn span,
 #clsVideoRefBtn span,
@@ -1066,9 +1088,11 @@ background-size: cover;
   left: -9px;
   width: 57px;
 }
+
 span.cIcons {
   display: block !important;
 }
+
 .no-touch #clsGlosBtn:hover:not(.clsGlosDisabled) {
   background: url("../media/images/player/common/Glossary_normal.png") no-repeat;
   transform: matrix(1.1, 0, 0, 1.1, 0, 0);
@@ -1265,9 +1289,11 @@ span.cIcons {
     font-size: 14px;
   }
 }
+
 .titleCase {
   text-transform: capitalize;
 }
+
 .close_txt {
   position: absolute;
   width: 35px;
@@ -1283,8 +1309,9 @@ span.cIcons {
   top: 1px !important;
   left: -2px !important;
   font-size: 12px !important;
-  color: #fff !important;
-  display: block !important;
+  color: #05222E !important;
+  /* display: block !important; */
+  display: none;
 }
 
 .popupglossasryCnt {
@@ -1523,8 +1550,8 @@ span.instructions {
   position: absolute;
 }
 
-.disabled [type="checkbox"]:not(:checked) + label,
-.disabled [type="checkbox"]:checked + label {
+.disabled [type="checkbox"]:not(:checked)+label,
+.disabled [type="checkbox"]:checked+label {
   cursor: default;
 }
 
@@ -1587,9 +1614,11 @@ span.instructions {
 #transcripttext::-moz-scrollbar {
   width: 8px;
 }
+
 .d-none {
   display: none;
 }
+
 /* #id_slider-vertical input[type=range][orient=vertical] {
     writing-mode: bt-lr;
     -webkit-appearance: slider-vertical;
@@ -1625,6 +1654,7 @@ span.instructions {
   scrollbar-width: thin;
   overflow-x: none;
 }
+
 #transcripttext {
   max-height: 100vh;
   scrollbar-color: #414141 rgba(65, 65, 65, 0.4);

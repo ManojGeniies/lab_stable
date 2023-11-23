@@ -9,7 +9,7 @@
     <title>Resources</title>
     <!-- Player and page level .js files to include -->
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             var media = $("#cVideosRef").get(0);
             var referencesURL;
             var referenceArr1 = []
@@ -17,7 +17,7 @@
                 type: "GET",
                 url: 'elements/videoreferences.xml',
                 dataType: ($.browser.msie) ? "text" : "xml",
-                success: function(data) {
+                success: function (data) {
                     parseReferencesXml(data);
                 }
             });
@@ -38,7 +38,7 @@
                 var closeTitle = referencesXmlObject.find('closeTitle').text();
                 var referencesList = $('<ul class="clsResouceLink"></ul>');
                 $("#RefTitleBar_id").hide();
-                referencesXmlObject.find('Resources').find('Resource').each(function(index, el) {
+                referencesXmlObject.find('Resources').find('Resource').each(function (index, el) {
                     var str = "";
                     var referencesURL = $(this).attr('URL');
                     referenceArr1.push(referencesURL)
@@ -73,12 +73,12 @@
             }
 
 
-            $("#id_RefCloseBtn").click(function() {
+            $("#id_RefCloseBtn").click(function () {
                 disableHelpPopup();
             });
 
 
-            $(document).on("click", '._clickLinkVideo', function() {
+            $(document).on("click", '._clickLinkVideo', function () {
                 var num1 = $(this).attr('id').slice(10);
                 //   $('.clsVideoCnt').append("<embed class='_link' id='cVideosRef' alt='video'>");
                 $(this).addClass("_viewed");
@@ -112,7 +112,7 @@
 
             // });
 
-            $(".RefCloseBtn_id").click(function() {
+            $(".RefCloseBtn_id").click(function () {
                 media.pause();
                 media.currentTime = 0;
                 $("#RefTitleBar_id").hide()
@@ -135,7 +135,7 @@
             fnJumpToPageByID(url);
         }
 
-        $("clsResouceLink").on("click", function() {
+        $("clsResouceLink").on("click", function () {
 
             if (!fnPauseAudio()) {
 
@@ -207,16 +207,16 @@
 
         });
 
-        $(".closepopup").on("click", function() {
+        $(".closepopup").on("click", function () {
 
             // audioReset();
 
             /* if(!fnPauseAudio()){
-			
-            	console.log(true);
-			
-            	playPauseAudio();
-			
+        	
+                console.log(true);
+        	
+                playPauseAudio();
+        	
             } */
 
 
@@ -229,7 +229,7 @@
 
         });
 
-        $(".closebutton").on("click", function() {
+        $(".closebutton").on("click", function () {
 
             vid.pause();
 
@@ -271,7 +271,7 @@
             width: 1065px;
             margin: 0px auto;
         }
-        
+
         #id_ReferencesBG {
             position: absolute;
             height: 530px;
@@ -281,7 +281,7 @@
             top: 0px;
             border-radius: 10px;
         }
-        
+
         #id_RefTitleBar {
             font-size: 36px;
             background-color: #5B5B5B;
@@ -294,7 +294,7 @@
             height: 67px;
             position: absolute;
         }
-        
+
         #id_ReftitleText {
             position: absolute;
             color: #fff;
@@ -305,7 +305,7 @@
             text-align: center;
             line-height: 23px;
         }
-        
+
         #id_RefCloseBtn {
             position: absolute;
             width: 21px;
@@ -321,10 +321,10 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-        
+
         #id_RefCloseBtn:hover {
             position: absolute;
-           background: url(media/images/new/closebtn-hover.svg); 
+            background: url(media/images/new/closebtn-hover.svg);
             background-position: -33.5px 0px;
             top: 11px !important;
             right: 18px !important;
@@ -333,7 +333,7 @@
             width: 21px;
             height: 21px;
         }
-        
+
         #RefTitleBar_id {
             font-size: 36px;
             background-color: #5B5B5B;
@@ -346,7 +346,7 @@
             height: 61px;
             position: absolute;
         }
-        
+
         #ReftitleText_id {
             position: absolute;
             color: #fff;
@@ -359,7 +359,7 @@
             display: table;
             height: 54px;
         }
-        
+
         .close_txt {
             position: absolute;
             width: 35px;
@@ -367,7 +367,7 @@
             top: 6px;
             right: 10px;
         }
-        
+
         #clsText {
             position: absolute;
             width: auto;
@@ -378,7 +378,7 @@
             font-size: 12px;
             color: #fff;
         }
-        
+
         #RefCloseBtn_id {
             position: absolute;
             width: 21px;
@@ -392,7 +392,7 @@
             transition: all 0.3s;
             background-size: cover;
         }
-        
+
         #RefCloseBtn_id:hover {
             background: url(media/images/new/closebtn-hover.svg);
             background-position: 0px 0px;
@@ -403,7 +403,7 @@
             right: 18px;
             position: absolute;
         }
-        
+
         #references {
             margin-left: 0%;
             margin-top: 60px;
@@ -419,7 +419,7 @@
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }
-        
+
         #references ul {
             padding-top: 0%;
             padding-bottom: 0%;
@@ -428,6 +428,7 @@
             margin-top: 25px;
             list-style-image: none;
         }
+
         /* #references ul li a{
 			outline: none;
 			color: #0000ff;
@@ -441,21 +442,21 @@
 	#references ul li a:active {
 		outline: none;
     } */
-        
+
         #references ul li {
             border: 0 none;
             margin-left: -4px;
             margin-right: 5px;
             vertical-align: bottom;
         }
-        
+
         #closeMainDiv .glossaryclosetip {
             margin-left: 70%;
             color: #FFFFFF;
             font-family: OpenSansRegular;
             font-size: 79.2%;
         }
-        
+
         .bullet {
             position: relative;
             background-image: url("media/images/player/common/bullet.png");
@@ -468,24 +469,24 @@
             list-style-type: none;
             border-radius: 10px;
         }
-        
+
         .text {
             color: #172430;
             list-style-type: none;
             margin-left: 30px;
             position: relative;
         }
-        
+
         .clsSectionName {
             margin-top: 17px !important;
             font-family: SegoeUIBold;
             color: #1a1f71;
         }
-        
+
         .clsResouceLink {
             margin-left: 1% !important;
         }
-        
+
         ._clickLinkVideo {
             position: relative;
             font-size: 16px;
@@ -493,7 +494,7 @@
             text-decoration: underline;
             padding-bottom: 15px;
         }
-        
+
         ._clickLinkVideo:hover {
             position: relative;
             font-size: 16px;
@@ -503,7 +504,7 @@
             color: blue;
             cursor: pointer;
         }
-        
+
         ._link {
             position: relative;
             top: 20px;
@@ -511,30 +512,35 @@
             height: 410px;
             max-width: 600px;
             margin: 0px auto;
-			text-align: center;
+            text-align: center;
         }
-        
+
         ._viewed {
             color: blue;
         }
-        
+
         .clsVideoCnt {
             background: #fff;
             position: relative;
             top: 51px;
             height: 468px;
+            border-radius: 25px;
         }
-        
+
         #RefTitleBar_id:after,
         #id_RefTitleBar:after {
             top: 62px;
         }
-        
+
         .wrapTxt {
             display: table-cell;
             vertical-align: middle;
         }
-		video{ height:400px}
+
+        video {
+            height: 400px;
+            border-radius: 25px;
+        }
     </style>
 </head>
 
@@ -562,9 +568,10 @@
 							</video>-->
                 <div class="clsVideoCnt">
                     <div class="_link">
-                        <video oncontextmenu="return false;" controls controlsList="nodownload noremoteplayback" disablepictureinpicture id="cVideosRef" preload="none">
-							<source src="" type="video/mp4">
-						</video>
+                        <video oncontextmenu="return false;" controls controlsList="nodownload noremoteplayback"
+                            disablepictureinpicture id="cVideosRef" preload="none">
+                            <source src="" type="video/mp4">
+                        </video>
 
                     </div>
 

@@ -304,7 +304,7 @@
                     //console.log("percent"+percent)
                     $(".loadingText").html("Loading " + percent + "%");
                     /*if(percent==100){
-                    	$(".loadingText").html("")
+                        $(".loadingText").html("")
                     }*/
                 }
 
@@ -470,7 +470,7 @@
         function fShowCourse() {
 
             fnShowCordinate();
-console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
+            console.log(gCurrMod, gCurrLess, gCurrTop, gCurrPage)
             fnLoadPage(gCurrMod, gCurrLess, gCurrTop, gCurrPage);
 
         }
@@ -602,9 +602,10 @@ console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
         }
     </script>
     <style>
-        span.tooltip.ntooltip{
-            left:-13px;
+        span.tooltip.ntooltip {
+            left: -13px;
         }
+
         .clsMockup {
             position: absolute;
             width: 100%;
@@ -679,10 +680,11 @@ console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
         }
 
         #id_ReferencesBG #clsText {
-            display: block;
+            /*display: block;*/
         }
+
         /* NEW */
-        .header-inner{
+        .header-inner {
             height: 100%;
             display: flex;
             align-items: center;
@@ -692,14 +694,16 @@ console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
             justify-content: space-between;
             width: 100%;
         }
-        .header-left{
+
+        .header-left {
             display: flex;
             flex-direction: row;
             align-content: center;
             align-items: center;
             width: 65%;
         }
-        .footer-inner{
+
+        .footer-inner {
             height: 100%;
             display: flex;
             align-items: center;
@@ -707,42 +711,69 @@ console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
             flex-wrap: nowrap;
             flex-direction: row;
         }
-        .st0{enable-background:new;}
-        .st1{fill:#1E1E1E;}
-          .st2{fill:#414141;}
-         #HoverNext{opacity: 0;transition: all 0.3s ease;-webkit-transition: all 0.3s ease;}
-         #arrowOneNext{opacity: 0.8;transition: all 0.3s ease;-webkit-transition: all 0.3s ease;}
-          #arrowTwoNext{opacity: 0;transition: all 0.3s ease;-webkit-transition: all 0.3s ease; transform: translateX(5px)}
 
-    .resourceBox{
-        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75);
-        color: black;
-        position: absolute;
-        top: 1px;
-        width: 90px;
-        height: 62px;
-        right: 190px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        -webkit-border-bottom-left-radius: 5px;
-        -webkit-border-bottom-right-radius: 5px;
-        webkit-box-shadow:  0px 2px 4px -1px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow:  0px 2px 4px -1px rgba(0, 0, 0, 0.75);
-        box-shadow:  0px 2px 4px -1px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow:  0px 2px 4px -1px rgba(0, 0, 0, 0.75);
+        .st0 {
+            enable-background: new;
         }
-        .small_expand.zoom_btn,.small_expand1 {
+
+        .st1 {
+            fill: #1E1E1E;
+        }
+
+        .st2 {
+            fill: #414141;
+        }
+
+        #HoverNext {
+            opacity: 0;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+        }
+
+        #arrowOneNext {
+            opacity: 0.8;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+        }
+
+        #arrowTwoNext {
+            opacity: 0;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            transform: translateX(5px)
+        }
+
+        .resourceBox {
+            box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75);
+            color: black;
+            position: absolute;
+            top: 1px;
+            width: 90px;
+            height: 62px;
+            right: 190px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+            -webkit-border-bottom-right-radius: 5px;
+            webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75);
+        }
+
+        .small_expand.zoom_btn,
+        .small_expand1 {
             text-decoration: none;
         }
     </style>
 </head>
 
 <body onunload="fUnload();">
-   
+
     <div id="scaleable-wrapper" class="scaleable-wrapper">
         <div class="player-container">
             <div class="clsPreloader">
-              
+
                 <div class="spinner">
                     <!-- <div class="rect1"></div>
                     <div class="rect2"></div>
@@ -755,38 +786,38 @@ console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
             <div class="courseIntro" style="width:100%; height:100%;position: absolute;z-index: 100000;">
             </div>
             <div class="gridContainer clearfix">
-             
+
                 <header name="topFrame" id="topFrame" class="headClass topFrame">
                     <div class="header-inner">
-                    <div class="header-left">
-                        <div id="course-Icon">
-                            <div class="logo-image">&nbsp;</div>
-                        </div>
-                        <div class="lineClassforheader"></div>
-                        <div id="pgTitleFrame"></div>
-                    
-                        <a class="back-btn" onclick="backBtn();" title="Return to previous page"></a>
-                   </div>
-                    <div class="closeContainer">                      
-                        <div class="ClsToolbtn" id="ToolBtn" title="Resources">
-                        </div>
-                        <div id="clsHelpBtn" title="Navigation" class="clsHelp">
-                            <!-- <span class="tooltip cIcons ntooltip">Navigation</span> -->
-                        </div>
-                        <div id="clsExitBtn" title="Exit Module">                           
-                        </div>
-        
-                    </div>
-                    <div id="clsMnuBtn" class="deactivMenu" title="Menu">   
-                        <span class="tooltip cIcons"></span>                   
-                    </div>
+                        <div class="header-left">
+                            <div id="course-Icon">
+                                <div class="logo-image">&nbsp;</div>
+                            </div>
+                            <div class="lineClassforheader"></div>
+                            <div id="pgTitleFrame"></div>
 
-                
-                    <div class="HighlightHelp"></div>
-                </div>
+                            <a class="back-btn" onclick="backBtn();" title="Return to previous page"></a>
+                        </div>
+                        <div class="closeContainer">
+                            <div class="ClsToolbtn" id="ToolBtn" title="Resources">
+                            </div>
+                            <div id="clsHelpBtn" title="Navigation" class="clsHelp">
+                                <!-- <span class="tooltip cIcons ntooltip">Navigation</span> -->
+                            </div>
+                            <div id="clsExitBtn" title="Exit Module">
+                            </div>
+
+                        </div>
+                        <div id="clsMnuBtn" class="deactivMenu" title="Menu">
+                            <span class="tooltip cIcons"></span>
+                        </div>
+
+
+                        <div class="HighlightHelp"></div>
+                    </div>
                 </header>
                 <div class="contentContainer" id="contentContainer">
-                  
+
                     <div id="contentFrame">
 
                     </div>
@@ -795,52 +826,51 @@ console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
                     </div>
 
                 </div>
-                <div id="id_transcriptBox" class="transcript-cnt">  
-                    <div ></div>                  
+                <div id="id_transcriptBox" class="transcript-cnt">
+                    <div></div>
                     <div id="transcripttext"></div>
-                    <div ></div>
+                    <div></div>
                 </div>
                 <div id="id_slider-vertical" title="Slider" class="d-none">
                     <div id="slidervertical"></div>
                     <!-- <input id="vol-control" type="range" orient="vertical" value="100" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"> -->
                 </div>
 
-              
+
                 <button class="modeuleCompletion">Module Completion</button>
                 <footer name="btmFrame" id="btmFrame">
                     <div class="footer-inner">
-                    <div id="audioDiv">
-                        <audio id="audioplayer" autoplay  oncanplay="onAudioCanPlay()"
-                            onplay="onAudioStart()">
-                        </audio>
-                    </div>
-                  
-                    <div id="footerbuttons">
-
-                       
-                        <div class="borderLine transcriptLeft">&nbsp;</div>
-                        <div class="borderLine transcriptRight">&nbsp;</div>
-                        <div id="transcriptBtn" class="clsTransOnBtn enableTranscript" title="Transcript On/Off">
-                            <div class="transcriptHover"></div>
+                        <div id="audioDiv">
+                            <audio id="audioplayer" autoplay oncanplay="onAudioCanPlay()" onplay="onAudioStart()">
+                            </audio>
                         </div>
-                     
-                     
-                       
+
+                        <div id="footerbuttons">
+
+
+                            <div class="borderLine transcriptLeft">&nbsp;</div>
+                            <div class="borderLine transcriptRight">&nbsp;</div>
+                            <div id="transcriptBtn" class="clsTransOnBtn enableTranscript" title="Transcript On/Off">
+                                <div class="transcriptHover"></div>
+                            </div>
+
+
+
                             <!-- /* Added by Seema om 12/11/22  -->
                             <!--<div class="PlayerRectangle">-->
                             <div id="clsPlayPauseBtn" class="clsPlay" title="Play/Pause">&nbsp;
-                            <!--<span class="clsPlayPauseBtnIcon cIcons">&nbsp;</span>-->
-                            <!-- <span class="tooltip cIcons">PLAY</span> -->
-                        </div>
-                        <div id="clsSpeedBtn" title="Speed">&nbsp;
-                            <!--<span class="clsPlayPauseBtnIcon cIcons">&nbsp;</span>-->
-                            <!-- <span class="tooltip cIcons">PLAY</span> -->
-                        </div>
-                        <div id="id_sliderContainer" title="SeekBar">
-                            <div id="slider"></div>
-                        </div>
-                          <div id="clsReplay" title="Replay">
-                            <!--<div class="replayButtonCenter">
+                                <!--<span class="clsPlayPauseBtnIcon cIcons">&nbsp;</span>-->
+                                <!-- <span class="tooltip cIcons">PLAY</span> -->
+                            </div>
+                            <div id="clsSpeedBtn" title="Speed">&nbsp;
+                                <!--<span class="clsPlayPauseBtnIcon cIcons">&nbsp;</span>-->
+                                <!-- <span class="tooltip cIcons">PLAY</span> -->
+                            </div>
+                            <div id="id_sliderContainer" title="SeekBar">
+                                <div id="slider"></div>
+                            </div>
+                            <div id="clsReplay" title="Replay">
+                                <!--<div class="replayButtonCenter">
                                 <span class="clsReplayIcon cIcons">
                                     <svg version="1.1" id="" x="0px" y="0px" viewBox="0 0 46 46" style="enable-background:new 0 0 46 46;" xml:space="preserve">
                                     <style type="text/css">
@@ -855,23 +885,24 @@ console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
                                 </span>
                                 <span class="tooltip cIcons">Replay</span>
                             </div>-->
-                            
-                        </div> 
-                        <div id="clsAudioOnBtn" title="Audio On/Off">
-                            <span class="clsAudioOnBtnIcon cIcons"></span>
-                            <!-- <span class="tooltip cIcons">Audio</span> -->
-                        </div>
-                        <div id="clsAudioOffBtn" title="Audio On/Off">
-                            <span class="clsAudioOffBtnIcon cIcons"></span>                          
-                        </div>
+
+                            </div>
+                            <div id="clsAudioOnBtn" title="Audio On/Off">
+                                <span class="clsAudioOnBtnIcon cIcons"></span>
+                                <!-- <span class="tooltip cIcons">Audio</span> -->
+                            </div>
+                            <div id="clsAudioOffBtn" title="Audio On/Off">
+                                <span class="clsAudioOffBtnIcon cIcons"></span>
+                            </div>
                             <!--</div>-->
-                          
+
 
                             <div id="clsBackBtn" class="clsDisBackBtn" title="Back">
-                                <span class="clsBackBtnIcon cIcons">  <div class="backButtonCenter">
-                                    <span class="clsBackBtnIcon cIcons">&nbsp;</span>
-                                    <!-- <span class="tooltip cIcons">Back</span> -->
-                                    <!--<span class="clsBackBtnIcon cIcons">
+                                <span class="clsBackBtnIcon cIcons">
+                                    <div class="backButtonCenter">
+                                        <span class="clsBackBtnIcon cIcons">&nbsp;</span>
+                                        <!-- <span class="tooltip cIcons">Back</span> -->
+                                        <!--<span class="clsBackBtnIcon cIcons">
                                         <svg version="1.1" id="Layer_1"x="0px" y="0px" viewBox="0 0 54 64" style="enable-background:new 0 0 54 64;" xml:space="preserve">
                                         <style type="text/css">
                                             .st0{enable-background:new;}
@@ -918,7 +949,8 @@ console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
                                         </g>
                                         </svg>
                                     </span>-->
-                                </div></span>
+                                    </div>
+                                </span>
                                 <!-- <span class="tooltip cIcons">Back</span> -->
                             </div>
                             <!-- <div id="clsNavPartitionBtn"></div> -->
@@ -928,8 +960,8 @@ console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
                             </div>
 
                             <div id="clsNxtBtn" class="clsDisNxtBtn" title="Next">
-                             
-                                <span class="clsNxtBtnIcon cIcons">  <!--<div class="nextButtonCenter">
+
+                                <span class="clsNxtBtnIcon cIcons"> <!--<div class="nextButtonCenter">
                                 <svg version="1.1" id="" x="0px" y="0px" viewBox="0 0 52 64.2" style="enable-background:new 0 0 52 64.2;" xml:space="preserve">
                                     <style type="text/css">
                                         .st0{enable-background:new;}
@@ -979,15 +1011,15 @@ console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
                                 </div>-->
                                 </span>
                             </div>
-                      
-                       
 
-                        
-                    </div>
+
+
+
+                        </div>
                     </div>
                 </footer>
                 <div class="ClsToolPop" id="ToolPop">
-                   
+
                     <div class="clsToolWhitePath" id="">
                         <div id="clsRefBtn" title="PDF Resources"><span class="tooltip cIcons">PDF Resources</span>
                         </div>
@@ -997,7 +1029,7 @@ console.log(gCurrMod,gCurrLess,gCurrTop,gCurrPage)
                         <div id="clsActivityRefBtn" title="Activity"><span class="tooltip cIcons">Activity</span></div>
                     </div>
                 </div>
-                <div id="dummyBtn1" >
+                <div id="dummyBtn1">
                     <div id="dummyBtnBk1"></div>
                 </div>
                 <div class="clsOrientationBox">
