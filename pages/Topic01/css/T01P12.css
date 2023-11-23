@@ -43,9 +43,11 @@
   0% {
     -webkit-transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.1);
   }
+
   100% {
     -webkit-transform: scale(1);
   }
@@ -59,6 +61,7 @@
     height: 0px;
     transform: scale(1);
   }
+
   50% {
     left: 105px;
     top: 10px;
@@ -66,6 +69,7 @@
     height: 235px;
     transform: scale(1.1);
   }
+
   100% {
     left: 105px;
     top: 10px;
@@ -280,9 +284,11 @@
   0% {
     -webkit-transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.1);
   }
+
   100% {
     -webkit-transform: scale(1);
   }
@@ -296,6 +302,7 @@
     height: 0px;
     transform: scale(1);
   }
+
   50% {
     left: 140px;
     top: 30px;
@@ -303,6 +310,7 @@
     height: 140px;
     transform: scale(1.1);
   }
+
   100% {
     left: 135px;
     top: 40px;
@@ -710,8 +718,7 @@
   position: absolute;
   top: 8px;
   left: 4px;
-  background: url("../../../pages/images/Topic01/T01P02/case_reviewed.png")
-    no-repeat !important;
+  background: url("../../../pages/images/Topic01/T01P02/case_reviewed.png") no-repeat !important;
   width: 160px;
   font-size: 16px;
   height: 56px;
@@ -763,17 +770,13 @@
   left: 0px;
 }
 
-#TabPopup1 {
-}
+#TabPopup1 {}
 
-#TabPopup2 {
-}
+#TabPopup2 {}
 
-#TabPopup3 {
-}
+#TabPopup3 {}
 
-#TabPopup4 {
-}
+#TabPopup4 {}
 
 .clsBold {
   font-family: OpenSansSemiBold;
@@ -813,8 +816,7 @@
 }
 
 .clsTick.progress {
-  background: url("../../../pages/images/Topic01/T01P02/review_in_progres.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/review_in_progres.png") no-repeat;
   top: -59px !important;
   height: 63px;
   background-size: contain;
@@ -885,8 +887,7 @@
 
 .contBtn {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png") no-repeat;
   width: 31px;
   height: 31px;
   left: 305px;
@@ -897,8 +898,7 @@
 
 .contBtn_2 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png") no-repeat;
   width: 31px;
   height: 31px;
   left: 305px;
@@ -909,14 +909,12 @@
 
 .contBtn:hover {
   cursor: pointer;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png") no-repeat;
 }
 
 .contBtn_3 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png") no-repeat;
   width: 31px;
   height: 31px;
   left: 303px;
@@ -926,14 +924,12 @@
 
 .contBtn_2:hover {
   cursor: pointer;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png") no-repeat;
 }
 
 .contBtn_3:hover {
   cursor: pointer;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png") no-repeat;
 }
 
 .clickToContinue {
@@ -972,8 +968,7 @@
 
 .contBtn1 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png") no-repeat;
   width: 31px;
   height: 31px;
   left: 305px;
@@ -984,14 +979,12 @@
 
 .contBtn1:hover {
   cursor: pointer;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png") no-repeat;
 }
 
 .contBtn1_2 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png") no-repeat;
   width: 31px;
   height: 31px;
   left: 305px;
@@ -1002,14 +995,12 @@
 
 .contBtn1_2:hover {
   cursor: pointer;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png") no-repeat;
 }
 
 .contBtn1_3 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png") no-repeat;
   width: 31px;
   height: 31px;
   left: 303px;
@@ -1020,15 +1011,13 @@
 
 .contBtn1_3:hover {
   cursor: pointer;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png") no-repeat;
 }
 
 .submitText,
 .submitText_2 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/submitText.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/submitText.png") no-repeat;
   width: 506px;
   height: 64px;
   top: -6px;
@@ -1039,8 +1028,7 @@
 
 .submitText.submitText4 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/box_big_with_arrow.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/box_big_with_arrow.png") no-repeat;
   width: 506px;
   height: 64px;
   top: -6px;
@@ -1055,8 +1043,7 @@
 
 .submitText_3 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/submitText.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/submitText.png") no-repeat;
   width: 506px;
   height: 64px;
   top: -6px;
@@ -1069,8 +1056,7 @@
 .tryagainBtn_2,
 .tryagainBtn_3 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/tryagainBtn.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/tryagainBtn.png") no-repeat;
   width: 95px;
   height: 35px;
   background-size: contain;
@@ -1107,8 +1093,7 @@
 .tryagainBtn_3:hover {
   width: 95px;
   height: 35px;
-  background: url("../../../pages/images/Topic01/T01P02/tryagainBtn_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/tryagainBtn_hover.png") no-repeat;
   left: 240px;
   top: 10px;
   background-size: contain;
@@ -1155,8 +1140,7 @@
 .submitBtn_2,
 .submitBtn_3 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/submitBtn_disable.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/submitBtn_disable.png") no-repeat;
   width: 95px;
   height: 35px;
   left: 240px;
@@ -1171,8 +1155,7 @@
   height: 35px;
   left: 240px;
   top: 10px;
-  background: url("../../../pages/images/Topic01/T01P02/submitBtn_disable.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/submitBtn_disable.png") no-repeat;
   background-size: contain;
 }
 
@@ -1181,8 +1164,7 @@
   height: 35px;
   left: 240px;
   top: 10px;
-  background: url("../../../pages/images/Topic01/T01P02/submitBtn_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/submitBtn_hover.png") no-repeat;
   background-size: contain;
   cursor: pointer;
 }
@@ -1214,8 +1196,7 @@
   height: 35px;
   left: 240px;
   top: 10px;
-  background: url("../../../pages/images/Topic01/T01P02/submitBtn.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/submitBtn.png") no-repeat;
   background-size: contain;
 }
 
@@ -1224,8 +1205,7 @@
   height: 35px;
   left: 240px;
   top: 10px;
-  background: url("../../../pages/images/Topic01/T01P02/submitBtn_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/submitBtn_hover.png") no-repeat;
   background-size: contain;
   cursor: pointer;
 }
@@ -1259,8 +1239,7 @@
 }
 
 #icon00 {
-  background: url("../../../pages/images/Topic01/T01P02/expandImg.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/expandImg.png") no-repeat;
   top: 376px;
   left: 50px;
   opacity: 1;
@@ -1308,6 +1287,7 @@
   left: 250px;
   opacity: 0;
 }
+
 .boxInst {
   top: 488px !important;
 }
@@ -1670,8 +1650,7 @@ _:-ms-fullscreen,
   opacity: 0;
 }
 
-#case_study_popup {
-}
+#case_study_popup {}
 
 .return_case_button,
 .return_case_button_vital {
@@ -1943,8 +1922,7 @@ return_case_button_vital:hover {
 
 .contBtn2 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png") no-repeat;
   width: 31px;
   height: 31px;
   left: 305px;
@@ -1955,14 +1933,12 @@ return_case_button_vital:hover {
 
 .contBtn2:hover {
   cursor: pointer;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png") no-repeat;
 }
 
 .contBtn3 {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn.png") no-repeat;
   width: 31px;
   height: 31px;
   left: 305px;
@@ -1973,8 +1949,7 @@ return_case_button_vital:hover {
 
 .contBtn3:hover {
   cursor: pointer;
-  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/continueBtn_hover.png") no-repeat;
 }
 
 .clickText3 {
@@ -2096,8 +2071,7 @@ return_case_button_vital:hover {
 
 .diagramText {
   position: absolute;
-  background: url("../../../pages/images/Topic01/T01P02/diagramText.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/diagramText.png") no-repeat;
   width: 210px;
   height: 64px;
   top: 379px;
@@ -2116,8 +2090,7 @@ return_case_button_vital:hover {
 }
 
 .diagramBtn:hover {
-  background: url("../../../pages/images/Topic01/T01P02/diagram_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/diagram_hover.png") no-repeat;
   width: 31px;
   height: 31px;
   left: 470px;
@@ -2241,8 +2214,7 @@ return_case_button_vital:hover {
   cursor: pointer;
 }
 
-#case_study_popup1 {
-}
+#case_study_popup1 {}
 
 .return_case_button1 {
   position: absolute;
@@ -2302,8 +2274,7 @@ return_case_button_vital:hover {
   opacity: 0;
 }
 
-#case_study_popup2 {
-}
+#case_study_popup2 {}
 
 .return_case_button2 {
   position: absolute;
@@ -2355,8 +2326,7 @@ return_case_button_vital:hover {
   line-height: 26px;
 }
 
-#case_study_popup2_3 {
-}
+#case_study_popup2_3 {}
 
 .return_case_button2_3,
 .return_case_button2_4 {
@@ -2389,8 +2359,7 @@ return_case_button_vital:hover {
 /*  -------------------Emmet Popup -------------------*/
 
 #icon00_2 {
-  background: url("../../../pages/images/Topic01/T01P02/expandImg.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/expandImg.png") no-repeat;
   top: 374px;
   left: 49px;
   opacity: 1;
@@ -2598,8 +2567,7 @@ return_case_button_vital:hover {
   opacity: 0;
 }
 
-#case_study_popup_2 {
-}
+#case_study_popup_2 {}
 
 .return_case_button_2 {
   position: absolute;
@@ -2683,8 +2651,7 @@ return_case_button_vital:hover {
   opacity: 0;
 }
 
-#case_study_popup_3 {
-}
+#case_study_popup_3 {}
 
 .return_case_button_3 {
   position: absolute;
@@ -2870,9 +2837,11 @@ return_case_button_vital:hover {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(1);
   }
@@ -2882,9 +2851,11 @@ return_case_button_vital:hover {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(1);
   }
@@ -2898,9 +2869,11 @@ return_case_button_vital:hover {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(0.67);
   }
+
   100% {
     transform: scale(1);
   }
@@ -2910,9 +2883,11 @@ return_case_button_vital:hover {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(0.67);
   }
+
   100% {
     transform: scale(1);
   }
@@ -3067,13 +3042,11 @@ return_case_button_vital:hover {
 }
 
 #topImgCnt1 {
-  background: url("../../../pages/images/Topic01/T01P59/image_02_small.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P59/image_02_small.png") no-repeat;
 }
 
 #topImgCnt2 {
-  background: url("../../../pages/images/Topic01/T01P59/T01P59_02.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P59/T01P59_02.png") no-repeat;
   background-size: contain;
   width: 361px;
   height: 164px;
@@ -3099,9 +3072,9 @@ return_case_button_vital:hover {
   display: none;
   opacity: 0.6;
 }
+
 .open_map {
-  background: url("../../../pages/images/Topic01/T01P22/small_expand.png")
-    no-repeat !important;
+  background: url("../../../pages/images/Topic01/T01P22/small_expand.png") no-repeat !important;
   width: 28px;
   height: 28px !important;
   position: absolute !important;
@@ -3117,19 +3090,18 @@ return_case_button_vital:hover {
   background-color: inherit !important;
   padding: 0px !important;
 }
+
 .small_expand:hover {
   opacity: 1;
 }
 
 /* , */
 .open_map:hover {
-  background: url("../../../pages/images/Topic01/T01P22/small_expand_hover.png")
-    no-repeat !important;
+  background: url("../../../pages/images/Topic01/T01P22/small_expand_hover.png") no-repeat !important;
 }
 
 .small_expand1 {
-  background: url("../../../pages/images/Topic01/T01P02/small_expand.png")
-    no-repeat !important;
+  background: url("../../../pages/images/Topic01/T01P02/small_expand.png") no-repeat !important;
   width: 28px;
   height: 28px !important;
   position: absolute !important;
@@ -3150,6 +3122,7 @@ return_case_button_vital:hover {
 .small_expand1:hover {
   opacity: 1;
 }
+
 .small_expand:hover {
   opacity: 1;
 }
@@ -3295,8 +3268,8 @@ return_case_button_vital:hover {
 }
 
 #imgPopup2 {
-  background: url("../../../pages/images/Topic01/T01P59/T01P59_02.png")
-    no-repeat;
+  /* background: url("../../../pages/images/Topic01/T01P59/T01P59_02.png")
+    no-repeat; */
   /* background-size: contain;
 
     background-position: center; */
@@ -3304,8 +3277,7 @@ return_case_button_vital:hover {
 }
 
 #largemap {
-  background: url("../../../pages/images/Topic01/T01P02/map_large.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/map_large.png") no-repeat;
   width: 100%;
   height: 327px;
   background-size: cover;
@@ -3341,8 +3313,7 @@ return_case_button_vital:hover {
   left: 719px;
 }
 
-.caseStudyMap .open_map_close {
-}
+.caseStudyMap .open_map_close {}
 
 .ModalTxtImg {
   position: absolute;
@@ -3364,8 +3335,7 @@ return_case_button_vital:hover {
   position: absolute;
   width: 41px;
   height: 41px;
-  background: url("../../../pages/images/Topic01/T01P22/close_expand.svg")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P22/close_expand.svg") no-repeat;
   bottom: 9px;
   right: 16px;
   cursor: pointer;
@@ -3376,18 +3346,19 @@ return_case_button_vital:hover {
   background-size: cover !important;
   background-repeat: no-repeat;
 }
+
 .open_map_close {
   position: absolute;
   width: 92px;
   height: 47px;
-  background: url("../../../pages/images/Topic01/T01P22/close_expand_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P22/close_expand_hover.png") no-repeat;
   bottom: 30px;
   right: -47px;
   cursor: pointer;
   z-index: 1000;
   text-decoration: none;
 }
+
 .closepopup:hover {
   opacity: 1;
 }
@@ -3398,8 +3369,7 @@ return_case_button_vital:hover {
 
 /* , */
 .open_map_close:hover {
-  background: url("../../../pages/images/Topic01/T01P22/close_expand_hover.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P22/close_expand_hover.png") no-repeat;
 }
 
 .assessmentShow .sectionContentArea .clsPanel {
@@ -3569,8 +3539,7 @@ return_case_button_vital:hover {
   text-align: center;
 }
 
-.cSection {
-}
+.cSection {}
 
 .postnatanFirstSection {
   position: absolute;
@@ -3672,8 +3641,7 @@ return_case_button_vital:hover {
 }
 
 .mapImg {
-  background: url("../../../pages/images/Topic01/T01P02/small_graph.png")
-    no-repeat;
+  background: url("../../../pages/images/Topic01/T01P02/small_graph.png") no-repeat;
   width: 100%;
   height: 128px;
   position: relative;
@@ -3911,8 +3879,7 @@ ul {
   z-index: 100;
 }
 
-.qtext {
-}
+.qtext {}
 
 #topImgCnt2 .clickToEnlarge,
 #topImgCnt2,
