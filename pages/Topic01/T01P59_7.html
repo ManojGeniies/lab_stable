@@ -12,19 +12,41 @@
     <link href="pages/Topic01/css/T01P96.css" rel="stylesheet" type="text/css">
     <style>
         .contentContainer {
-            height:541px;
+            height: 541px;
         }
+
         .boxInst {
-    top: 471px;
-    left: 868px;
-    display: none;
+            top: 471px;
+            left: 868px;
+            display: none;
+        }
+
+        .instNextClick {
+            position: absolute;
+            top: -18px;
+            left: -34px;
+            background: url('./media/images/player/common/instNext.png') no-repeat;
+            width: 210px;
+            height: 82px;
+        }
+
+        .next_click {
+            position: absolute;
+            font-size: 14px;
+            color: #000000;
+            font-family: OpenSansRegular;
+            line-height: 11px;
+            width: 76%;
+            left: -11px;
+            top: -6px;
+            text-align: center;
         }
     </style>
     <script>
         manifest = [{
-                src: 'pages/images/Topic01/T01P90/T01P90_01.png',
-                id: '1'
-            }
+            src: 'pages/images/Topic01/T01P90/T01P90_01.png',
+            id: '1'
+        }
 
         ];
     </script>
@@ -82,9 +104,9 @@
 
 
 
-        $(document).ready(function() {
+        $(document).ready(function () {
 
-            setTimeout(function() {
+            setTimeout(function () {
                 //fnDesiableNext(true);
             }, 200);
             if (assessmentObj.getUserReviewType() == true) {
@@ -103,7 +125,7 @@
             var _passPercent = 80;
             var _getWrongCount = assessmentObj.getWrongAnsVal();
             var _calc = _answer - _getWrongCount
-                //console.log(_calc + " Wrong answer count " + 2);
+            //console.log(_calc + " Wrong answer count " + 2);
             var result = parseInt((_calc * 100) / _answer);
             var _aStatus = "";
             // console.log("result score" + result);
@@ -119,7 +141,7 @@
                     $(".btn").show();
                     //$(".reviewBtn").show().addClass("btn_center");
                 }
-                setTimeout(function() {
+                setTimeout(function () {
                     //fnDesiableNext(true);
                     enableNextBtn();
                     //fnGlowNextBtn();
@@ -148,7 +170,7 @@
 
             if (assessmentObj.getUserReviewType() == false) {
                 //xAPI score update
-                setTimeout(function() {
+                setTimeout(function () {
                     tinCanWrapper.sendStatementWithScore(_aStatus, true, false, result);
                 }, 500);
                 //xAPI score update
@@ -169,7 +191,7 @@
 
             $('#pageClsResourcesPopup').hide();
 
-            $(document).on("click", '._clickLink', function() {
+            $(document).on("click", '._clickLink', function () {
 
 
 
@@ -199,7 +221,7 @@
 
             });
 
-            $("#pageRefCloseBtn_id").click(function() {
+            $("#pageRefCloseBtn_id").click(function () {
 
                 fnPlayAudio();
 
@@ -217,12 +239,12 @@
 
         });
 
-        $(".reviewBtn").on("click", function() {
+        $(".reviewBtn").on("click", function () {
             tinCanWrapper.sendStatementData("experienced", "sugar-assessment-review", "Sugar Review Assessment");
             fnJumpToPageByID("M1L0T1P59_1");
             assessmentObj.userReviewType();
         });
-        $(".retryBtn").on("click", function() {
+        $(".retryBtn").on("click", function () {
             tinCanWrapper.sendStatementData("experienced", "sugar-assessment-retake", "Sugar Retake Assessment");
             assessmentObj.clearPageId();
             fnJumpToPageByID("M1L0T1P59_1");
@@ -235,7 +257,7 @@
 
         }
 
-        $("#_clickImg0pdf").on("click", function() {
+        $("#_clickImg0pdf").on("click", function () {
 
 
             fnPauseAudio();
@@ -245,7 +267,7 @@
 
         });
 
-        $("#_clickImg0pdf1").on("click", function() {
+        $("#_clickImg0pdf1").on("click", function () {
 
 
             fnPauseAudio();
