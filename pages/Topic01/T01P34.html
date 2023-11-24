@@ -510,10 +510,10 @@
 
     .error1 .error1_inner img {
       position: absolute;
-      width: 47px;
+      width: 35px;
       height: 47px;
       left: -1px;
-      top: 9px;
+      top: -13px;
     }
 
     .boxInst {
@@ -581,11 +581,7 @@
     .equalImageDiv {
       width: 50px;
       margin-top: 7px;
-<<<<<<< HEAD
-      /* height: 50px;
-=======
       height: 50px;
->>>>>>> 2e9c38811f68856aa08f6a5c278cba057b5cb0e4
     }
   </style>
 
@@ -601,6 +597,13 @@
       <div class="sectionContent">
 
         <div class="sectionContentinner">
+
+          <ul class="listitem">
+            <li>In the bone marrow, metamyelocytes, band neutrophils, and segmented neutrophils comprise the neutrophil
+              storage pool (NSP). </li>
+            <li id="list2" style="visibility: inherit; opacity: 1;">A severe bacterial infection may deplete the NSP.
+            </li>
+          </ul>
 
           <div class="leftSectionImg">
             <div id="img0" class="img0">
@@ -630,21 +633,25 @@
               </div>
               <strong>Neutrophil Storage Pool</strong>
             </div>
+
+            <div id="error1" class="error1 ">
+              <div class="error1_inner">
+                <img src="pages/images/Topic01/T01P12/warning.svg"> NSP depletion increases the risk of complications
+                and
+                even death from sepsis
+              </div>
+            </div>
           </div>
         </div>
-        <div id="righttxt" class="righttxt">
-          <ul class="listitem">
-            <li>In the bone marrow, metamyelocytes, band neutrophils, and segmented neutrophils comprise the neutrophil
-              storage pool (NSP). </li>
-            <li id="list2">A severe bacterial infection may deplete the NSP. </li>
-          </ul>
+        <!-- <div id="righttxt" class="righttxt">
           <div id="error1" class="error1 ">
             <div class="error1_inner">
               <img src="pages/images/Topic01/T01P12/warning.svg"> NSP depletion increases the risk of complications and
               even death from sepsis
             </div>
           </div>
-        </div>
+        </div> -->
+
       </div>
 
     </div>
@@ -680,11 +687,11 @@
       transcript: "In the bone marrow, the metamyelocytes, band neutrophils, and segmented neutrophils comprise what is called the neutrophil storage pool. When there is a serious bacterial infection, the neutrophil storage pool may become depleted because the bone marrow releases neutrophils faster than they can be made. Neutrophil storage pool depletion significantly increases the risk of complications and even death from sepsis. <br>Click Next to continue."
     },
     {
-      time: "0.5", carry: "", event: "", show: "#img0,#img01,#img02", hide: "",
+      time: "0.0", carry: "", event: "", show: "#img0,#img02", hide: "#img1Box",
       transcript: "In the bone marrow, the metamyelocytes, band neutrophils, and segmented neutrophils comprise what is called the neutrophil storage pool. When there is a serious bacterial infection, the neutrophil storage pool may become depleted because the bone marrow releases neutrophils faster than they can be made. Neutrophil storage pool depletion significantly increases the risk of complications and even death from sepsis. <br>Click Next to continue."
     },
     {
-      time: "3", carry: "", event: "", show: "#img1", hide: "",
+      time: "3", carry: "", event: "", show: "#img1,#img1Box", hide: "",
       transcript: "In the bone marrow, the metamyelocytes, band neutrophils, and segmented neutrophils comprise what is called the neutrophil storage pool. When there is a serious bacterial infection, the neutrophil storage pool may become depleted because the bone marrow releases neutrophils faster than they can be made. Neutrophil storage pool depletion significantly increases the risk of complications and even death from sepsis. <br>Click Next to continue."
       , animation: [{ target: "#img1", activity: { "-webkit-animation": "10s in-out forwards", "animation": "10s in-out forwards", "width": "142px" } }]
     },
